@@ -13,9 +13,9 @@ export function Welcome() {
         </Text>
       </Title>
       <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
-        We are going to relaunch the Hessdalen research,
-        by a new international research initiative whose goal is to
-        solve the&nbsp;
+        We are planning to relaunch the Hessdalen research 
+        through a new international research initiative 
+        aimed at solving the&nbsp;
         <Anchor href="http://hessdalen.org/" size="lg">
           Hessdalen mystery
         </Anchor>
