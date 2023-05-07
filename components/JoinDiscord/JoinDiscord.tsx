@@ -10,13 +10,13 @@ export default function JoinDiscord() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://discord.gg/JmZr4kqD4X"
-                leftIcon={<IconBrandDiscord size={rem(48)} />}
+                leftIcon={<IconBrandDiscord size={rem(28)} />}
                 styles={(theme) => ({
                     root: {
                         backgroundColor: '#5865f2',
                         border: 0,
-                        height: rem(64),
-                        paddingLeft: rem(20),
+                        height: rem(30),
+                        paddingLeft: rem(10),
                         paddingRight: rem(20),
                         '&:not([data-disabled])': theme.fn.hover({
                             backgroundColor: theme.fn.darken('#404eed', 0.05),
@@ -28,7 +28,7 @@ export default function JoinDiscord() {
                     },
                 })}
             >
-                Join us on Discord
+                Join Discord
             </Button>
         </Group>
     );

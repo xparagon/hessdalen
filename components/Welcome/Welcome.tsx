@@ -1,53 +1,135 @@
 import { Title, Text, Anchor, Container, Space, Grid } from '@mantine/core';
 import useStyles from './Welcome.styles';
-import MainPoints from '../MainPoints/MainPoints';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
-import TimelinePlan from '../TimelinePlan/TimelinePlan';
-import FundingProgress from '../FundingProgress/FundingProgress';
+import { MainMenu } from '../MainMenu/MainMenu';
+import { MainFooter } from '../MainFooter/MainFooter';
 
 export function Welcome() {
-  const { classes } = useStyles();
+  // const { classes } = useStyles();
+
+  const links = [
+    {
+      link: "/sightings",
+      label: "UFO Sightings"
+    },
+    {
+      link: "/report",
+      label: "Report a UFO"
+    },
+    {
+      link: "/about",
+      label: "Live stream"
+    },
+    {
+      link: "#1",
+      label: "Research",
+      links: [
+        {
+          link: "/docs",
+          label: "Scientific Papers"
+        },
+        {
+          link: "/resources",
+          label: "Student Reports"
+        },
+        {
+          link: "/community",
+          label: "Facts & Theories"
+        },
+        {
+          link: "/blog",
+          label: "Data from the Blue Box"
+        }
+      ]
+    },
+    {
+      link: "#2",
+      label: "Plans",
+      links: [
+        {
+          link: "/research",
+          label: "Research Plan"
+        },
+        {
+          link: "/technical",
+          label: "Tecnical Plan"
+        },
+        {
+          link: "/software",
+          label: "Software Plan"
+        },
+        {
+          link: "/community",
+          label: "Community Plan"
+        }
+      ]
+    }
+  ];
+
+
+  const data = [{
+    title: "About",
+    links: [{ label: "History", link: "#" },
+    { label: "People", link: "#" },
+    { label: "Blue Box", link: "#" },
+    { label: "Science Camp", link: "#" }]
+  },
+  {
+    title: "Project",
+    links: [
+      {
+        label: "Contribute",
+        link: "#"
+      },
+      {
+        label: "Media assets",
+        link: "#"
+      },
+      {
+        label: "Changelog",
+        link: "#"
+      },
+      {
+        label: "Releases",
+        link: "#"
+      }
+    ]
+  },
+  {
+    title: "Community",
+    links: [
+      {
+        label: "Join Discord",
+        link: "#"
+      },
+      {
+        label: "Meet a UFO witness",
+        link: "#"
+      },
+      {
+        label: "Join an event",
+        link: "#"
+      },
+      {
+        label: "Visit Hessdalen",
+        link: "#"
+      }
+    ]
+  }
+  ];
+
 
   return (
     <>
       <Container>
 
 
-
-        <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
-          We are planning to relaunch the Hessdalen research
-          through a new international research initiative
-          aimed at solving the&nbsp;
-          <Anchor href="http://hessdalen.org/" size="lg">
-            Hessdalen mystery
-          </Anchor>
-          .
-        </Text>
-        <Space h="xl" />
-        <MainPoints />
-        <Title className={classes.title} align="center" mt={10}>
-          Welcome to{' '}
-          <Text inherit variant="gradient" component="span">
-            Project Hessdalen
-          </Text>
-        </Title>
-
-        <Space h="xl" />
-
-        <Grid gutter="lg">
-          <Grid.Col xs={12} sm={6}>
-            <TimelinePlan />
-
-          </Grid.Col>
-          <Grid.Col xs={12} sm={6}>
-            <FundingProgress />
-
-          </Grid.Col>
-        </Grid>
+        <MainMenu links={links} />
 
 
         <Space h="xl" />
-        <JoinDiscord />
+
+        <MainFooter data={data} />
 
       </Container>
     </>
