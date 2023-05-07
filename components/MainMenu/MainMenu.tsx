@@ -57,7 +57,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 interface MainMenuProps {
-    links: { link: string; label: string; links: { link: string; label: string }[] }[];
+    links: { link: string; label: string; links?: { link: string; label: string }[] }[];
 }
 
 export function MainMenu({ links }: MainMenuProps) {
