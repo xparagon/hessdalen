@@ -1,4 +1,5 @@
 import { createStyles, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
+import { IconBrandFacebook } from '@tabler/icons';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import { IconUfo } from '@tabler/icons-react';
 
@@ -133,9 +134,11 @@ export function MainFooter({ data }: MainFooterProps) {
             <Container className={classes.inner}>
                 <div className={classes.logo}>
                     <IconUfo size={52} />
+                    <Text size="xs" className={classes.description}>
+                        Hessdalen is a UFO hotspot.
+                    </Text>
                     <Text size="xs" color="dimmed" className={classes.description}>
-                        Hessdalen is a UFO hotspot.<br />
-                        Project Hessdalen had been relaunch as a new international research initiative
+                        Project Hessdalen had been relaunched as a new international research initiative
                         aimed at solving the Hessdalen mystery.
                     </Text>
                 </div>
@@ -143,12 +146,12 @@ export function MainFooter({ data }: MainFooterProps) {
             </Container>
             <Container className={classes.afterFooter}>
                 <Text color="dimmed" size="sm">
-                    2023 hessdalen.org
+                    1998 - 2023 old.hessdalen.org | 2023 hessdalen.org
                 </Text>
 
                 <Group spacing={0} className={classes.social} position="right" noWrap>
                     <ActionIcon size="lg">
-                        <IconBrandTwitter size="1.05rem" stroke={1.5} />
+                        <IconBrandFacebook size="1.05rem" stroke={1.5} />
                     </ActionIcon>
                     <ActionIcon size="lg">
                         <IconBrandYoutube size="1.05rem" stroke={1.5} />
