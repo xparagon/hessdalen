@@ -3,6 +3,7 @@ import useStyles from './Welcome.styles';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
 import { MainMenu } from '../MainMenu/MainMenu';
 import { MainFooter } from '../MainFooter/MainFooter';
+import MainTopMenu from '../MainTopMenu/MainTopMenu';
 
 export function Welcome() {
   // const { classes } = useStyles();
@@ -124,8 +125,9 @@ export function Welcome() {
       <Container>
 
 
-        <MainMenu links={links} />
+        {/* <MainMenu links={links} /> */}
 
+        <MainTopMenu />
 
         <Space h="xl" />
 
