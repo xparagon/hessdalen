@@ -1,25 +1,18 @@
-import { Group, Button, Stack, Box, useMantineTheme, CSSObject, Burger, Drawer, Flex, Space } from '@mantine/core';
-import { MediaQuery, Text, rem } from '@mantine/core';
+import { Group, Button, Stack, Box, useMantineTheme, CSSObject, Burger, Drawer, Flex, Space, MediaQuery, Text, rem } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconUfo } from '@tabler/icons-react';
+import { IconSearch, IconUfo } from '@tabler/icons-react';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
+import Link from 'next/link';
 
 
 
 export default function MainTopMenu() {
-
-
-    const theme = useMantineTheme();
-
     const doHide: CSSObject = {
         display: 'none',
     };
 
-
-
     const [opened, { toggle }] = useDisclosure(false);
     const label = opened ? 'Close navigation' : 'Open navigation';
-
 
     return (
         <>
@@ -32,7 +25,9 @@ export default function MainTopMenu() {
                             justify="flex-start"
                             align="center"
                         >
-                            <IconUfo size={28} />
+                            <Link href="/">
+                                <IconUfo size={28} />
+                            </Link>
                         </Flex>
                         <Flex
                             mih={50}
@@ -47,7 +42,17 @@ export default function MainTopMenu() {
                             <Button radius="sm" compact variant="subtle">Live steaming</Button>
                             <Button radius="sm" compact variant="subtle">UFO research</Button>
                         </Flex>
-                        <JoinDiscord />
+                        <Flex
+                            mih={50}
+                            gap="sm"
+                            justify="flex-start"
+                            align="center"
+                        >
+                            <Link href="/sitemap">
+                                <IconSearch size={18} />
+                            </Link>
+                            <JoinDiscord />
+                        </Flex>
                     </Group>
                 </Box>
             </MediaQuery>
@@ -60,7 +65,9 @@ export default function MainTopMenu() {
                             justify="flex-start"
                             align="center"
                         >
-                            <IconUfo size={28} />
+                            <Link href="/">
+                                <IconUfo size={28} />
+                            </Link>
                             <Burger opened={opened} onClick={toggle} aria-label={label} />
                         </Flex>
                         <JoinDiscord />
@@ -87,7 +94,12 @@ export default function MainTopMenu() {
                                     <Button radius="sm" compact variant="subtle">Live steaming</Button>
                                     <Button radius="sm" compact variant="subtle">UFO research</Button>
                                     <Space h="xl" />
-
+                                    <Button
+                                        color="gray"
+                                        leftIcon={<IconSearch
+                                            size={18} stroke={1.4} />} variant="subtle" compact>
+                                        Sitemap
+                                    </Button>
                                     <JoinDiscord />
                                 </Stack>
                             </Drawer.Body>

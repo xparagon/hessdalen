@@ -1,14 +1,15 @@
-import { createStyles, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
+import { createStyles, Text, Container, ActionIcon, Group, rem, Button, Space } from '@mantine/core';
 import { IconBrandFacebook } from '@tabler/icons';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
-import { IconUfo } from '@tabler/icons-react';
+import { IconBrandYoutube, IconBrandInstagram, IconUfo, IconSearch } from '@tabler/icons-react';
+import Link from 'next/link';
+
 
 
 const useStyles = createStyles((theme) => ({
     footer: {
         marginTop: rem(120),
         paddingTop: `calc(${theme.spacing.xl} * 2)`,
-        paddingBottom: `calc(${theme.spacing.xl} * 2)`,
+        paddingBottom: `calc(${theme.spacing.xl} * 1)`,
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
         borderTop: `${rem(1)} solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
             }`,
@@ -80,9 +81,9 @@ const useStyles = createStyles((theme) => ({
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginTop: theme.spacing.xl,
-        paddingTop: theme.spacing.xl,
-        paddingBottom: theme.spacing.xl,
+        marginTop: theme.spacing.sm,
+        paddingTop: theme.spacing.sm,
+        paddingBottom: theme.spacing.xs,
         borderTop: `${rem(1)} solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
             }`,
 
@@ -98,16 +99,61 @@ const useStyles = createStyles((theme) => ({
     },
 }));
 
-interface MainFooterProps {
-    data: {
-        title: string;
-        links: { label: string; link: string }[];
-    }[];
-}
 
-export function MainFooter({ data }: MainFooterProps) {
+export function MainFooter() {
     const { classes } = useStyles();
 
+
+    const data = [{
+        title: "About",
+        links: [{ label: "History", link: "#" },
+        { label: "People", link: "#" },
+        { label: "Blue Box", link: "#" },
+        { label: "Science Camp", link: "#" }]
+    },
+    {
+        title: "Project",
+        links: [
+            {
+                label: "Contribute",
+                link: "#"
+            },
+            {
+                label: "Media assets",
+                link: "#"
+            },
+            {
+                label: "Changelog",
+                link: "#"
+            },
+            {
+                label: "Releases",
+                link: "#"
+            }
+        ]
+    },
+    {
+        title: "Community",
+        links: [
+            {
+                label: "Join Discord",
+                link: "#"
+            },
+            {
+                label: "Meet a UFO witness",
+                link: "#"
+            },
+            {
+                label: "Join an event",
+                link: "#"
+            },
+            {
+                label: "Visit Hessdalen",
+                link: "#"
+            }
+        ]
+    }
+    ];
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
             <Text<'a'>
@@ -138,15 +184,19 @@ export function MainFooter({ data }: MainFooterProps) {
                         Hessdalen is a UFO hotspot.
                     </Text>
                     <Text size="xs" color="dimmed" className={classes.description}>
-                        Project Hessdalen had been relaunched as a new international research initiative
+                        Project Hessdalen has been relaunched as a
+                        new international research initiative
                         aimed at solving the Hessdalen mystery.
                     </Text>
+
+
                 </div>
                 <div className={classes.groups}>{groups}</div>
             </Container>
             <Container className={classes.afterFooter}>
-                <Text color="dimmed" size="sm">
-                    1998 - 2023 old.hessdalen.org | 2023 hessdalen.org
+                <Text color="dimmed" size="xs">
+                    1998 - 2023 old.hessdalen.org<br />
+                    2023 hessdalen.org
                 </Text>
 
                 <Group spacing={0} className={classes.social} position="right" noWrap>

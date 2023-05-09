@@ -9,8 +9,7 @@ import {
     rem,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconChevronDown } from '@tabler/icons-react';
-import { IconUfo } from '@tabler/icons-react';
+import { IconChevronDown, IconUfo } from '@tabler/icons-react';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
 
 

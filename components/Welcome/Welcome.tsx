@@ -1,139 +1,255 @@
-import { Title, Text, Anchor, Container, Space, Grid } from '@mantine/core';
+import { Title, Text, Anchor, Container, Space, Grid, Divider, Center } from '@mantine/core';
 import useStyles from './Welcome.styles';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
 import { MainMenu } from '../MainMenu/MainMenu';
 import { MainFooter } from '../MainFooter/MainFooter';
 import MainTopMenu from '../MainTopMenu/MainTopMenu';
+import MainLayout from '../../pages/layout';
 
 export function Welcome() {
   // const { classes } = useStyles();
 
-  const links = [
-    {
-      link: "/sightings",
-      label: "UFO Sightings"
-    },
-    {
-      link: "/report",
-      label: "Report a UFO"
-    },
-    {
-      link: "/about",
-      label: "Live stream"
-    },
-    {
-      link: "#1",
-      label: "Research",
-      links: [
-        {
-          link: "/docs",
-          label: "Scientific Papers"
-        },
-        {
-          link: "/resources",
-          label: "Student Reports"
-        },
-        {
-          link: "/community",
-          label: "Facts & Theories"
-        },
-        {
-          link: "/blog",
-          label: "Data from the Blue Box"
-        }
-      ]
-    },
-    {
-      link: "#2",
-      label: "Plans",
-      links: [
-        {
-          link: "/research",
-          label: "Research Plan"
-        },
-        {
-          link: "/technical",
-          label: "Tecnical Plan"
-        },
-        {
-          link: "/software",
-          label: "Software Plan"
-        },
-        {
-          link: "/community",
-          label: "Community Plan"
-        }
-      ]
-    }
-  ];
 
 
-  const data = [{
-    title: "About",
-    links: [{ label: "History", link: "#" },
-    { label: "People", link: "#" },
-    { label: "Blue Box", link: "#" },
-    { label: "Science Camp", link: "#" }]
-  },
-  {
-    title: "Project",
-    links: [
-      {
-        label: "Contribute",
-        link: "#"
-      },
-      {
-        label: "Media assets",
-        link: "#"
-      },
-      {
-        label: "Changelog",
-        link: "#"
-      },
-      {
-        label: "Releases",
-        link: "#"
-      }
-    ]
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        label: "Join Discord",
-        link: "#"
-      },
-      {
-        label: "Meet a UFO witness",
-        link: "#"
-      },
-      {
-        label: "Join an event",
-        link: "#"
-      },
-      {
-        label: "Visit Hessdalen",
-        link: "#"
-      }
-    ]
-  }
-  ];
 
 
   return (
-    <>
-      <Container>
+    <MainLayout>
 
+      <Divider my="sm" />
 
-        {/* <MainMenu links={links} /> */}
+      <Space h="sm" />
+      <Text ta="center" c="blue" size={48}>
+        Hessdalen is a UFO hotspot.
+      </Text>
+      <Text ta="center" size={24}>
+        We know where the UFOs are. We know they will appear, as they have done for decades.
 
-        <MainTopMenu />
+      </Text>
+      <Space h="xl" />
 
-        <Space h="xl" />
+      <Grid>
+        <Grid.Col sm={6}>
+          <Center mx="auto">
+            <img src="https://dummyimage.com/400x400/efefef/ffffff&text=type+1+2+3+4" />
 
-        <MainFooter data={data} />
+          </Center>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+          <Text>
+            Type 1
+          </Text>
+          <Text color="dimmed" size="xs">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+          </Text>
+          <Space h="md" />
+          <Text>
+            Type 2
+          </Text>
+          <Text color="dimmed" size="xs">
+            Totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </Text>
+          <Space h="md" />
+          <Text>
+            Type 2
+          </Text>
+          <Text color="dimmed" size="xs">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </Text>
+          <Space h="md" />
+          <Text>
+            Type 2
+          </Text>
+          <Text color="dimmed" size="xs">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </Text>
+          <Space h="md" />
 
-      </Container>
-    </>
+        </Grid.Col>
+      </Grid>
+
+      <Space h="sm" />
+      <Divider my="sm" />
+
+      <Space h="sm" />
+      <Text ta="center" c="orange" size={48}>
+        24/7 Automatic Surveillance System
+      </Text>
+      <Text ta="center" size={24}>
+        When the light phenomena appears, or a UFO, the system will automatically start recording.
+        And you can get a notification on your phone.
+      </Text>
+      <Space h="xl" />
+
+      <Grid>
+        <Grid.Col sm={6}>
+          <Center mx="auto">
+            <img src="https://dummyimage.com/400x300/efefef/ffffff&text=blue+box+camera" />
+          </Center>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+          <Text>
+            The Blue Box
+          </Text>
+          <Text color="dimmed" size="xs">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, natus error sit voluptatem
+          </Text>
+          <Space h="md" />
+          <Text>
+            Live Streaming
+          </Text>
+          <Text color="dimmed" size="xs">
+            Totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architectobeatae
+            vitae dicta sunt explicabo.
+            Totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architectobeatae
+            vitae dicta sunt explicabo.
+          </Text>
+          <Space h="md" />
+        </Grid.Col>
+
+      </Grid>
+      <Space h="xl" />
+
+      <Grid mt="sm">
+        <Grid.Col sm={6}>
+          <Center maw={400} h={250} mx="auto">
+            <img src="https://dummyimage.com/400x300/efefef/ffffff&text=alarm+radar" />
+
+          </Center>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+          <Text>
+            Automatic Alarm System
+          </Text>
+          <Text color="dimmed" size="xs">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+          </Text>
+          <Space h="md" />
+          <Text>
+            Radar + Magnetometer
+          </Text>
+          <Text color="dimmed" size="xs">
+            Totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architectobeatae
+            vitae dicta sunt explicabo.
+          </Text>
+          <Space h="md" />
+        </Grid.Col>
+
+      </Grid>
+
+      <Space h="sm" />
+      <Divider my="sm" />
+
+      <Space h="sm" />
+      <Text ta="center" c="grape" size={48}>
+        A new international research initiative
+      </Text>
+      <Text ta="center" size={24}>
+        Totam rem aperiam, eaque
+        ipsa quae ab illo inventore veritatis
+      </Text>
+      <Space h="xl" />
+
+      <Grid>
+        <Grid.Col sm={6}>
+          <Center mx="auto">
+            <img src="https://dummyimage.com/400x300/efefef/ffffff&text=people+team" />
+          </Center>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+          <Title order={2}>The Research Team</Title>
+
+          <Text>
+            Erling E. Strand
+          </Text>
+          <Text color="dimmed" size="xs">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, natus error sit voluptatem
+          </Text>
+          <Space h="md" />
+          <Text>
+            Massimo Teodorani
+          </Text>
+          <Text color="dimmed" size="xs">
+            Totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architectobeatae
+            vitae dicta sunt explicabo.
+
+          </Text>
+          <Space h="md" />
+          <Text>
+            The Team
+          </Text>
+          <Text color="dimmed" size="xs">
+            Totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architectobeatae
+            vitae dicta sunt explicabo.
+            Totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architectobeatae
+            vitae dicta sunt explicabo.
+            Totam rem aperiam, eaque
+
+          </Text>
+          <Space h="md" />
+        </Grid.Col>
+
+      </Grid>
+      <Space h="xl" />
+
+      <Grid mt="sm">
+        <Grid.Col sm={6}>
+          <Center maw={400} h={250} mx="auto">
+            <img src="https://dummyimage.com/400x300/efefef/ffffff&text=join+meet+volunteer" />
+
+          </Center>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+          <Title order={2}>You can participate</Title>
+          <Text>
+            Discord Community Server
+          </Text>
+          <Text color="dimmed" size="xs">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+          </Text>
+          <Space h="md" />
+          <Text>
+            Meet a UFO witness
+          </Text>
+          <Text color="dimmed" size="xs">
+            Totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architectobeatae
+            vitae dicta sunt explicabo.
+          </Text>
+          <Space h="md" />
+          <Text>
+            Be a volunteer - Join the team!
+          </Text>
+          <Text color="dimmed" size="xs">
+            Totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architectobeatae
+            vitae dicta sunt explicabo.
+          </Text>
+          <Space h="md" />
+        </Grid.Col>
+
+      </Grid>
+
+      <Space h="xl" />
+
+      <MainFooter />
+
+    </MainLayout>
   );
 }
