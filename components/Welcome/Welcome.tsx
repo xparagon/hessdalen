@@ -36,34 +36,36 @@ export function Welcome() {
           </Center>
         </Grid.Col>
         <Grid.Col sm={6}>
-          <Text>
+          <Text tt="uppercase">The Phenomena</Text>
+
+          <Title order={2}>
             Type 1
-          </Text>
+          </Title>
           <Text color="dimmed" size="xs">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium,
           </Text>
           <Space h="md" />
-          <Text>
+          <Title order={2}>
             Type 2
-          </Text>
+          </Title>
           <Text color="dimmed" size="xs">
             Totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
           </Text>
           <Space h="md" />
-          <Text>
-            Type 2
-          </Text>
+          <Title order={2}>
+            Type 3
+          </Title>
           <Text color="dimmed" size="xs">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
           </Text>
           <Space h="md" />
-          <Text>
-            Type 2
-          </Text>
+          <Title order={2}>
+            Type 4
+          </Title>
           <Text color="dimmed" size="xs">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque
@@ -94,17 +96,17 @@ export function Welcome() {
           </Center>
         </Grid.Col>
         <Grid.Col sm={6}>
-          <Text>
+          <Title order={2}>
             The Blue Box
-          </Text>
+          </Title>
           <Text color="dimmed" size="xs">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, natus error sit voluptatem
           </Text>
           <Space h="md" />
-          <Text>
+          <Title order={2}>
             Live Streaming
-          </Text>
+          </Title>
           <Text color="dimmed" size="xs">
             Totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architectobeatae
@@ -127,17 +129,17 @@ export function Welcome() {
           </Center>
         </Grid.Col>
         <Grid.Col sm={6}>
-          <Text>
+          <Title order={2}>
             Automatic Alarm System
-          </Text>
+          </Title>
           <Text color="dimmed" size="xs">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium,
           </Text>
           <Space h="md" />
-          <Text>
+          <Title order={2}>
             Radar + Magnetometer
-          </Text>
+          </Title>
           <Text color="dimmed" size="xs">
             Totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architectobeatae
@@ -168,19 +170,19 @@ export function Welcome() {
           </Center>
         </Grid.Col>
         <Grid.Col sm={6}>
-          <Title order={2}>The Research Team</Title>
+          <Text tt="uppercase">The Research Team</Text>
 
-          <Text>
+          <Title order={2}>
             Erling E. Strand
-          </Text>
+          </Title>
           <Text color="dimmed" size="xs">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, natus error sit voluptatem
           </Text>
           <Space h="md" />
-          <Text>
+          <Title order={2}>
             Massimo Teodorani
-          </Text>
+          </Title>
           <Text color="dimmed" size="xs">
             Totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architectobeatae
@@ -188,9 +190,9 @@ export function Welcome() {
 
           </Text>
           <Space h="md" />
-          <Text>
+          <Title order={2}>
             The Team
-          </Text>
+          </Title>
           <Text color="dimmed" size="xs">
             Totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architectobeatae
@@ -211,7 +213,6 @@ export function Welcome() {
         <Grid.Col sm={6}>
           <Center maw={400} h={250} mx="auto">
             <img src="https://dummyimage.com/400x300/efefef/ffffff&text=join+meet+volunteer" />
-
           </Center>
         </Grid.Col>
         <Grid.Col sm={6}>
