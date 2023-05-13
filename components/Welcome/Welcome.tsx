@@ -13,7 +13,7 @@ export function Welcome() {
   // const { classes } = useStyles();
 
 
-  const [imgUfo, imgUfoSet] = useState('/img/ph-1.jpg');
+  const [imgUfo, imgUfoSet] = useState('/img/ph-ufo.jpg');
   const [imgEquipment, imgEquipmentSet] = useState('/img/ph-2.jpg');
   const [imgTeam, imgTeamSet] = useState('/img/ph-es.jpeg');
 
@@ -60,7 +60,7 @@ export function Welcome() {
                 </Button>
               </Grid.Col>
               <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-7.jpg')}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-ufo.jpg')}>
                   4
                 </Button>
               </Grid.Col>
@@ -143,7 +143,7 @@ export function Welcome() {
             </Text>
           </div>
           <Space h="md" />
-          <div onMouseEnter={() => imgUfoSet('/img/ph-7.jpg')} style={{ cursor: 'pointer' }} >
+          <div onMouseEnter={() => imgUfoSet('/img/ph-ufo.jpg')} style={{ cursor: 'pointer' }} >
 
             <Title order={2}>
               Type 4
