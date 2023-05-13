@@ -7,6 +7,7 @@ import MainTopMenu from '../MainTopMenu/MainTopMenu';
 import MainLayout from '../../pages/layout';
 import { useState } from 'react';
 import { IconEye } from '@tabler/icons';
+import Image from 'next/image'
 
 export function Welcome() {
   // const { classes } = useStyles();
@@ -36,25 +37,33 @@ export function Welcome() {
       <Grid>
         <Grid.Col sm={6}>
           <Flex
-            mih='100%'
+            mih={500}
             justify="center"
             align="center"
             direction="column"
           >
-            <img src={imgUfo} width="100%" />
+            <Image src={imgUfo} alt="" width={450} height={450} />
             <Grid pt={4}>
-              <Grid.Col span={3}><Button variant="outline" compact>
-                1
-              </Button></Grid.Col>
-              <Grid.Col span={3}><Button variant="outline" compact>
-                2
-              </Button></Grid.Col>
-              <Grid.Col span={3}><Button variant="outline" compact>
-                3
-              </Button></Grid.Col>
-              <Grid.Col span={3}><Button variant="outline" compact>
-                4
-              </Button></Grid.Col>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-4.jpg')}>
+                  1
+                </Button>
+              </Grid.Col>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-1.jpg')}>
+                  2
+                </Button>
+              </Grid.Col>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-5.jpg')}>
+                  3
+                </Button>
+              </Grid.Col>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-7.jpg')}>
+                  4
+                </Button>
+              </Grid.Col>
             </Grid>
 
           </Flex>
@@ -79,7 +88,7 @@ export function Welcome() {
                 White, or blue-white flashing light.
               </Text>
             </Flex>
-            <Text color="dimmed" size="xs">
+            <Text color="dimmed" size="sm">
               They are usually high up in the air, close to the to of the mountains or even higher.
               Short lifespan, seconds to minutes.
             </Text>
@@ -103,7 +112,7 @@ export function Welcome() {
               </Text>
             </Flex>
 
-            <Text color="dimmed" size="xs">
+            <Text color="dimmed" size="sm">
               The red light can be flashing.
               The yellow light varies in intensity.
             </Text>
@@ -126,7 +135,7 @@ export function Welcome() {
                 The shape is often round as a ball.
               </Text>
             </Flex>
-            <Text color="dimmed" size="xs">
+            <Text color="dimmed" size="sm">
               <i>This is the most common description of the Hessdalen Phenomena.</i><br />
               A yellow or white light.
               The light is capable of remaining stationary for over an hour.
@@ -151,7 +160,7 @@ export function Welcome() {
                 A black "object".
               </Text>
             </Flex>
-            <Text color="dimmed" size="xs">
+            <Text color="dimmed" size="sm">
               This image closely resembles the phenomena described in many witness reports.
 
               (This is from a film recorded in Hungary in 1990.)
@@ -180,17 +189,35 @@ export function Welcome() {
       <Grid>
         <Grid.Col sm={6}>
           <Flex
-            mih='100%'
+            mih={500}
             justify="center"
             align="center"
-            direction="row"
+            direction="column"
           >
-            <img src={imgEquipment} width="100%" />
+            <Image src={imgEquipment} alt="" width={450} height={450} />
+            <Grid pt={4}>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-2.jpg')}>
+                  1
+                </Button>
+              </Grid.Col>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-9.jpg')}>
+                  2
+                </Button>
+              </Grid.Col>
+
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-11.jpg')}>
+                  3
+                </Button>
+              </Grid.Col>
+            </Grid>
 
           </Flex>
         </Grid.Col>
         <Grid.Col sm={6}>
-          <Text tt="uppercase">The Phenomena</Text>
+          <Text tt="uppercase">The Equipment</Text>
           <div onMouseEnter={() => imgEquipmentSet('/img/ph-2.jpg')} style={{ cursor: 'pointer' }}  >
 
             <Title order={2}>
@@ -204,14 +231,13 @@ export function Welcome() {
               align="center"
               direction="row"
             >
-              <IconEye color='lightblue' size={24} />
+              <IconEye size={24} />
               <Text>
-                White, or blue-white flashing light.
+                With all the Equipment to capture the Phenomena.
               </Text>
             </Flex>
-            <Text color="dimmed" size="xs">
-              They are usually high up in the air, close to the to of the mountains or even higher.
-              Short lifespan, seconds to minutes.
+            <Text color="dimmed" size="sm">
+              Live camera. Alarm system. Magnetometer. Radar. Spectrum Analyzer. Two weather stations.
             </Text>
           </div>
           <Space h="md" />
@@ -227,22 +253,24 @@ export function Welcome() {
               align="center"
               direction="row"
             >
-              <IconEye color='orange' size={24} />
+              <IconEye size={24} />
               <Text>
-                A yellow light, with a red light on the top.
+                3 x  Novus NVC-GDN5801C-2
               </Text>
             </Flex>
 
-            <Text color="dimmed" size="xs">
-              The red light can be flashing.
-              The yellow light varies in intensity.
+            <Text color="dimmed" size="sm">
+              There are two cameras directed towards the southwest
+              and one camera to the northwest.<br />
+              <i>We want to upgrade our cameras!</i>
             </Text>
           </div>
           <Space h="md" />
-          <div onMouseEnter={() => imgEquipmentSet('/img/ph-10.jpg')} style={{ cursor: 'pointer' }} >
+
+          <div onMouseEnter={() => imgEquipmentSet('/img/ph-11.jpg')} style={{ cursor: 'pointer' }} >
 
             <Title order={2}>
-              Scientific Goal
+              Goal: Triangulate and follow
             </Title>
             <Flex
               mih={32}
@@ -253,36 +281,13 @@ export function Welcome() {
             >
               <IconEye size={24} />
               <Text>
-                Doing exactly what we do in Astronomy.
+                a scientific endeavour
               </Text>
             </Flex>
-            <Text color="dimmed" size="xs">
-              Understanding the Physical Mechanism of what is observed by studying the Variability of the Phenomena and the correlation of different
-              physical parameters, through simultaneous multi wavelength observations.
-            </Text>
-          </div>
-          <Space h="md" />
-          <div onMouseEnter={() => imgEquipmentSet('/img/ph-8.jpg')} style={{ cursor: 'pointer' }} >
-
-            <Title order={2}>
-              Radar + Magnetometer
-            </Title>
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                A black "object".
-              </Text>
-            </Flex>
-            <Text color="dimmed" size="xs">
-              This image closely resembles the phenomena described in many witness reports.
-
-              (This is from a film recorded in Hungary in 1990.)
+            <Text color="dimmed" size="sm">
+              we need to get all of it - optical, radar,
+              thermal, wide band spectrum analyzer, magnetometer,
+              all correlated in a tracking mode configuration
             </Text>
           </div>
           <Space h="md" />
@@ -319,7 +324,7 @@ export function Welcome() {
           <Title order={2}>
             Erling E. Strand
           </Title>
-          <Text color="dimmed" size="xs">
+          <Text color="dimmed" size="sm">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, natus error sit voluptatem
           </Text>
@@ -327,7 +332,7 @@ export function Welcome() {
           <Title order={2}>
             Massimo Teodorani
           </Title>
-          <Text color="dimmed" size="xs">
+          <Text color="dimmed" size="sm">
             Totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architectobeatae
             vitae dicta sunt explicabo.
@@ -337,7 +342,7 @@ export function Welcome() {
           <Title order={2}>
             The Team
           </Title>
-          <Text color="dimmed" size="xs">
+          <Text color="dimmed" size="sm">
             Totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architectobeatae
             vitae dicta sunt explicabo.
@@ -364,7 +369,7 @@ export function Welcome() {
           <Text>
             Discord Community Server
           </Text>
-          <Text color="dimmed" size="xs">
+          <Text color="dimmed" size="sm">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium,
           </Text>
@@ -372,7 +377,7 @@ export function Welcome() {
           <Text>
             Meet a UFO witness
           </Text>
-          <Text color="dimmed" size="xs">
+          <Text color="dimmed" size="sm">
             Totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architectobeatae
             vitae dicta sunt explicabo.
@@ -381,7 +386,7 @@ export function Welcome() {
           <Text>
             Be a volunteer - Join the team!
           </Text>
-          <Text color="dimmed" size="xs">
+          <Text color="dimmed" size="sm">
             Totam rem aperiam, eaque
             ipsa quae ab illo inventore veritatis et quasi architectobeatae
             vitae dicta sunt explicabo.
@@ -400,7 +405,7 @@ export function Welcome() {
           <Text>
             When there is an * behind a word, it means that this feature is not yet implemented.
           </Text>
-          <Text color="dimmed" size="xs">
+          <Text color="dimmed" size="sm">
             But it also mean that you can be a part of making it happen!
           </Text>
         </div>
