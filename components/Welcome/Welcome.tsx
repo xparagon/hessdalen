@@ -330,7 +330,7 @@ export function Welcome() {
                 </Button>
               </Grid.Col>
               <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-mt.jpg')}>
+                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-mt-ai.png')}>
                   2
                 </Button>
               </Grid.Col>
@@ -372,7 +372,7 @@ export function Welcome() {
             </Text>
           </div>
           <Space h="md" />
-          <div onMouseEnter={() => imgTeamSet('/img/ph-mt.jpg')} style={{ cursor: 'pointer' }}>
+          <div onMouseEnter={() => imgTeamSet('/img/ph-mt-ai.png')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Massimo Teodorani
