@@ -14,8 +14,8 @@ export function Welcome() {
 
 
   const [imgUfo, imgUfoSet] = useState('/img/ph-1.jpg');
-
   const [imgEquipment, imgEquipmentSet] = useState('/img/ph-2.jpg');
+  const [imgTeam, imgTeamSet] = useState('/img/ph-es.jpeg');
 
 
 
@@ -307,55 +307,137 @@ export function Welcome() {
         A new international research initiative
       </Text>
       <Text ta="center" size={24}>
-        Totam rem aperiam, eaque
-        ipsa quae ab illo inventore veritatis
+        "The Hessdalen phenomenon represents
+        the most important laboratory <b>in the world</b> to study
+        recurrent anomalous aerial phenomena”
+        (UFOs!)<br />
+        - Massimo Teodorani
+
       </Text>
       <Space h="xl" />
 
       <Grid>
         <Grid.Col sm={6}>
-          <Center mx="auto">
-            <img src="https://dummyimage.com/400x300/efefef/ffffff&text=people+team" />
-          </Center>
+          <Flex
+            mih={500}
+            justify="center"
+            align="center"
+            direction="column"
+          >
+            <Image src={imgTeam} alt="" width={450} height={450} />
+            <Grid pt={4}>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-es.jpeg')}>
+                  1
+                </Button>
+              </Grid.Col>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-mt.jpg')}>
+                  2
+                </Button>
+              </Grid.Col>
+
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-team.jpg')}>
+                  3
+                </Button>
+              </Grid.Col>
+            </Grid>
+
+          </Flex>
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text tt="uppercase">The Research Team</Text>
+          <div onMouseEnter={() => imgTeamSet('/img/ph-es.jpeg')} style={{ cursor: 'pointer' }}  >
 
-          <Title order={2}>
-            Erling E. Strand
-          </Title>
-          <Text color="dimmed" size="sm">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, natus error sit voluptatem
-          </Text>
-          <Space h="md" />
-          <Title order={2}>
-            Massimo Teodorani
-          </Title>
-          <Text color="dimmed" size="sm">
-            Totam rem aperiam, eaque
-            ipsa quae ab illo inventore veritatis et quasi architectobeatae
-            vitae dicta sunt explicabo.
+            <Title order={2}>
+              Erling E. Strand
+            </Title>
 
-          </Text>
+            <Flex
+              mih={32}
+              gap="xs"
+              justify="flex-start"
+              align="center"
+              direction="row"
+            >
+              <IconEye size={24} />
+              <Text>
+                The Precident of Project Hessdalen
+              </Text>
+            </Flex>
+            <Text color="dimmed" size="sm">
+              Co-founded and led the Hessdalen project in the early 1980s.
+              Through field investigations, monitoring systems, and data collection,
+              he applies scientific methods and advanced equipment to study the nature and
+              characteristics of the Hessdalen lights.
+            </Text>
+          </div>
           <Space h="md" />
-          <Title order={2}>
-            The Team
-          </Title>
-          <Text color="dimmed" size="sm">
-            Totam rem aperiam, eaque
-            ipsa quae ab illo inventore veritatis et quasi architectobeatae
-            vitae dicta sunt explicabo.
-            Totam rem aperiam, eaque
-            ipsa quae ab illo inventore veritatis et quasi architectobeatae
-            vitae dicta sunt explicabo.
-            Totam rem aperiam, eaque
+          <div onMouseEnter={() => imgTeamSet('/img/ph-mt.jpg')} style={{ cursor: 'pointer' }}>
 
-          </Text>
+            <Title order={2}>
+              Massimo Teodorani
+            </Title>
+            <Flex
+              mih={32}
+              gap="xs"
+              justify="flex-start"
+              align="center"
+              direction="row"
+            >
+              <IconEye size={24} />
+              <Text>
+                Ph.D. in Astrophysics
+              </Text>
+            </Flex>
+
+            <Text color="dimmed" size="sm">
+              Research Director in Project Hessdalen<br />
+              An astrophysicist, specializes in atmospheric and plasma physics.
+              His research focuses on the unique light emissions observed in Hessdalen,
+              resulting in scientific publications and presentations at conferences.
+            </Text>
+          </div>
           <Space h="md" />
+
+          <div onMouseEnter={() => imgTeamSet('/img/ph-team.jpg')} style={{ cursor: 'pointer' }} >
+
+            <Title order={2}>
+              The Team
+            </Title>
+            <Flex
+              mih={32}
+              gap="xs"
+              justify="flex-start"
+              align="center"
+              direction="row"
+            >
+              <IconEye size={24} />
+              <Text>
+                UFO witnesses, engineers, programmers, and more.
+              </Text>
+            </Flex>
+            <Text color="dimmed" size="sm">
+              Established in the summer of 1983, Project Hessdalen has seen the
+              involvement of some team members since its inception.
+              Now, a new generation of researchers, engineers, software developers,
+              and community builders are joining the team, further strengthening the project goals.
+
+            </Text>
+          </div>
+          <Space h="md" />
+
         </Grid.Col>
-
       </Grid>
+
+
+
+
+
+
+
+
       <Space h="xl" />
 
       <Grid mt="sm">
