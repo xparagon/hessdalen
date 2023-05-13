@@ -34,6 +34,7 @@
     "@vercel/analytics": "^1.0.1",
     "cookies-next": "^2.1.1",
     "dayjs": "^1.11.6",
+    "embla-carousel-autoplay": "^8.0.0-rc03",
     "embla-carousel-react": "^7.0.3",
     "next": "13.2.4",
     "react": "18.2.0",

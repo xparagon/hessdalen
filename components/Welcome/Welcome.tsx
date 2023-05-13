@@ -1,16 +1,21 @@
-import { Title, Text, Anchor, Container, Space, Grid, Divider, Center } from '@mantine/core';
+import { Title, Text, Anchor, Container, Space, Grid, Divider, Center, Button } from '@mantine/core';
 import useStyles from './Welcome.styles';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
 import { MainMenu } from '../MainMenu/MainMenu';
 import { MainFooter } from '../MainFooter/MainFooter';
 import MainTopMenu from '../MainTopMenu/MainTopMenu';
 import MainLayout from '../../pages/layout';
+import { useState } from 'react';
 
 export function Welcome() {
   // const { classes } = useStyles();
 
 
+  const [ufoImg, setUfoImg] = useState('/img/ph-1.jpg');
 
+  function doNextUfoImg(i: string) {
+    setUfoImg(i);
+  }
 
 
   return (
@@ -23,54 +28,79 @@ export function Welcome() {
         Hessdalen is a UFO hotspot.
       </Text>
       <Text ta="center" size={24}>
-        We know where the UFOs are. We know they will appear, as they have done for decades.
-
+        These mesmerizing light phenomena are undeniably real,
+        and their presence shows no signs of fading away.
       </Text>
       <Space h="xl" />
 
       <Grid>
         <Grid.Col sm={6}>
           <Center mx="auto">
-            <img src="https://dummyimage.com/400x400/efefef/ffffff&text=type+1+2+3+4" />
+            <img src={ufoImg} width="100%" />
 
           </Center>
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text tt="uppercase">The Phenomena</Text>
+          <div onMouseEnter={() => setUfoImg('/img/ph-4.jpg')} style={{ cursor: 'pointer' }}  >
 
-          <Title order={2}>
-            Type 1
-          </Title>
-          <Text color="dimmed" size="xs">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium,
-          </Text>
+            <Title order={2}>
+              Type 1
+            </Title>
+
+            <Text>
+              White, or blue-white flashing light.
+            </Text>
+            <Text color="dimmed" size="xs">
+              They are usually high up in the air, close to the to of the mountains or even higher.
+              Short lifespan, seconds to minutes.
+            </Text>
+          </div>
           <Space h="md" />
-          <Title order={2}>
-            Type 2
-          </Title>
-          <Text color="dimmed" size="xs">
-            Totam rem aperiam, eaque
-            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          </Text>
+          <div onMouseEnter={() => setUfoImg('/img/ph-1.jpg')} style={{ cursor: 'pointer' }}>
+
+            <Title order={2}>
+              Type 2
+            </Title>
+            <Text>
+              A yellow light, with a red light on the top.
+            </Text>
+            <Text color="dimmed" size="xs">
+              The red light can be flashing.
+              The yellow light varies in intensity.
+            </Text>
+          </div>
           <Space h="md" />
-          <Title order={2}>
-            Type 3
-          </Title>
-          <Text color="dimmed" size="xs">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque
-            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          </Text>
+          <div onMouseEnter={() => setUfoImg('/img/ph-5.jpg')} style={{ cursor: 'pointer' }} >
+
+            <Title order={2}>
+              Type 3
+            </Title>
+            <Text>
+              The shape is often round as a ball.
+            </Text>
+            <Text color="dimmed" size="xs">
+              <i>This is the most common description of the Hessdalen Phenomena.</i><br />
+              A yellow or white light.
+              The light is capable of remaining stationary for over an hour.
+              It can also slowly traverse the valley, occasionally pausing for several minutes before resuming its movement.
+            </Text>
+          </div>
           <Space h="md" />
-          <Title order={2}>
-            Type 4
-          </Title>
-          <Text color="dimmed" size="xs">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque
-            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          </Text>
+          <div onMouseEnter={() => setUfoImg('/img/ph-7.jpg')} style={{ cursor: 'pointer' }} >
+
+            <Title order={2}>
+              Type 4
+            </Title>
+            <Text>
+              A black "object".
+            </Text>
+            <Text color="dimmed" size="xs">
+              This image closely resembles the phenomena described in many witness reports.
+
+              (This is from a film recorded in Hungary in 1990.)
+            </Text>
+          </div>
           <Space h="md" />
 
         </Grid.Col>
@@ -84,8 +114,8 @@ export function Welcome() {
         24/7 Automatic Surveillance System
       </Text>
       <Text ta="center" size={24}>
-        When the light phenomena appears, or a UFO, the system will automatically start recording.
-        And you can get a notification on your phone.
+        When the light phenomena appears, or a UFO, the system will <b>automatically</b> start recording.
+        And you can get a notification on your phone *
       </Text>
       <Space h="xl" />
 
@@ -248,6 +278,19 @@ export function Welcome() {
       </Grid>
 
       <Space h="xl" />
+      <Space h="xl" />
+
+      <Center>
+        <div>
+
+          <Text>
+            When there is an * behind a word, it means that this feature is not yet implemented.
+          </Text>
+          <Text color="dimmed" size="xs">
+            But it also mean that you can be a part of making it happen!
+          </Text>
+        </div>
+      </Center>
 
       <MainFooter />
 
