@@ -162,8 +162,6 @@ export function Welcome() {
             </Flex>
             <Text color="dimmed" size="sm">
               This image closely resembles the phenomena described in many witness reports.
-
-              (This is from a film recorded in Hungary in 1990.)
             </Text>
           </div>
           <Space h="md" />
