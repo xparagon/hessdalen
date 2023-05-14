@@ -12,6 +12,8 @@ export default function MainLayout({
             <MainTopMenu />
 
             {children}
+
+            <MainTopMenu />
         </Container>
     );
 }

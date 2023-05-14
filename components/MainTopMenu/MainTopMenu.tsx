@@ -37,10 +37,10 @@ export default function MainTopMenu() {
                             direction="row"
                             wrap="wrap"
                         >
-                            <Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button>
-                            <Button radius="sm" compact variant="subtle">UFO reports</Button>
-                            <Button radius="sm" compact variant="subtle">Live steaming</Button>
-                            <Button radius="sm" compact variant="subtle">UFO research</Button>
+                            <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
+                            <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
+                            <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">Live steaming</Button></Link>
+                            <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
                         </Flex>
                         <Flex
                             mih={50}
@@ -53,9 +53,9 @@ export default function MainTopMenu() {
                             </Link>
                             <JoinDiscord />
                         </Flex>
-                    </Group>
-                </Box>
-            </MediaQuery>
+                    </Group >
+                </Box >
+            </MediaQuery >
             <MediaQuery largerThan={800} styles={doHide}>
                 <div>
                     <Group position="apart" mt="1rem">
@@ -65,7 +65,7 @@ export default function MainTopMenu() {
                             justify="flex-start"
                             align="center"
                         >
-                            <Link href="/">
+                            <Link href="/work-in-progress">
                                 <IconUfo size={28} />
                             </Link>
                             <Burger opened={opened} onClick={toggle} aria-label={label} />

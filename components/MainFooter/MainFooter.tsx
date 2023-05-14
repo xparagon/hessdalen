@@ -3,6 +3,8 @@ import { IconBrandFacebook } from '@tabler/icons';
 import { IconBrandYoutube, IconBrandInstagram, IconUfo, IconSearch } from '@tabler/icons-react';
 import Link from 'next/link';
 
+import Image from 'next/image'
+
 
 
 const useStyles = createStyles((theme) => ({
@@ -179,14 +181,11 @@ export function MainFooter() {
         <footer className={classes.footer}>
             <Container className={classes.inner}>
                 <div className={classes.logo}>
-                    <IconUfo size={52} />
+
+                    <Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={200} height={200} />
+
                     <Text size="xs" className={classes.description}>
                         Hessdalen is a UFO hotspot.
-                    </Text>
-                    <Text size="xs" color="dimmed" className={classes.description}>
-                        Project Hessdalen has been relaunched as a
-                        new international research initiative
-                        aimed at solving the Hessdalen mystery.
                     </Text>
 
 
@@ -195,8 +194,7 @@ export function MainFooter() {
             </Container>
             <Container className={classes.afterFooter}>
                 <Text color="dimmed" size="xs">
-                    1998 - 2023 old.hessdalen.org<br />
-                    2023 hessdalen.org
+                    1998 &rarr; old.hessdalen.org |  2023 &rarr; hessdalen.org
                 </Text>
 
                 <Group spacing={0} className={classes.social} position="right" noWrap>

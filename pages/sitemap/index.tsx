@@ -4,11 +4,11 @@ import MainLayout from '../layout';
 import { IconArrowRight } from '@tabler/icons';
 
 
-// interface TableOfContentsFloatingProps {
+// interface SitemapProps {
 //     links: { label: string; link: string; order: number }[];
 // }
 
-export default function TableOfContentsFloating() {
+export default function Sitemap() {
     return (
         <MainLayout>
             <Space h="lg" />
@@ -26,7 +26,7 @@ export default function TableOfContentsFloating() {
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation
                         </Text>
-                        <Link href="/">
+                        <Link href="/work-in-progress">
                             <IconArrowRight size={28} />
                         </Link>
                     </Card>
@@ -41,7 +41,7 @@ export default function TableOfContentsFloating() {
                             Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </Text>
-                        <Link href="/">
+                        <Link href="/work-in-progress">
                             <IconArrowRight size={28} />
                         </Link>
                     </Card>
@@ -54,7 +54,7 @@ export default function TableOfContentsFloating() {
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation
                         </Text>
-                        <Link href="/">
+                        <Link href="/work-in-progress">
                             <IconArrowRight size={28} />
                         </Link>
                     </Card>
@@ -67,7 +67,7 @@ export default function TableOfContentsFloating() {
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation
                         </Text>
-                        <Link href="/">
+                        <Link href="/work-in-progress">
                             <IconArrowRight size={28} />
                         </Link>
                     </Card>

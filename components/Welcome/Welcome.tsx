@@ -8,14 +8,16 @@ import MainLayout from '../../pages/layout';
 import { useState } from 'react';
 import { IconEye } from '@tabler/icons';
 import Image from 'next/image'
+import Link from 'next/link';
 
 export function Welcome() {
   // const { classes } = useStyles();
 
 
-  const [imgUfo, imgUfoSet] = useState('/img/ph-ufo.jpg');
+  const [imgUfo, imgUfoSet] = useState('/img/ph-ufo3-t.png');
   const [imgEquipment, imgEquipmentSet] = useState('/img/ph-2.jpg');
   const [imgTeam, imgTeamSet] = useState('/img/ph-es.jpeg');
+  const [imgCommunity, imgCommunitySet] = useState('/img/ph-es.jpeg');
 
 
 
@@ -60,7 +62,7 @@ export function Welcome() {
                 </Button>
               </Grid.Col>
               <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-ufo.jpg')}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-ufo3-t.png')}>
                   4
                 </Button>
               </Grid.Col>
@@ -139,11 +141,13 @@ export function Welcome() {
               <i>This is the most common description of the Hessdalen Phenomena.</i><br />
               A yellow or white light.
               The light is capable of remaining stationary for over an hour.
-              It can also slowly traverse the valley, occasionally pausing for several minutes before resuming its movement.
+              It can also slowly traverse the valley, occasionally pausing for
+              several minutes before resuming its movement.
             </Text>
           </div>
+
           <Space h="md" />
-          <div onMouseEnter={() => imgUfoSet('/img/ph-ufo.jpg')} style={{ cursor: 'pointer' }} >
+          <div onMouseEnter={() => imgUfoSet('/img/ph-ufo3-t.png')} style={{ cursor: 'pointer' }} >
 
             <Title order={2}>
               Type 4
@@ -164,8 +168,19 @@ export function Welcome() {
               This image closely resembles the phenomena described in many witness reports.
             </Text>
           </div>
-          <Space h="md" />
 
+          <Space h="md" />
+          <Flex
+            mih={50}
+            gap="sm"
+            justify="flex-start"
+            align="center"
+            direction="row"
+            wrap="wrap"
+          >
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">UFO research</Button></Link>
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">UFO reports</Button></Link>
+          </Flex>
         </Grid.Col>
       </Grid>
 
@@ -289,7 +304,17 @@ export function Welcome() {
             </Text>
           </div>
           <Space h="md" />
-
+          <Flex
+            mih={50}
+            gap="sm"
+            justify="flex-start"
+            align="center"
+            direction="row"
+            wrap="wrap"
+          >
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Blue Box</Button></Link>
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Live streaming</Button></Link>
+          </Flex>
         </Grid.Col>
       </Grid>
 
@@ -349,7 +374,7 @@ export function Welcome() {
           <div onMouseEnter={() => imgTeamSet('/img/ph-es.jpeg')} style={{ cursor: 'pointer' }}  >
 
             <Title order={2}>
-              Erling E. Strand
+              Erling P. Strand
             </Title>
 
             <Flex
@@ -425,7 +450,17 @@ export function Welcome() {
             </Text>
           </div>
           <Space h="md" />
-
+          <Flex
+            mih={50}
+            gap="sm"
+            justify="flex-start"
+            align="center"
+            direction="row"
+            wrap="wrap"
+          >
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">People</Button></Link>
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Teams</Button></Link>
+          </Flex>
         </Grid.Col>
       </Grid>
 
@@ -436,45 +471,198 @@ export function Welcome() {
 
 
 
+      <Space h="sm" />
+      <Divider my="sm" />
+
+      <Space h="sm" />
+      <Text ta="center" c="pink" size={48}>
+        A new international community
+      </Text>
+      <Text ta="center" size={24}>
+        "The Hessdalen phenomenon represents
+        the most important laboratory <b>in the world</b> to study
+        recurrent anomalous aerial phenomena”
+        (UFOs!)<br />
+        - Massimo Teodorani
+
+      </Text>
       <Space h="xl" />
 
-      <Grid mt="sm">
+      <Grid>
         <Grid.Col sm={6}>
-          <Center maw={400} h={250} mx="auto">
-            <img src="https://dummyimage.com/400x300/efefef/ffffff&text=join+meet+volunteer" />
-          </Center>
-        </Grid.Col>
-        <Grid.Col sm={6}>
-          <Title order={2}>You can participate</Title>
-          <Text>
-            Discord Community Server
-          </Text>
-          <Text color="dimmed" size="sm">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium,
-          </Text>
-          <Space h="md" />
-          <Text>
-            Meet a UFO witness
-          </Text>
-          <Text color="dimmed" size="sm">
-            Totam rem aperiam, eaque
-            ipsa quae ab illo inventore veritatis et quasi architectobeatae
-            vitae dicta sunt explicabo.
-          </Text>
-          <Space h="md" />
-          <Text>
-            Be a volunteer - Join the team!
-          </Text>
-          <Text color="dimmed" size="sm">
-            Totam rem aperiam, eaque
-            ipsa quae ab illo inventore veritatis et quasi architectobeatae
-            vitae dicta sunt explicabo.
-          </Text>
-          <Space h="md" />
-        </Grid.Col>
+          <Flex
+            mih={500}
+            justify="center"
+            align="center"
+            direction="column"
+          >
+            <Image src={imgTeam} alt="" width={450} height={450} />
+            <Grid pt={4}>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-es.jpeg')}>
+                  1
+                </Button>
+              </Grid.Col>
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-mt-ai.png')}>
+                  2
+                </Button>
+              </Grid.Col>
 
+              <Grid.Col span={3}>
+                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-team.jpg')}>
+                  3
+                </Button>
+              </Grid.Col>
+            </Grid>
+
+          </Flex>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+          <Text tt="uppercase">The Community</Text>
+          <div onMouseEnter={() => imgTeamSet('/img/ph-es.jpeg')} style={{ cursor: 'pointer' }}  >
+
+            <Title order={2}>
+              Discord
+            </Title>
+
+            <Flex
+              mih={32}
+              gap="xs"
+              justify="flex-start"
+              align="center"
+              direction="row"
+            >
+              <IconEye size={24} />
+              <Text>
+                Always free
+              </Text>
+            </Flex>
+            <Text color="dimmed" size="sm">
+              Co-founded and led the Hessdalen project in the early 1980s.
+              Through field investigations, monitoring systems, and data collection,
+              he applies scientific methods and advanced equipment to study the nature and
+              characteristics of the Hessdalen lights.
+            </Text>
+          </div>
+          <Space h="md" />
+          <JoinDiscord />
+          <Space h="md" />
+          <div onMouseEnter={() => imgTeamSet('/img/ph-mt-ai.png')} style={{ cursor: 'pointer' }}>
+
+            <Title order={2}>
+              Membership
+            </Title>
+            <Flex
+              mih={32}
+              gap="xs"
+              justify="flex-start"
+              align="center"
+              direction="row"
+            >
+              <IconEye size={24} />
+              <Text>
+                50 NOK / month (about 5 USD)
+              </Text>
+            </Flex>
+
+            <Text color="dimmed" size="sm">
+              Research Director in Project Hessdalen<br />
+              An astrophysicist, specializes in atmospheric and plasma physics.
+              His research focuses on the unique light emissions observed in Hessdalen,
+              resulting in scientific publications and presentations at conferences.
+            </Text>
+          </div>
+          <Flex
+            mih={50}
+            gap="sm"
+            justify="flex-start"
+            align="center"
+            direction="row"
+            wrap="wrap"
+          >
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Membership</Button></Link>
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Field trip</Button></Link>
+          </Flex>
+          <Space h="md" />
+
+          <div onMouseEnter={() => imgTeamSet('/img/ph-team.jpg')} style={{ cursor: 'pointer' }} >
+
+            <Title order={2}>
+              Field trip
+            </Title>
+            <Flex
+              mih={32}
+              gap="xs"
+              justify="flex-start"
+              align="center"
+              direction="row"
+            >
+              <IconEye size={24} />
+              <Text>
+                A weekend in Hessdalen
+              </Text>
+            </Flex>
+            <Text color="dimmed" size="sm">
+              Established in the summer of 1983, Project Hessdalen has seen the
+              involvement of some team members since its inception.
+              Now, a new generation of researchers, engineers, software developers,
+              and community builders are joining the team, further strengthening the project goals.
+
+            </Text>
+          </div>
+          <Flex
+            mih={50}
+            gap="sm"
+            justify="flex-start"
+            align="center"
+            direction="row"
+            wrap="wrap"
+          >
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Field trip</Button></Link>
+          </Flex>
+          <Space h="md" />
+          <div onMouseEnter={() => imgTeamSet('/img/ph-team.jpg')} style={{ cursor: 'pointer' }} >
+
+            <Title order={2}>
+              Donate
+            </Title>
+            <Flex
+              mih={32}
+              gap="xs"
+              justify="flex-start"
+              align="center"
+              direction="row"
+            >
+              <IconEye size={24} />
+              <Text>
+                Boost the project!
+              </Text>
+            </Flex>
+            <Text color="dimmed" size="sm">
+              Established in the summer of 1983, Project Hessdalen has seen the
+              involvement of some team members since its inception.
+              Now, a new generation of researchers, engineers, software developers,
+              and community builders are joining the team, further strengthening the project goals.
+
+            </Text>
+          </div>
+          <Flex
+            mih={50}
+            gap="sm"
+            justify="flex-start"
+            align="center"
+            direction="row"
+            wrap="wrap"
+          >
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Donate</Button></Link>
+          </Flex>
+        </Grid.Col>
       </Grid>
+
+
+
+
 
       <Space h="xl" />
       <Space h="xl" />
