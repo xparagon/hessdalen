@@ -1,4 +1,4 @@
-import { Title, Text, Anchor, Container, Space, Grid, Divider, Center, Button, Flex } from '@mantine/core';
+import { Title, Text, Anchor, Container, Space, Grid, Divider, Center, Button, Flex, Group } from '@mantine/core';
 import useStyles from './Welcome.styles';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
 import { MainMenu } from '../MainMenu/MainMenu';
@@ -17,7 +17,8 @@ export function Welcome() {
   const [imgUfo, imgUfoSet] = useState('/img/ph-ufo3-t.png');
   const [imgEquipment, imgEquipmentSet] = useState('/img/ph-2.jpg');
   const [imgTeam, imgTeamSet] = useState('/img/ph-es.jpeg');
-  const [imgCommunity, imgCommunitySet] = useState('/img/ph-es.jpeg');
+  const [imgCommunity, imgCommunitySet] = useState('/img/pg-discord.jpg');
+  const [imgAction, imgActionSet] = useState('/img/ph-field.jpg');
 
 
 
@@ -476,14 +477,10 @@ export function Welcome() {
 
       <Space h="sm" />
       <Text ta="center" c="pink" size={48}>
-        A new international community
+        Calling all UFO Enthusiasts:
       </Text>
       <Text ta="center" size={24}>
-        "The Hessdalen phenomenon represents
-        the most important laboratory <b>in the world</b> to study
-        recurrent anomalous aerial phenomena”
-        (UFOs!)<br />
-        - Massimo Teodorani
+        Unite for a Collective Quest to Unravel the UFO Mysteries!
 
       </Text>
       <Space h="xl" />
@@ -496,31 +493,27 @@ export function Welcome() {
             align="center"
             direction="column"
           >
-            <Image src={imgTeam} alt="" width={450} height={450} />
+            <Image src={imgCommunity} alt="" width={450} height={450} />
             <Grid pt={4}>
-              <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-es.jpeg')}>
+              <Grid.Col span={4}>
+                <Button variant="outline" compact onClick={() => imgCommunitySet('/img/pg-discord.jpg')}>
                   1
                 </Button>
               </Grid.Col>
-              <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-mt-ai.png')}>
+              <Grid.Col span={4}>
+                <Button variant="outline" compact onClick={() => imgCommunitySet('/img/ph-ko-fi.jpg')}>
                   2
                 </Button>
               </Grid.Col>
 
-              <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-team.jpg')}>
-                  3
-                </Button>
-              </Grid.Col>
+
             </Grid>
 
           </Flex>
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text tt="uppercase">The Community</Text>
-          <div onMouseEnter={() => imgTeamSet('/img/ph-es.jpeg')} style={{ cursor: 'pointer' }}  >
+          <div onMouseEnter={() => imgCommunitySet('/img/pg-discord.jpg')} style={{ cursor: 'pointer' }}  >
 
             <Title order={2}>
               Discord
@@ -535,20 +528,19 @@ export function Welcome() {
             >
               <IconEye size={24} />
               <Text>
-                Always free
+                Always free to subscribe
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              Co-founded and led the Hessdalen project in the early 1980s.
-              Through field investigations, monitoring systems, and data collection,
-              he applies scientific methods and advanced equipment to study the nature and
-              characteristics of the Hessdalen lights.
+              Project Hessdalen is an open Discord community server.<br />
+              Want to ask questions to the researchers? Join the Discord server.
+
             </Text>
           </div>
           <Space h="md" />
           <JoinDiscord />
           <Space h="md" />
-          <div onMouseEnter={() => imgTeamSet('/img/ph-mt-ai.png')} style={{ cursor: 'pointer' }}>
+          <div onMouseEnter={() => imgCommunitySet('/img/ph-ko-fi.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Membership
@@ -562,31 +554,85 @@ export function Welcome() {
             >
               <IconEye size={24} />
               <Text>
-                50 NOK / month (about 5 USD)
+                Help us fund the project
               </Text>
             </Flex>
 
             <Text color="dimmed" size="sm">
-              Research Director in Project Hessdalen<br />
-              An astrophysicist, specializes in atmospheric and plasma physics.
-              His research focuses on the unique light emissions observed in Hessdalen,
-              resulting in scientific publications and presentations at conferences.
+              <Grid>
+                <Grid.Col span={6}>
+                  <b>50 NOK (5 USD) per month</b><br />
+                  Access to a lot more content: videos, pictures, and articles.<br />
+                  Get invited to community events.<br />
+                  <i>We need a lot of people to join this tier to make the project sustainable.</i>
+                </Grid.Col>
+                <Grid.Col span={6}>
+                  <b>200 NOK (20 USD) per month</b><br />
+                  Get notifications to your mobilephone
+                  when something unusual is detected.
+                  Get access to the live surveillance cameras
+                  and the data from the equipment.
+                </Grid.Col>
+
+                <Grid.Col span={6}>
+                  <Link href="/work-in-progress"><Button radius="sm" variant="outline">Membership</Button></Link>
+                </Grid.Col>
+                <Grid.Col span={6}>
+                  <Link href="/work-in-progress"><Button radius="sm" variant="outline">Premium Membership</Button></Link>
+                </Grid.Col>
+
+              </Grid>
             </Text>
           </div>
-          <Flex
-            mih={50}
-            gap="sm"
-            justify="flex-start"
-            align="center"
-            direction="row"
-            wrap="wrap"
-          >
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Membership</Button></Link>
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Field trip</Button></Link>
-          </Flex>
+
           <Space h="md" />
 
-          <div onMouseEnter={() => imgTeamSet('/img/ph-team.jpg')} style={{ cursor: 'pointer' }} >
+        </Grid.Col>
+      </Grid>
+
+
+
+      <Space h="sm" />
+      <Divider my="sm" />
+
+      <Space h="sm" />
+      <Text ta="center" size={48}>
+        Be part of the solution
+      </Text>
+      <Text ta="center" size={24}>
+
+        Join us in our mission to solve the ultimate cosmic puzzle!
+
+      </Text>
+      <Space h="xl" />
+
+      <Grid>
+        <Grid.Col sm={6}>
+          <Flex
+            mih={500}
+            justify="center"
+            align="center"
+            direction="column"
+          >
+            <Image src={imgAction} alt="" width={450} height={450} />
+            <Grid pt={4}>
+              <Grid.Col span={4}>
+                <Button variant="outline" compact onClick={() => imgActionSet('/img/ph-field.jpg')}>
+                  1
+                </Button>
+              </Grid.Col>
+              <Grid.Col span={4}>
+                <Button variant="outline" compact onClick={() => imgActionSet('/img/ph-flares.jpg')}>
+                  2
+                </Button>
+              </Grid.Col>
+            </Grid>
+          </Flex>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+          <Text tt="uppercase">The Action</Text>
+
+          <div onMouseEnter={() => imgActionSet('/img/ph-field.jpg')} style={{ cursor: 'pointer' }} >
 
             <Title order={2}>
               Field trip
@@ -600,14 +646,16 @@ export function Welcome() {
             >
               <IconEye size={24} />
               <Text>
-                A weekend in Hessdalen
+                Observe, investigate, and experience
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              Established in the summer of 1983, Project Hessdalen has seen the
-              involvement of some team members since its inception.
-              Now, a new generation of researchers, engineers, software developers,
-              and community builders are joining the team, further strengthening the project goals.
+              We will be looking out for UFOs, with all the equipment available.
+              You will meet locals and the researchers.
+              I promise - the nights will be long but feel short with
+              interesting stories and discussions.<br />
+              <i>We have set up these field trips because it
+                has been requested by many for years.</i>
 
             </Text>
           </div>
@@ -619,10 +667,16 @@ export function Welcome() {
             direction="row"
             wrap="wrap"
           >
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Field trip</Button></Link>
+
+            <Group>
+              <Link href="/work-in-progress"><Button radius="sm" variant="outline">Field trip</Button></Link>
+              <div>
+                3 days in Hessdalen - in September
+              </div>
+            </Group>
           </Flex>
           <Space h="md" />
-          <div onMouseEnter={() => imgTeamSet('/img/ph-team.jpg')} style={{ cursor: 'pointer' }} >
+          <div onMouseEnter={() => imgActionSet('/img/ph-flares.jpg')} style={{ cursor: 'pointer' }} >
 
             <Title order={2}>
               Donate
@@ -640,11 +694,13 @@ export function Welcome() {
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              Established in the summer of 1983, Project Hessdalen has seen the
-              involvement of some team members since its inception.
-              Now, a new generation of researchers, engineers, software developers,
-              and community builders are joining the team, further strengthening the project goals.
-
+              Your substantial donation can shape the future of UFO research.
+              With your support, we'll acquire advanced equipment, conduct field investigations,
+              collaborate with experts, and analyze crucial data.<br />
+              <i>As a distinguished donor, you'll enjoy exclusive benefits like VIP access to field trips,
+                firsthand updates, and connections with passionate researchers.
+                Your name will be etched in UFO research history as a catalyst for change.
+              </i>
             </Text>
           </div>
           <Flex
@@ -662,22 +718,9 @@ export function Welcome() {
 
 
 
-
-
-      <Space h="xl" />
       <Space h="xl" />
 
-      <Center>
-        <div>
 
-          <Text>
-            When there is an * behind a word, it means that this feature is not yet implemented.
-          </Text>
-          <Text color="dimmed" size="sm">
-            But it also mean that you can be a part of making it happen!
-          </Text>
-        </div>
-      </Center>
 
       <MainFooter />
 
