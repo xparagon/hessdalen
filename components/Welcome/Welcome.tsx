@@ -325,7 +325,7 @@ export function Welcome() {
               </Grid.Col>
 
               <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-51.jpg')}>
+                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-11.jpg')}>
                   3
                 </Button>
               </Grid.Col>
@@ -384,7 +384,7 @@ export function Welcome() {
           </div>
           <Space h="md" />
 
-          <div onMouseEnter={() => imgEquipmentSet('/img/ph-51.jpg')} style={{ cursor: 'pointer' }}>
+          <div onMouseEnter={() => imgEquipmentSet('/img/ph-11.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Goal: Triangulate and follow
