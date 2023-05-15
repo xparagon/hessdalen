@@ -66,7 +66,7 @@ export function Welcome() {
               <Popover width={300} position="bottom" withArrow shadow="md">
                 <Popover.Target>
                   <Text size="sm" style={{ cursor: 'pointer' }}>
-                    - <b>US Department of Defense</b>: UAPTF/AOIMSG (since 2020)&nbsp;  <IconArrowDownCircle color="blue" size={18} />
+                    <IconArrowDownCircle color="blue" size={18} />  <b>US Department of Defense</b>: UAPTF/AOIMSG (since 2020)
                   </Text>
                 </Popover.Target>
                 <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
@@ -92,7 +92,7 @@ export function Welcome() {
               <Popover width={300} position="bottom" withArrow shadow="md">
                 <Popover.Target>
                   <Text size="sm" style={{ cursor: 'pointer' }}>
-                    - <b>Harvard & Smithsonian</b>: The Galileo Project (since 2021)&nbsp;  <IconArrowDownCircle color="blue" size={18} />
+                    <IconArrowDownCircle color="blue" size={18} /> <b>Harvard & Smithsonian</b>: The Galileo Project (since 2021)
                   </Text>
                 </Popover.Target>
                 <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
@@ -111,7 +111,7 @@ export function Welcome() {
               <Popover width={300} position="bottom" withArrow shadow="md">
                 <Popover.Target>
                   <Text size="sm" style={{ cursor: 'pointer' }}>
-                    - <b>NASA</b>: Independent Study on UAPs (since 2022)&nbsp;  <IconArrowDownCircle color="blue" size={18} />
+                    <IconArrowDownCircle color="blue" size={18} /> <b>NASA</b>: Independent Study on UAPs (since 2022)
                   </Text>
                 </Popover.Target>
                 <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
@@ -156,17 +156,17 @@ export function Welcome() {
             <Image src={imgUfo} alt="" width={450} height={450} />
             <Grid pt={4}>
               <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-4.jpg')}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/hp-t1.jpg')}>
                   1
                 </Button>
               </Grid.Col>
               <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-1.jpg')}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-5.jpg')}>
                   2
                 </Button>
               </Grid.Col>
               <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-5.jpg')}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/hp-t3.jpg')}>
                   3
                 </Button>
               </Grid.Col>
@@ -181,7 +181,7 @@ export function Welcome() {
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text tt="uppercase">The Phenomena</Text>
-          <div onMouseEnter={() => imgUfoSet('/img/ph-4.jpg')} style={{ cursor: 'pointer' }}>
+          <div onMouseEnter={() => imgUfoSet('/img/hp-t1.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Type 1
@@ -196,16 +196,15 @@ export function Welcome() {
             >
               <IconEye color="lightblue" size={24} />
               <Text>
-                White, or blue-white flashing light.
+                Strong, white or blue flashes.
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              They are usually high up in the air, close to the to of the mountains or even higher.
-              Short lifespan, seconds to minutes.
+              Lasting anywhere from a fraction of a second to a few seconds
             </Text>
           </div>
           <Space h="md" />
-          <div onMouseEnter={() => imgUfoSet('/img/ph-1.jpg')} style={{ cursor: 'pointer' }}>
+          <div onMouseEnter={() => imgUfoSet('/img/ph-5.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Type 2
@@ -219,17 +218,19 @@ export function Welcome() {
             >
               <IconEye color="orange" size={24} />
               <Text>
-                A yellow light, with a red light on the top.
+                Yellow or yellow-white ball of light.
               </Text>
             </Flex>
 
             <Text color="dimmed" size="sm">
-              The red light can be flashing.
-              The yellow light varies in intensity.
+              These have different shapes. They can stand still for minutes,
+              even hours, and they can move slowly, or fast. Can be several meters in diameter.
+              The ground has been illuminated. Another light with another color
+              can be attached to the main light.
             </Text>
           </div>
           <Space h="md" />
-          <div onMouseEnter={() => imgUfoSet('/img/ph-5.jpg')} style={{ cursor: 'pointer' }}>
+          <div onMouseEnter={() => imgUfoSet('/img/hp-t3.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Type 3
@@ -243,15 +244,11 @@ export function Welcome() {
             >
               <IconEye color="red" size={24} />
               <Text>
-                The shape is often round as a ball.
+                Several lights together.
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              <i>This is the most common description of the Hessdalen Phenomena.</i><br />
-              A yellow or white light.
-              The light is capable of remaining stationary for over an hour.
-              It can also slowly traverse the valley, occasionally pausing for
-              several minutes before resuming its movement.
+              It looks like the lights are connected to an object.
             </Text>
           </div>
 
@@ -270,11 +267,11 @@ export function Welcome() {
             >
               <IconEye size={24} />
               <Text>
-                A black "object".
+                Daylight objects
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              This image closely resembles the phenomena described in many witness reports.
+              Drawing from a witness report.
             </Text>
           </div>
 
@@ -328,7 +325,7 @@ export function Welcome() {
               </Grid.Col>
 
               <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-11.jpg')}>
+                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-51.jpg')}>
                   3
                 </Button>
               </Grid.Col>
@@ -387,7 +384,7 @@ export function Welcome() {
           </div>
           <Space h="md" />
 
-          <div onMouseEnter={() => imgEquipmentSet('/img/ph-11.jpg')} style={{ cursor: 'pointer' }}>
+          <div onMouseEnter={() => imgEquipmentSet('/img/ph-51.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Goal: Triangulate and follow
