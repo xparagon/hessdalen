@@ -91,7 +91,7 @@ export default function MainTopMenu() {
                                 <Stack align="flex-start" spacing="xs">
                                     <Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button>
                                     <Button radius="sm" compact variant="subtle">UFO reports</Button>
-                                    <Button radius="sm" compact variant="subtle">Live steaming</Button>
+                                    <Button radius="sm" compact variant="subtle">Live streaming</Button>
                                     <Button radius="sm" compact variant="subtle">UFO research</Button>
                                     <Space h="xl" />
                                     <Button
