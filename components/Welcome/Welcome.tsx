@@ -1,18 +1,14 @@
-import { Title, Text, Anchor, Container, Space, Grid, Divider, Center, Button, Flex, Group } from '@mantine/core';
-import useStyles from './Welcome.styles';
-import JoinDiscord from '../JoinDiscord/JoinDiscord';
-import { MainMenu } from '../MainMenu/MainMenu';
-import { MainFooter } from '../MainFooter/MainFooter';
-import MainTopMenu from '../MainTopMenu/MainTopMenu';
-import MainLayout from '../../pages/layout';
+import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Group, Popover, UnstyledButton } from '@mantine/core';
 import { useState } from 'react';
-import { IconEye } from '@tabler/icons';
-import Image from 'next/image'
+import { IconEye, IconArrowDownCircle, IconExternalLink } from '@tabler/icons';
+import Image from 'next/image';
 import Link from 'next/link';
+import JoinDiscord from '../JoinDiscord/JoinDiscord';
+import { MainFooter } from '../MainFooter/MainFooter';
+import MainLayout from '../../pages/layout';
 
 export function Welcome() {
   // const { classes } = useStyles();
-
 
   const [imgUfo, imgUfoSet] = useState('/img/ph-ufo3-t.png');
   const [imgEquipment, imgEquipmentSet] = useState('/img/ph-2.jpg');
@@ -21,10 +17,122 @@ export function Welcome() {
   const [imgAction, imgActionSet] = useState('/img/ph-field.jpg');
 
 
-
   return (
     <MainLayout>
+      <Space h="sm" />
+      <Divider my="sm" />
+      <Space h="sm" />
 
+      <Grid>
+        <Grid.Col sm={6}>
+          <Center>
+            <Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={350} height={350} />
+          </Center>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+
+          <Text tt="uppercase">The Mission</Text>
+
+          <Title order={2}>
+            Light Phenomena and UFOs
+          </Title>
+          <Space h="sm" />
+
+          <Text size="sm">
+            <i>"The Scientific Coalition for UAP Studies
+              promotes and encourages the rigorous scientific examination of
+              Unidentified Aerospace Phenomena (UAP),
+              commonly known as Unidentified Flying Objects (UFOs)"</i> (
+            <Link href="https://www.explorescu.org/">
+              www.explorescu.org
+              <IconExternalLink size={14} />
+            </Link>
+            )
+          </Text>
+          <Space h="sm" />
+
+          <Text size="md">
+
+            Project Hessdalen, established in 1983,
+            is a&nbsp;
+            <Link href="https://www.explorescu.org/partners">
+              partner
+            </Link>
+            &nbsp;in the Scientific Coalition for UAP Studies.
+            <br />
+            <br />
+            UAPs, UFOs, USOs and OVNIs are now studied by:<br />
+            <div>
+              <Popover width={300} position="bottom" withArrow shadow="md">
+                <Popover.Target>
+                  <Text size="sm" style={{ cursor: 'pointer' }}>
+                    - <b>US Department of Defense</b>: UAPTF/AOIMSG (since 2020)&nbsp;  <IconArrowDownCircle color="blue" size={18} />
+                  </Text>
+                </Popover.Target>
+                <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
+                  <Text size="sm">
+                    The Department of Defense established the UAPTF to improve its understanding of,
+                    and gain insight into, the nature and origins of UAPs. <br />
+                    The Airborne Object Identification and Management Synchronization Group (AOIMSG)
+                    is the successor to the U.S. Navy’s Unidentified Aerial Phenomena Task Force.<br />
+                    <Link href="https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/">
+                      defense.gov
+                      <IconExternalLink size={14} />
+                    </Link>
+                    <Link href="https://media.defense.gov/2021/Nov/23/2002898596/-1/-1/0/ESTABLISHMENT-OF-THE-AIRBORNE-OBJECT-IDENTIFICATION-AND-MANAGEMENT-SYNCHRONIZATION-GROUP.PDF">
+                      AOIMSG
+                      <IconExternalLink size={14} />
+                    </Link>
+
+                  </Text>
+                </Popover.Dropdown>
+              </Popover>
+            </div>
+            <div>
+              <Popover width={300} position="bottom" withArrow shadow="md">
+                <Popover.Target>
+                  <Text size="sm" style={{ cursor: 'pointer' }}>
+                    - <b>Harvard & Smithsonian</b>: The Galileo Project (since 2021)&nbsp;  <IconArrowDownCircle color="blue" size={18} />
+                  </Text>
+                </Popover.Target>
+                <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
+                  <Text size="sm">
+                    To examine the possibility of extraterrestrial origin for unidentified aerial phenomena (UAP),
+                    by making observations of objects in and near Earth’s atmosphere<br />
+                    <Link href="https://projects.iq.harvard.edu/galileo/project-goal">
+                      harvard.edu
+                      <IconExternalLink size={14} />
+                    </Link>
+                  </Text>
+                </Popover.Dropdown>
+              </Popover>
+            </div>
+            <div>
+              <Popover width={300} position="bottom" withArrow shadow="md">
+                <Popover.Target>
+                  <Text size="sm" style={{ cursor: 'pointer' }}>
+                    - <b>NASA</b>: Independent Study on UAPs (since 2022)&nbsp;  <IconArrowDownCircle color="blue" size={18} />
+                  </Text>
+                </Popover.Target>
+                <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
+                  <Text size="sm">
+                    NASA has selected 16 individuals to participate in its
+                    independent study team on unidentified anomalous phenomena (UAP).<br />
+                    <Link href="https://www.nasa.gov/feature/nasa-to-set-up-independent-study-on-unidentified-aerial-phenomena/">
+                      nasa.gov
+                      <IconExternalLink size={14} />
+                    </Link>
+                  </Text>
+                </Popover.Dropdown>
+              </Popover>
+            </div>
+
+
+
+          </Text>
+
+        </Grid.Col>
+      </Grid>
       <Space h="sm" />
       <Divider my="sm" />
       <Space h="sm" />
@@ -73,7 +181,7 @@ export function Welcome() {
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text tt="uppercase">The Phenomena</Text>
-          <div onMouseEnter={() => imgUfoSet('/img/ph-4.jpg')} style={{ cursor: 'pointer' }}  >
+          <div onMouseEnter={() => imgUfoSet('/img/ph-4.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Type 1
@@ -86,7 +194,7 @@ export function Welcome() {
               align="center"
               direction="row"
             >
-              <IconEye color='lightblue' size={24} />
+              <IconEye color="lightblue" size={24} />
               <Text>
                 White, or blue-white flashing light.
               </Text>
@@ -109,7 +217,7 @@ export function Welcome() {
               align="center"
               direction="row"
             >
-              <IconEye color='orange' size={24} />
+              <IconEye color="orange" size={24} />
               <Text>
                 A yellow light, with a red light on the top.
               </Text>
@@ -121,7 +229,7 @@ export function Welcome() {
             </Text>
           </div>
           <Space h="md" />
-          <div onMouseEnter={() => imgUfoSet('/img/ph-5.jpg')} style={{ cursor: 'pointer' }} >
+          <div onMouseEnter={() => imgUfoSet('/img/ph-5.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Type 3
@@ -133,7 +241,7 @@ export function Welcome() {
               align="center"
               direction="row"
             >
-              <IconEye color='red' size={24} />
+              <IconEye color="red" size={24} />
               <Text>
                 The shape is often round as a ball.
               </Text>
@@ -148,7 +256,7 @@ export function Welcome() {
           </div>
 
           <Space h="md" />
-          <div onMouseEnter={() => imgUfoSet('/img/ph-ufo3-t.png')} style={{ cursor: 'pointer' }} >
+          <div onMouseEnter={() => imgUfoSet('/img/ph-ufo3-t.png')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Type 4
@@ -184,8 +292,6 @@ export function Welcome() {
           </Flex>
         </Grid.Col>
       </Grid>
-
-
 
       <Space h="sm" />
       <Divider my="sm" />
@@ -232,7 +338,7 @@ export function Welcome() {
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text tt="uppercase">The Equipment</Text>
-          <div onMouseEnter={() => imgEquipmentSet('/img/ph-2.jpg')} style={{ cursor: 'pointer' }}  >
+          <div onMouseEnter={() => imgEquipmentSet('/img/ph-2.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               The Blue Box
@@ -281,7 +387,7 @@ export function Welcome() {
           </div>
           <Space h="md" />
 
-          <div onMouseEnter={() => imgEquipmentSet('/img/ph-11.jpg')} style={{ cursor: 'pointer' }} >
+          <div onMouseEnter={() => imgEquipmentSet('/img/ph-11.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Goal: Triangulate and follow
@@ -318,10 +424,6 @@ export function Welcome() {
           </Flex>
         </Grid.Col>
       </Grid>
-
-
-
-
 
       <Space h="sm" />
       <Divider my="sm" />
@@ -372,7 +474,7 @@ export function Welcome() {
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text tt="uppercase">The Research Team</Text>
-          <div onMouseEnter={() => imgTeamSet('/img/ph-es.jpeg')} style={{ cursor: 'pointer' }}  >
+          <div onMouseEnter={() => imgTeamSet('/img/ph-es.jpeg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Erling P. Strand
@@ -425,7 +527,7 @@ export function Welcome() {
           </div>
           <Space h="md" />
 
-          <div onMouseEnter={() => imgTeamSet('/img/ph-team.jpg')} style={{ cursor: 'pointer' }} >
+          <div onMouseEnter={() => imgTeamSet('/img/ph-team.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               The Team
@@ -465,13 +567,6 @@ export function Welcome() {
         </Grid.Col>
       </Grid>
 
-
-
-
-
-
-
-
       <Space h="sm" />
       <Divider my="sm" />
 
@@ -506,14 +601,13 @@ export function Welcome() {
                 </Button>
               </Grid.Col>
 
-
             </Grid>
 
           </Flex>
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text tt="uppercase">The Community</Text>
-          <div onMouseEnter={() => imgCommunitySet('/img/pg-discord.jpg')} style={{ cursor: 'pointer' }}  >
+          <div onMouseEnter={() => imgCommunitySet('/img/pg-discord.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Discord
@@ -590,8 +684,6 @@ export function Welcome() {
         </Grid.Col>
       </Grid>
 
-
-
       <Space h="sm" />
       <Divider my="sm" />
 
@@ -632,7 +724,7 @@ export function Welcome() {
         <Grid.Col sm={6}>
           <Text tt="uppercase">The Action</Text>
 
-          <div onMouseEnter={() => imgActionSet('/img/ph-field.jpg')} style={{ cursor: 'pointer' }} >
+          <div onMouseEnter={() => imgActionSet('/img/ph-field.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Field trip
@@ -655,7 +747,8 @@ export function Welcome() {
               I promise - the nights will be long but feel short with
               interesting stories and discussions.<br />
               <i>We have set up these field trips because it
-                has been requested by many for years.</i>
+                has been requested by many for years.
+              </i>
 
             </Text>
           </div>
@@ -676,7 +769,7 @@ export function Welcome() {
             </Group>
           </Flex>
           <Space h="md" />
-          <div onMouseEnter={() => imgActionSet('/img/ph-flares.jpg')} style={{ cursor: 'pointer' }} >
+          <div onMouseEnter={() => imgActionSet('/img/ph-flares.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Donate
@@ -716,11 +809,7 @@ export function Welcome() {
         </Grid.Col>
       </Grid>
 
-
-
       <Space h="xl" />
-
-
 
       <MainFooter />
 
