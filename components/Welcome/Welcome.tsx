@@ -135,6 +135,31 @@ export function Welcome() {
       </Grid>
       <Space h="sm" />
       <Divider my="sm" />
+      <Space h="xs" />
+      <Grid>
+        <Grid.Col sm={6}>
+          <Center>
+            <Link href="https://youtu.be/tPUcmVRMj_Y" target="youtube">
+              <Image src="/img/youtube.png" title="Jan Moen on Lehto Files" width={64} height={64} />
+            </Link>
+            <Link href="https://youtu.be/Hsxa5rTed_w" target="youtube">
+              <Image src="/img/youtube.png" title="German documentary (in english)" width={64} height={64} />
+            </Link>
+          </Center>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+          <Text color="dimmed" size="sm">
+            <i>As you can see - this site is under construction.
+              We will add the reports in a database, make a map,
+              open for questions and answers about the sightings.
+              Check the Roadmap for all our plans.</i><br />
+            - Fred Pallesen, VP
+          </Text>
+        </Grid.Col>
+      </Grid>
+
+      <Space h="xs" />
+      <Divider my="sm" />
       <Space h="sm" />
       <Text ta="center" c="blue" size={48}>
         Hessdalen is a UFO hotspot.
@@ -313,18 +338,18 @@ export function Welcome() {
           >
             <Image src={imgEquipment} alt="" width={450} height={450} />
             <Grid pt={4}>
-              <Grid.Col span={3}>
+              <Grid.Col span={4}>
                 <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-2.jpg')}>
                   1
                 </Button>
               </Grid.Col>
-              <Grid.Col span={3}>
+              <Grid.Col span={4}>
                 <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-9.jpg')}>
                   2
                 </Button>
               </Grid.Col>
 
-              <Grid.Col span={3}>
+              <Grid.Col span={4}>
                 <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-11.jpg')}>
                   3
                 </Button>
@@ -449,18 +474,18 @@ export function Welcome() {
           >
             <Image src={imgTeam} alt="" width={450} height={450} />
             <Grid pt={4}>
-              <Grid.Col span={3}>
+              <Grid.Col span={4}>
                 <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-es.jpeg')}>
                   1
                 </Button>
               </Grid.Col>
-              <Grid.Col span={3}>
+              <Grid.Col span={4}>
                 <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-mt-ai.png')}>
                   2
                 </Button>
               </Grid.Col>
 
-              <Grid.Col span={3}>
+              <Grid.Col span={4}>
                 <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-team.jpg')}>
                   3
                 </Button>
@@ -587,12 +612,12 @@ export function Welcome() {
           >
             <Image src={imgCommunity} alt="" width={450} height={450} />
             <Grid pt={4}>
-              <Grid.Col span={4}>
+              <Grid.Col span={6}>
                 <Button variant="outline" compact onClick={() => imgCommunitySet('/img/pg-discord.jpg')}>
                   1
                 </Button>
               </Grid.Col>
-              <Grid.Col span={4}>
+              <Grid.Col span={6}>
                 <Button variant="outline" compact onClick={() => imgCommunitySet('/img/ph-ko-fi.jpg')}>
                   2
                 </Button>
@@ -650,30 +675,22 @@ export function Welcome() {
             </Flex>
 
             <Text color="dimmed" size="sm">
-              <Grid>
-                <Grid.Col span={6}>
-                  <b>50 NOK (5 USD) per month</b><br />
-                  Access to a lot more content: videos, pictures, and articles.<br />
-                  Get invited to community events.<br />
-                  <i>We need a lot of people to join this tier to make the project sustainable.</i>
-                </Grid.Col>
-                <Grid.Col span={6}>
-                  <b>200 NOK (20 USD) per month</b><br />
-                  Get notifications to your mobilephone
-                  when something unusual is detected.
-                  Get access to the live surveillance cameras
-                  and the data from the equipment.
-                </Grid.Col>
 
-                <Grid.Col span={6}>
-                  <Link href="/work-in-progress"><Button radius="sm" variant="outline">Membership</Button></Link>
-                </Grid.Col>
-                <Grid.Col span={6}>
-                  <Link href="/work-in-progress"><Button radius="sm" variant="outline">Premium Membership</Button></Link>
-                </Grid.Col>
+              <b>50 NOK (5 USD) per month</b><br />
+              Access to a lot more content: videos, pictures, and articles.<br />
+              <i>We need a lot of people to join to pay our internet bills<br />
+                - so invite your friends</i> (use this&nbsp;
+              <Link href="/work-in-progress">invite form</Link>&nbsp;
+              now!)
+              <br />
+              We plan to enable <b>mobile notifications</b> to members when
+              the AI detects a UFO - then you could access the live streaming cameras
+              and see what is going on.<br />
 
-              </Grid>
             </Text>
+            <Space h="sm" />
+
+            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Membership</Button></Link>
           </div>
 
           <Space h="md" />
@@ -705,12 +722,12 @@ export function Welcome() {
           >
             <Image src={imgAction} alt="" width={450} height={450} />
             <Grid pt={4}>
-              <Grid.Col span={4}>
+              <Grid.Col span={6}>
                 <Button variant="outline" compact onClick={() => imgActionSet('/img/ph-field.jpg')}>
                   1
                 </Button>
               </Grid.Col>
-              <Grid.Col span={4}>
+              <Grid.Col span={6}>
                 <Button variant="outline" compact onClick={() => imgActionSet('/img/ph-flares.jpg')}>
                   2
                 </Button>
@@ -808,7 +825,6 @@ export function Welcome() {
 
       <Space h="xl" />
 
-      <MainFooter />
 
     </MainLayout>
   );
