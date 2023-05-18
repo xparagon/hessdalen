@@ -1,4 +1,4 @@
-import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Group, Popover, UnstyledButton } from '@mantine/core';
+import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Group, Popover, UnstyledButton, Tooltip } from '@mantine/core';
 import { useState } from 'react';
 import { IconEye, IconArrowDownCircle, IconExternalLink } from '@tabler/icons';
 import Image from 'next/image';
@@ -140,10 +140,14 @@ export function Welcome() {
         <Grid.Col sm={6}>
           <Center>
             <Link href="https://youtu.be/tPUcmVRMj_Y" target="youtube">
-              <Image src="/img/youtube.png" title="Jan Moen on Lehto Files" width={64} height={64} />
+              <Tooltip label="Jan Moen on Lehto Files">
+                <Image src="/img/youtube.png" alt="Jan Moen on Lehto Files" width={64} height={64} />
+              </Tooltip>
             </Link>
             <Link href="https://youtu.be/Hsxa5rTed_w" target="youtube">
-              <Image src="/img/youtube.png" title="German documentary (in english)" width={64} height={64} />
+              <Tooltip label="German documentary (in english)">
+                <Image src="/img/youtube.png" alt="German documentary (in english)" width={64} height={64} />
+              </Tooltip>
             </Link>
           </Center>
         </Grid.Col>

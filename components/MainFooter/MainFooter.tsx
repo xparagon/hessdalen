@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 const useStyles = createStyles((theme) => ({
     footer: {
-        marginTop: rem(120),
+        marginTop: rem(20),
         paddingTop: `calc(${theme.spacing.xl} * 2)`,
         paddingBottom: `calc(${theme.spacing.xl} * 1)`,
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
@@ -108,10 +108,13 @@ export function MainFooter() {
 
     const data = [{
         title: "About",
-        links: [{ label: "History", link: "#" },
-        { label: "People", link: "#" },
-        { label: "Blue Box", link: "#" },
-        { label: "Science Camp", link: "#" }]
+        links: [
+            { label: "History", link: "#" },
+            { label: "People", link: "#" },
+            { label: "Teams", link: "#" },
+            { label: "Blue Box", link: "#" },
+            { label: "Equipment", link: "#" }
+        ]
     },
     {
         title: "Project",
@@ -125,7 +128,7 @@ export function MainFooter() {
                 link: "#"
             },
             {
-                label: "Changelog",
+                label: "Roadmap",
                 link: "#"
             },
             {
@@ -138,15 +141,19 @@ export function MainFooter() {
         title: "Community",
         links: [
             {
-                label: "Join Discord",
+                label: "Discord",
                 link: "#"
             },
             {
-                label: "Meet a UFO witness",
+                label: "Invite a friend",
                 link: "#"
             },
             {
                 label: "Join an event",
+                link: "#"
+            },
+            {
+                label: "Join a field trip",
                 link: "#"
             },
             {

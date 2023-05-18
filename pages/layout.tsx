@@ -1,5 +1,6 @@
 import { Container } from "@mantine/core";
 import MainTopMenu from "../components/MainTopMenu/MainTopMenu";
+import { MainFooter } from "../components/MainFooter/MainFooter";
 
 export default function MainLayout({
     children, // will be a page or nested layout
@@ -14,6 +15,8 @@ export default function MainLayout({
             {children}
 
             <MainTopMenu />
+            <MainFooter />
+
         </Container>
     );
 }
