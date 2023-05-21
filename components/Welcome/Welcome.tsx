@@ -688,7 +688,7 @@ export function Welcome() {
               now!)
               <br />
               We plan to enable <b>mobile notifications</b> to members when
-              the AI detects a UFO - then you could access the live streaming cameras
+              the AI detects an anomaly - then you could access the live streaming cameras
               and see what is going on.<br />
 
             </Text>
