@@ -201,19 +201,26 @@ export function MainFooter() {
             </Container>
             <Container className={classes.afterFooter}>
                 <Text color="dimmed" size="xs">
-                    1998 &rarr; old.hessdalen.org |  2023 &rarr; hessdalen.org
+                    1998 &rarr; 
+                    <Link href="https://old.hessdalen.org/">
+                    old.hessdalen.org
+                    </Link>
+                     |  2023 &rarr; hessdalen.org
                 </Text>
 
                 <Group spacing={0} className={classes.social} position="right" noWrap>
-                    <ActionIcon size="lg">
+                    {/* <ActionIcon size="lg">
                         <IconBrandFacebook size="1.05rem" stroke={1.5} />
-                    </ActionIcon>
+                    </ActionIcon> */}
+                    <Link href="https://www.youtube.com/@projecthessdalen">
                     <ActionIcon size="lg">
                         <IconBrandYoutube size="1.05rem" stroke={1.5} />
                     </ActionIcon>
-                    <ActionIcon size="lg">
+                    </Link>
+
+                    {/* <ActionIcon size="lg">
                         <IconBrandInstagram size="1.05rem" stroke={1.5} />
-                    </ActionIcon>
+                    </ActionIcon> */}
                 </Group>
             </Container>
         </footer>
