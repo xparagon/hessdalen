@@ -165,15 +165,9 @@ export function MainFooter() {
     ];
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
-            <Text<'a'>
-                key={index}
-                className={classes.link}
-                component="a"
-                href={link.link}
-                onClick={(event) => event.preventDefault()}
-            >
+            <Link href={link.link}>
                 {link.label}
-            </Text>
+            </Link>
         ));
 
         return (
