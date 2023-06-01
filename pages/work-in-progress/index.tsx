@@ -14,7 +14,7 @@ export default function WorkInProgress() {
             <Space h="lg" />
 
             <Group mb="md">
-                <Text size={24}>Project Hessdalen WorkInProgress</Text>
+                <Text size={24}>Project Hessdalen Work In Progress</Text>
             </Group>
 
 

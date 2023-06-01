@@ -144,6 +144,11 @@ export function Welcome() {
                 <Image src="/img/youtube.png" alt="Jan Moen on Lehto Files" width={64} height={64} />
               </Tooltip>
             </Link>
+            <Link href="https://youtu.be/sIZ9J2gy1qI" target="youtube">
+              <Tooltip label="Tomas Dahl on Lehto Files">
+                <Image src="/img/youtube.png" alt="Tomas Dahl on Lehto Files" width={64} height={64} />
+              </Tooltip>
+            </Link>
             <Link href="https://youtu.be/Hsxa5rTed_w" target="youtube">
               <Tooltip label="German documentary (in english)">
                 <Image src="/img/youtube.png" alt="German documentary (in english)" width={64} height={64} />

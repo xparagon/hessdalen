@@ -129,7 +129,7 @@ export function MainFooter() {
             },
             {
                 label: "Roadmap",
-                link: "#"
+                link: "/roadmap"
             },
             {
                 label: "Releases",
