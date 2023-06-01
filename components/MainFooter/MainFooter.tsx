@@ -165,9 +165,11 @@ export function MainFooter() {
     ];
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
+            <div>
             <Link href={link.link}>
                 {link.label}
             </Link>
+            </div>
         ));
 
         return (
