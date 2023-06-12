@@ -1,9 +1,9 @@
-import { createStyles, Text, Container, ActionIcon, Group, rem, Button, Space } from '@mantine/core';
+import { createStyles, Text, Container, ActionIcon, Group, rem, Button, Space, Center, Stack } from '@mantine/core';
 import { IconBrandFacebook } from '@tabler/icons';
 import { IconBrandYoutube, IconBrandInstagram, IconUfo, IconSearch } from '@tabler/icons-react';
 import Link from 'next/link';
 
-import Image from 'next/image'
+import Image from 'next/image';
 
 
 
@@ -166,9 +166,9 @@ export function MainFooter() {
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
             <div>
-            <Link href={link.link}>
-                {link.label}
-            </Link>
+                <Link href={link.link}>
+                    {link.label}
+                </Link>
             </div>
         ));
 
@@ -183,25 +183,21 @@ export function MainFooter() {
     return (
         <footer className={classes.footer}>
             <Container className={classes.inner}>
-                <div className={classes.logo}>
-
+                <Stack align="center" justify="flex-start">
                     <Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={200} height={200} />
-
-                    <Text size="xs" className={classes.description}>
+                    <Text size="md" className={classes.description}>
                         Hessdalen is a UFO hotspot.
                     </Text>
-
-
-                </div>
+                </Stack>
                 <div className={classes.groups}>{groups}</div>
             </Container>
             <Container className={classes.afterFooter}>
                 <Text color="dimmed" size="xs">
-                    1998 &rarr; 
+                    1998 &rarr;&nbsp;
                     <Link href="https://old.hessdalen.org/">
-                    old.hessdalen.org
-                    </Link>
-                     |  2023 &rarr; hessdalen.org
+                        old.hessdalen.org
+                    </Link>&nbsp;
+                    |  2023 &rarr; hessdalen.org
                 </Text>
 
                 <Group spacing={0} className={classes.social} position="right" noWrap>
@@ -209,9 +205,9 @@ export function MainFooter() {
                         <IconBrandFacebook size="1.05rem" stroke={1.5} />
                     </ActionIcon> */}
                     <Link href="https://www.youtube.com/@projecthessdalen">
-                    <ActionIcon size="lg">
-                        <IconBrandYoutube size="1.05rem" stroke={1.5} />
-                    </ActionIcon>
+                        <ActionIcon size="lg">
+                            <IconBrandYoutube size="1.05rem" stroke={1.5} />
+                        </ActionIcon>
                     </Link>
 
                     {/* <ActionIcon size="lg">

@@ -139,6 +139,11 @@ export function Welcome() {
       <Grid>
         <Grid.Col sm={6}>
           <Center>
+            <Link href="https://youtu.be/7hBUk13yE8s" target="youtube">
+              <Tooltip label="Erling Strand recounts his journey">
+                <Image src="/img/youtube.png" alt="Erling Strand recounts his journey" width={64} height={64} />
+              </Tooltip>
+            </Link>
             <Link href="https://youtu.be/tPUcmVRMj_Y" target="youtube">
               <Tooltip label="Jan Moen on Lehto Files">
                 <Image src="/img/youtube.png" alt="Jan Moen on Lehto Files" width={64} height={64} />
@@ -147,6 +152,11 @@ export function Welcome() {
             <Link href="https://youtu.be/sIZ9J2gy1qI" target="youtube">
               <Tooltip label="Tomas Dahl on Lehto Files">
                 <Image src="/img/youtube.png" alt="Tomas Dahl on Lehto Files" width={64} height={64} />
+              </Tooltip>
+            </Link>
+            <Link href="https://youtu.be/q_9DyxGceQo" target="youtube">
+              <Tooltip label="Erling Strand on Lehto Files">
+                <Image src="/img/youtube.png" alt="Erling Strand on Lehto Files" width={64} height={64} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/Hsxa5rTed_w" target="youtube">
@@ -686,7 +696,7 @@ export function Welcome() {
             <Text color="dimmed" size="sm">
 
               <b>50 NOK (5 USD) per month</b><br />
-              Access to a lot more content: videos, pictures, and articles.<br />
+              Early access to content: videos, pictures, and articles.<br />
               <i>We need a lot of people to join to pay our internet bills<br />
                 - so invite your friends</i> (use this&nbsp;
               <Link href="/work-in-progress">invite form</Link>&nbsp;
