@@ -22,15 +22,15 @@ export default function MainTopMenu() {
                     <Group position="apart">
                         <div>
                             <Group>
-                                <Link href="/"><Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={48} height={48} /></Link>
-                                <Link href="/sitemap" style={{ height: '24px' }} ><IconListSearch size={24} /></Link>
+                                <Link href="/" passHref><Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={48} height={48} /></Link>
+                                <Link href="/sitemap" passHref style={{ height: '24px' }} ><IconListSearch size={24} /></Link>
                             </Group>
                         </div>
-                        <div >
-                            <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
-                            <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
-                            <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
-                            <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
+                        <div>
+                            <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
+                            <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
+                            <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
+                            <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
                         </div>
                         <div>
 
@@ -43,7 +43,7 @@ export default function MainTopMenu() {
                 <div>
                     <Group position="apart" mt="1rem">
                         <Group>
-                            <Link href="/work-in-progress">
+                            <Link href="/" passHref>
                                 <Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={48} height={48} />
                             </Link>
                             <Burger size={16} opened={opened} onClick={toggle} aria-label={label} />
@@ -56,25 +56,25 @@ export default function MainTopMenu() {
                         <Drawer.Content>
                             <Drawer.Header>
                                 <Group>
-
-                                    <Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={48} height={48} />
+                                    <Link href="/" passHref>
+                                        <Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={48} height={48} />
+                                    </Link>
                                     <Burger size={16} opened={opened} onClick={toggle} aria-label={label} />
                                 </Group>
                             </Drawer.Header>
                             <Drawer.Body>
 
                                 <Stack align="flex-start" spacing="xs">
-                                    <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
-                                    <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
-                                    <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
-                                    <Link href="/work-in-progress"><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
+                                    <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
+                                    <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
+                                    <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
+                                    <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
                                     <Space h="xl" />
-                                    <Button
-                                        color="gray"
-                                        leftIcon={<IconListSearch
-                                            size={18} stroke={1.4} />} variant="subtle" compact>
-                                        Sitemap
-                                    </Button>
+                                    <Link href="/sitemap" passHref>
+                                        <Button color="gray" leftIcon={<IconListSearch size={18} stroke={1.4} />} variant="subtle" compact>
+                                            Sitemap
+                                        </Button>
+                                    </Link>
                                     <JoinDiscord />
                                 </Stack>
                             </Drawer.Body>

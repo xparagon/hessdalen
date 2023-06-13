@@ -23,17 +23,17 @@ export default function WorkInProgress() {
                         <Text fw={700}>Non-profit organization</Text>
                         <Text color="dimmed">
                             We have registered Project Hessdalen as a non profit
-                            organization, but we are still waiting for some 
-                            "paperwork". Once we get an organizational number 
+                            organization, but we are still waiting for some
+                            "paperwork". Once we get an organizational number
                             we can set up a bank account and connect ko-fi.
                         </Text>
-                        <Link href="/work-in-progress">
+                        <Link href="/work-in-progress" passHref>
                             <IconArrowRight size={28} />
                         </Link>
                     </Card>
 
                 </Grid.Col>
-                </Grid>
+            </Grid>
 
             <Space h="xl" />
             <Space h="xl" />

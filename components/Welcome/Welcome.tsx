@@ -43,7 +43,7 @@ export function Welcome() {
               promotes and encourages the rigorous scientific examination of
               Unidentified Aerospace Phenomena (UAP),
               commonly known as Unidentified Flying Objects (UFOs)"</i> (
-            <Link href="https://www.explorescu.org/">
+            <Link href="https://www.explorescu.org/" passHref>
               www.explorescu.org
               <IconExternalLink size={14} />
             </Link>
@@ -55,7 +55,7 @@ export function Welcome() {
 
             Project Hessdalen, established in 1983,
             is a&nbsp;
-            <Link href="https://www.explorescu.org/partners">
+            <Link href="https://www.explorescu.org/partners" passHref>
               partner
             </Link>
             &nbsp;in the Scientific Coalition for UAP Studies.
@@ -75,11 +75,11 @@ export function Welcome() {
                     and gain insight into, the nature and origins of UAPs. <br />
                     The Airborne Object Identification and Management Synchronization Group (AOIMSG)
                     is the successor to the U.S. Navy’s Unidentified Aerial Phenomena Task Force.<br />
-                    <Link href="https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/">
+                    <Link href="https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/" passHref>
                       defense.gov
                       <IconExternalLink size={14} />
                     </Link>
-                    <Link href="https://media.defense.gov/2021/Nov/23/2002898596/-1/-1/0/ESTABLISHMENT-OF-THE-AIRBORNE-OBJECT-IDENTIFICATION-AND-MANAGEMENT-SYNCHRONIZATION-GROUP.PDF">
+                    <Link href="https://media.defense.gov/2021/Nov/23/2002898596/-1/-1/0/ESTABLISHMENT-OF-THE-AIRBORNE-OBJECT-IDENTIFICATION-AND-MANAGEMENT-SYNCHRONIZATION-GROUP.PDF" passHref>
                       AOIMSG
                       <IconExternalLink size={14} />
                     </Link>
@@ -99,7 +99,7 @@ export function Welcome() {
                   <Text size="sm">
                     To examine the possibility of extraterrestrial origin for unidentified aerial phenomena (UAP),
                     by making observations of objects in and near Earth’s atmosphere<br />
-                    <Link href="https://projects.iq.harvard.edu/galileo/project-goal">
+                    <Link href="https://projects.iq.harvard.edu/galileo/project-goal" passHref>
                       harvard.edu
                       <IconExternalLink size={14} />
                     </Link>
@@ -118,7 +118,7 @@ export function Welcome() {
                   <Text size="sm">
                     NASA has selected 16 individuals to participate in its
                     independent study team on unidentified anomalous phenomena (UAP).<br />
-                    <Link href="https://www.nasa.gov/feature/nasa-to-set-up-independent-study-on-unidentified-aerial-phenomena/">
+                    <Link href="https://www.nasa.gov/feature/nasa-to-set-up-independent-study-on-unidentified-aerial-phenomena/" passHref>
                       nasa.gov
                       <IconExternalLink size={14} />
                     </Link>
@@ -139,27 +139,27 @@ export function Welcome() {
       <Grid>
         <Grid.Col sm={6}>
           <Center>
-            <Link href="https://youtu.be/7hBUk13yE8s" target="youtube">
+            <Link href="https://youtu.be/7hBUk13yE8s" target="youtube" passHref>
               <Tooltip label="Erling Strand recounts his journey">
                 <Image src="/img/youtube.png" alt="Erling Strand recounts his journey" width={64} height={64} />
               </Tooltip>
             </Link>
-            <Link href="https://youtu.be/tPUcmVRMj_Y" target="youtube">
+            <Link href="https://youtu.be/tPUcmVRMj_Y" target="youtube" passHref>
               <Tooltip label="Jan Moen on Lehto Files">
                 <Image src="/img/youtube.png" alt="Jan Moen on Lehto Files" width={64} height={64} />
               </Tooltip>
             </Link>
-            <Link href="https://youtu.be/sIZ9J2gy1qI" target="youtube">
+            <Link href="https://youtu.be/sIZ9J2gy1qI" target="youtube" passHref>
               <Tooltip label="Tomas Dahl on Lehto Files">
                 <Image src="/img/youtube.png" alt="Tomas Dahl on Lehto Files" width={64} height={64} />
               </Tooltip>
             </Link>
-            <Link href="https://youtu.be/q_9DyxGceQo" target="youtube">
+            <Link href="https://youtu.be/q_9DyxGceQo" target="youtube" passHref>
               <Tooltip label="Erling Strand on Lehto Files">
                 <Image src="/img/youtube.png" alt="Erling Strand on Lehto Files" width={64} height={64} />
               </Tooltip>
             </Link>
-            <Link href="https://youtu.be/Hsxa5rTed_w" target="youtube">
+            <Link href="https://youtu.be/Hsxa5rTed_w" target="youtube" passHref>
               <Tooltip label="German documentary (in english)">
                 <Image src="/img/youtube.png" alt="German documentary (in english)" width={64} height={64} />
               </Tooltip>
@@ -328,8 +328,8 @@ export function Welcome() {
             direction="row"
             wrap="wrap"
           >
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">UFO research</Button></Link>
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">UFO reports</Button></Link>
+            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">UFO research</Button></Link>
+            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">UFO reports</Button></Link>
           </Flex>
         </Grid.Col>
       </Grid>
@@ -398,7 +398,8 @@ export function Welcome() {
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              Live camera. Alarm system. Magnetometer. Radar. Spectrum Analyzer. Two weather stations.
+              Live camera. Alarm system. Magnetometer.
+              Radar. Spectrum Analyzer. Two weather stations.
             </Text>
           </div>
           <Space h="md" />
@@ -460,8 +461,8 @@ export function Welcome() {
             direction="row"
             wrap="wrap"
           >
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Blue Box</Button></Link>
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Live streaming</Button></Link>
+            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Blue Box</Button></Link>
+            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Live streaming</Button></Link>
           </Flex>
         </Grid.Col>
       </Grid>
@@ -602,8 +603,8 @@ export function Welcome() {
             direction="row"
             wrap="wrap"
           >
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">People</Button></Link>
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Teams</Button></Link>
+            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">People</Button></Link>
+            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Teams</Button></Link>
           </Flex>
         </Grid.Col>
       </Grid>
@@ -699,7 +700,7 @@ export function Welcome() {
               Early access to content: videos, pictures, and articles.<br />
               <i>We need a lot of people to join to pay our internet bills<br />
                 - so invite your friends</i> (use this&nbsp;
-              <Link href="/work-in-progress">invite form</Link>&nbsp;
+              <Link href="/work-in-progress" passHref>invite form</Link>&nbsp;
               now!)
               <br />
               We plan to enable <b>mobile notifications</b> to members when
@@ -709,7 +710,7 @@ export function Welcome() {
             </Text>
             <Space h="sm" />
 
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Membership</Button></Link>
+            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Membership</Button></Link>
           </div>
 
           <Space h="md" />
@@ -795,7 +796,7 @@ export function Welcome() {
           >
 
             <Group>
-              <Link href="/work-in-progress"><Button radius="sm" variant="outline">Field trip</Button></Link>
+              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Field trip</Button></Link>
               <div>
                 3 days in Hessdalen - in September
               </div>
@@ -823,7 +824,8 @@ export function Welcome() {
               Your substantial donation can shape the future of UFO research.
               With your support, we'll acquire advanced equipment, conduct field investigations,
               collaborate with experts, and analyze crucial data.<br />
-              <i>As a distinguished donor, you'll enjoy exclusive benefits like VIP access to field trips,
+              <i>As a distinguished donor, you'll enjoy exclusive
+                benefits like VIP access to field trips,
                 firsthand updates, and connections with passionate researchers.
                 Your name will be etched in UFO research history as a catalyst for change.
               </i>
@@ -837,7 +839,7 @@ export function Welcome() {
             direction="row"
             wrap="wrap"
           >
-            <Link href="/work-in-progress"><Button radius="sm" variant="outline">Donate</Button></Link>
+            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Donate</Button></Link>
           </Flex>
         </Grid.Col>
       </Grid>

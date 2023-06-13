@@ -26,7 +26,7 @@ export default function Sitemap() {
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation
                         </Text>
-                        <Link href="/work-in-progress">
+                        <Link href="/work-in-progress" passHref>
                             <IconArrowRight size={28} />
                         </Link>
                     </Card>
@@ -41,7 +41,7 @@ export default function Sitemap() {
                             Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </Text>
-                        <Link href="/work-in-progress">
+                        <Link href="/work-in-progress" passHref>
                             <IconArrowRight size={28} />
                         </Link>
                     </Card>
@@ -54,7 +54,7 @@ export default function Sitemap() {
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation
                         </Text>
-                        <Link href="/work-in-progress">
+                        <Link href="/work-in-progress" passHref>
                             <IconArrowRight size={28} />
                         </Link>
                     </Card>
@@ -67,7 +67,7 @@ export default function Sitemap() {
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation
                         </Text>
-                        <Link href="/work-in-progress">
+                        <Link href="/work-in-progress" passHref>
                             <IconArrowRight size={28} />
                         </Link>
                     </Card>

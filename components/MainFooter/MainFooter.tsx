@@ -165,7 +165,7 @@ export function MainFooter() {
     ];
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
-            <div>
+            <div key={index}>
                 <Link href={link.link}>
                     {link.label}
                 </Link>
@@ -204,7 +204,7 @@ export function MainFooter() {
                     {/* <ActionIcon size="lg">
                         <IconBrandFacebook size="1.05rem" stroke={1.5} />
                     </ActionIcon> */}
-                    <Link href="https://www.youtube.com/@projecthessdalen">
+                    <Link href="https://www.youtube.com/@projecthessdalen" passHref>
                         <ActionIcon size="lg">
                             <IconBrandYoutube size="1.05rem" stroke={1.5} />
                         </ActionIcon>
