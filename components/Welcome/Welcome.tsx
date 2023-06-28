@@ -31,34 +31,50 @@ export function Welcome() {
         </Grid.Col>
         <Grid.Col sm={6}>
 
-          <Text tt="uppercase">The Mission</Text>
 
           <Title order={2}>
-            Light Phenomena and UFOs
+            Project Hessdalen
           </Title>
           <Space h="sm" />
 
-          <Text size="sm">
-            <i>"The Scientific Coalition for UAP Studies
-              promotes and encourages the rigorous scientific examination of
-              Unidentified Aerospace Phenomena (UAP),
-              commonly known as Unidentified Flying Objects (UFOs)"</i> (
-            <Link href="https://www.explorescu.org/" passHref>
-              www.explorescu.org
-              <IconExternalLink size={14} />
-            </Link>
-            )
+          <Text tt="uppercase">Mission</Text>
+
+          <Text size="md">
+            Collect high quality data on the Hessdalen Lights phenomenon and explain the science behind it.
           </Text>
           <Space h="sm" />
 
+          <Text tt="uppercase">Vision</Text>
           <Text size="md">
+            Discover unknown processes and laws of nature, find new sources of energy and interact with non-human intelligences.
+          </Text>
+
+          <Space h="sm" />
+          <Flex
+            mih={50}
+            gap="sm"
+            justify="flex-start"
+            align="center"
+            direction="row"
+            wrap="wrap"
+          >
+            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Manifesto</Button></Link>
+            <Link href="old.hessdalen.org" passHref><Button radius="sm" variant="outline">The historic hessdalen site</Button></Link>
+          </Flex>
+          <Space h="sm" />
+
+          <Text size="sm">
 
             Project Hessdalen, established in 1983,
             is a&nbsp;
             <Link href="https://www.explorescu.org/partners" passHref>
               partner
             </Link>
-            &nbsp;in the Scientific Coalition for UAP Studies.
+            &nbsp;in the Scientific Coalition for UAP Studies (
+            <Link href="https://www.explorescu.org/" passHref>
+              SCU
+            </Link>
+            ).
             <br />
             <br />
             UAPs, UFOs, USOs and OVNIs are now studied by:<br />
@@ -71,16 +87,17 @@ export function Welcome() {
                 </Popover.Target>
                 <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
                   <Text size="sm">
-                    The Department of Defense established the UAPTF to improve its understanding of,
+                    The Department of Defense established the UAPTF (2017) to improve its understanding of,
                     and gain insight into, the nature and origins of UAPs. <br />
-                    The Airborne Object Identification and Management Synchronization Group (AOIMSG)
-                    is the successor to the U.S. Navy’s Unidentified Aerial Phenomena Task Force.<br />
+                    AARO is the All-domain Anomaly Resolution Office, established in 2020.<br />
+                    as the successor of UAPTF.<br />
                     <Link href="https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/" passHref>
                       defense.gov
                       <IconExternalLink size={14} />
                     </Link>
-                    <Link href="https://media.defense.gov/2021/Nov/23/2002898596/-1/-1/0/ESTABLISHMENT-OF-THE-AIRBORNE-OBJECT-IDENTIFICATION-AND-MANAGEMENT-SYNCHRONIZATION-GROUP.PDF" passHref>
-                      AOIMSG
+                    &nbsp;
+                    <Link href="https://en.wikipedia.org/wiki/All-domain_Anomaly_Resolution_Office" passHref>
+                      AARO
                       <IconExternalLink size={14} />
                     </Link>
 
@@ -159,9 +176,9 @@ export function Welcome() {
                 <Image src="/img/youtube.png" alt="Erling Strand on Lehto Files" width={64} height={64} />
               </Tooltip>
             </Link>
-            <Link href="https://youtu.be/Hsxa5rTed_w" target="youtube" passHref>
-              <Tooltip label="German documentary (in english)">
-                <Image src="/img/youtube.png" alt="German documentary (in english)" width={64} height={64} />
+            <Link href="https://youtu.be/K5XluLrIqCQ" target="youtube" passHref>
+              <Tooltip label="Clas Svahn on Lehto Files">
+                <Image src="/img/youtube.png" alt="Clas Svahn on Lehto Files" width={64} height={64} />
               </Tooltip>
             </Link>
           </Center>
