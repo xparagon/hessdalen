@@ -6,11 +6,8 @@ import MainLayout from '../layout';
 import { IconArrowRight } from '@tabler/icons';
 
 
-// interface WorkInProgressProps {
-//     links: { label: string; link: string; order: number }[];
-// }
 
-export default function WorkInProgress() {
+export default function LiveStreaming() {
     return (
         <MainLayout>
             <Space h="lg" />
@@ -18,7 +15,7 @@ export default function WorkInProgress() {
             <Grid>
                 <Grid.Col sm={6}>
                     <Title order={2}>
-                        This page is not ready
+                        Roadmap
                     </Title>
                     <Space h="sm" />
                     <Text tt="uppercase">Work In Progress</Text>
@@ -31,15 +28,13 @@ export default function WorkInProgress() {
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
-                        Project Hessdalen was established in 1983 and
-                        on the historic hessdalen site you can read all
-                        about phenomena, the observations, articles, TV-programs and more.
+                        We have two cameras in Hessdalen that are streaming live video.
+                        But we have some technical difficulties with the streaming.
                     </Text>
                     <Space h="sm" />
-                    <Text size="sm">
-                        This new site is an attempt to upgrade both
-                        look and functionality and use modern web-technology
-                        that will work on any device.
+                    <Text size="lg">
+                        It is high on our priority list to get the streaming up and running again.
+                        And we want new and better cameras as soon as possible.
                     </Text>
                     <Space h="sm" />
                     <Text size="md">
@@ -49,7 +44,7 @@ export default function WorkInProgress() {
                     </Text>
                 </Grid.Col>
                 <Grid.Col sm={6}>
-                    <Image src="/img/building-a-ufo-mj.png" alt="Building a UFO (Midjourney)" width={450} height={450} />
+                    <Image src="/img/ph-9.jpg" alt="View from the Blue Box camera" width={450} height={450} />
 
                 </Grid.Col>
             </Grid>

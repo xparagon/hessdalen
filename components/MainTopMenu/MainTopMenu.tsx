@@ -1,6 +1,6 @@
-import { Group, Button, Stack, Box, CSSObject, Burger, Drawer, Flex, Space, MediaQuery, Text, rem } from '@mantine/core';
+import { Group, Button, Stack, Box, CSSObject, Burger, Drawer, Space, MediaQuery } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconListSearch, IconUfo } from '@tabler/icons-react';
+import { IconListSearch } from '@tabler/icons-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
@@ -27,9 +27,9 @@ export default function MainTopMenu() {
                             </Group>
                         </div>
                         <div>
-                            <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
-                            <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
-                            <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
+                            <Link href="/ufo-reporting" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
+                            <Link href="/ufo-reports" passHref><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
+                            <Link href="/live-streaming" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
                             <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
                         </div>
                         <div>

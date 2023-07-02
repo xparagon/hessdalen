@@ -6,11 +6,8 @@ import MainLayout from '../layout';
 import { IconArrowRight } from '@tabler/icons';
 
 
-// interface WorkInProgressProps {
-//     links: { label: string; link: string; order: number }[];
-// }
 
-export default function WorkInProgress() {
+export default function UFOreports() {
     return (
         <MainLayout>
             <Space h="lg" />
@@ -18,7 +15,7 @@ export default function WorkInProgress() {
             <Grid>
                 <Grid.Col sm={6}>
                     <Title order={2}>
-                        This page is not ready
+                        UFO reports
                     </Title>
                     <Space h="sm" />
                     <Text tt="uppercase">Work In Progress</Text>
@@ -31,15 +28,16 @@ export default function WorkInProgress() {
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
-                        Project Hessdalen was established in 1983 and
-                        on the historic hessdalen site you can read all
-                        about phenomena, the observations, articles, TV-programs and more.
+                        On the historic hessdalen site you can find all the reports
+                        and all the images and videos from captered by the Blue Box.
                     </Text>
                     <Space h="sm" />
-                    <Text size="sm">
-                        This new site is an attempt to upgrade both
-                        look and functionality and use modern web-technology
-                        that will work on any device.
+                    <Text size="lg">
+                        On this page we want to make it easier to find and naviate in the reports,
+                        by filter on date, location, type of phenomena and more.
+                        We would also like to add a map where you can
+                        see the location of the reports
+                        and combine witness reports with the data from the Blue Box.
                     </Text>
                     <Space h="sm" />
                     <Text size="md">

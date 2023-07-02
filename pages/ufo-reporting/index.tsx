@@ -6,11 +6,8 @@ import MainLayout from '../layout';
 import { IconArrowRight } from '@tabler/icons';
 
 
-// interface WorkInProgressProps {
-//     links: { label: string; link: string; order: number }[];
-// }
 
-export default function WorkInProgress() {
+export default function UFOreporting() {
     return (
         <MainLayout>
             <Space h="lg" />
@@ -18,7 +15,7 @@ export default function WorkInProgress() {
             <Grid>
                 <Grid.Col sm={6}>
                     <Title order={2}>
-                        This page is not ready
+                        Have you seen a UFO?
                     </Title>
                     <Space h="sm" />
                     <Text tt="uppercase">Work In Progress</Text>
@@ -31,15 +28,26 @@ export default function WorkInProgress() {
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
-                        Project Hessdalen was established in 1983 and
-                        on the historic hessdalen site you can read all
-                        about phenomena, the observations, articles, TV-programs and more.
+                        Any sighting of the light phonomenoa in Hessdalen has been
+                        reported to the Project Hessdalen team,
+                        by taking to people in the area,
+                        or by sending an email to the <a href="mailto:erling.p.strand@gmail.com">Erling P. Strand</a>.<br />
+                        If you have seen a UFO in Hessdalen, please report it to us.<br />
+
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
-                        This new site is an attempt to upgrade both
-                        look and functionality and use modern web-technology
-                        that will work on any device.
+                        If you have seen a UFO anywhere else in Norway, please report it to <a href="https://nuforc.org/">NUFOS</a>.
+                        If you have seen a UFO anywhere else in the world, report it to <a href="https://norskufosenter.no/">NUFORC</a> or
+                        use the app from <a href="https://enigmalabs.io/">ENIGMA</a>.
+                    </Text>
+                    <Space h="sm" />
+                    <Text size="lg">
+                        We hope to make a form for reporting UFO sightings in Hessdalen soon.
+                        But we also want to make it easy to share a sighing in real time
+                        - and let members of the community
+                        get a notification when a sighting is beeing reported
+                        - using live video feed.
                     </Text>
                     <Space h="sm" />
                     <Text size="md">
