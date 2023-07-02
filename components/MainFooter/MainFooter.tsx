@@ -1,4 +1,4 @@
-import { createStyles, Text, Container, ActionIcon, Group, rem, Button, Space, Center, Stack } from '@mantine/core';
+import { createStyles, Text, Container, ActionIcon, Group, rem, Button, Space, Center, Stack, Tooltip } from '@mantine/core';
 import { IconBrandFacebook } from '@tabler/icons';
 import { IconBrandYoutube, IconBrandInstagram, IconUfo, IconSearch } from '@tabler/icons-react';
 import Link from 'next/link';
@@ -132,8 +132,9 @@ export function MainFooter() {
                 link: "/roadmap"
             },
             {
-                label: "Releases",
-                link: "#"
+                label: "Kanban board",
+                link: "https://trello.com/b/RgENuoBe/project-hessdalen",
+                target: "_blank"
             }
         ]
     },
@@ -166,7 +167,7 @@ export function MainFooter() {
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
             <div key={index}>
-                <Link href={link.link}>
+                <Link href={link.link} target={link.target ? link.target : '_self'}>
                     {link.label}
                 </Link>
             </div>
@@ -185,8 +186,15 @@ export function MainFooter() {
             <Container className={classes.inner}>
                 <Stack align="center" justify="flex-start">
                     <Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={200} height={200} />
-                    <Text size="md" className={classes.description}>
-                        Hessdalen is a UFO hotspot.
+                    <Text size="md">
+                        Contact info: <a href="mailto:mail@xparagon.no?subject=PROJECT HESSDALEN Inquiry">mail@xparagon.no</a><br />
+                    </Text>
+                    <Text size="sm">
+                        (until we get our own email at @hessdalen.org)
+                    </Text>
+                    <Text size="sm">
+                        Webmaster: Fred Pallesen&nbsp;
+                        <a href="tel:+4794086203">+47 94 08 62 03</a>
                     </Text>
                 </Stack>
                 <div className={classes.groups}>{groups}</div>
@@ -198,6 +206,11 @@ export function MainFooter() {
                         old.hessdalen.org
                     </Link>&nbsp;
                     |  2023 &rarr; hessdalen.org
+                    |  we are a non-profit organization :
+                    <Link href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=931580566">
+                        N 931 580 566
+                    </Link>
+
                 </Text>
 
                 <Group spacing={0} className={classes.social} position="right" noWrap>
