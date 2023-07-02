@@ -18,35 +18,32 @@ export default function Roadmap() {
                         Roadmap
                     </Title>
                     <Space h="sm" />
-                    <Text tt="uppercase">Work In Progress</Text>
+                    <Text tt="uppercase">Getting started</Text>
                     <Space h="sm" />
-                    <Text size="md">The page you are looking for is not ready.
-                    </Text>
-                    <Space h="sm" />
+
                     <Text size="xl">
-                        Come back soon to check if we are done.
+                        Project Hessdalen is a non-profit organization.
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
-                        Project Hessdalen was established in 1983 and
-                        on the historic hessdalen site you can read all
-                        about phenomena, the observations, articles, TV-programs and more.
+                        We have now registered the company and opened a bank account.<br />
+                        We need to improve the new webside,
+                        invite more people to join our discord server.
+                    </Text>
+                    <Space h="sm" />
+                    <Text size="lg">
+                        We will use Ko-fi to collect membership fees and donations,
+                        because - guess what - no money: no equipment.
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
-                        This new site is an attempt to upgrade both
-                        look and functionality and use modern web-technology
-                        that will work on any device.
-                    </Text>
-                    <Space h="sm" />
-                    <Text size="md">
-                        Please join our discord server to get the latest news.<br />
-                        Please help us to make this site better by reporting bugs and
-                        suggesting improvements.
+                        We will always have a free option, if you just want to
+                        subscribe to our discord server and check out the our website.
+                        But if you want to support us, please consider becoming a member.
                     </Text>
                 </Grid.Col>
                 <Grid.Col sm={6}>
-                    <Image src="/img/building-a-ufo-mj.png" alt="Building a UFO (Midjourney)" width={450} height={450} />
+                    <Image src="/img/flow.png" alt="web-discord-ko-fi" width={450} height={450} />
 
                 </Grid.Col>
             </Grid>
