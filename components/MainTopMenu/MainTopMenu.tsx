@@ -4,6 +4,7 @@ import { IconListSearch } from '@tabler/icons-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
+import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 
 
 
@@ -33,12 +34,14 @@ export default function MainTopMenu() {
                             <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
                         </div>
                         <div>
-
-                            <JoinDiscord />
+                            <Group>
+                                <ColorSchemeToggle />
+                                <JoinDiscord />
+                            </Group>
                         </div>
-                    </Group >
-                </Box >
-            </MediaQuery >
+                    </Group>
+                </Box>
+            </MediaQuery>
             <MediaQuery largerThan={800} styles={doHide}>
                 <div>
                     <Group position="apart" mt="1rem">
@@ -49,7 +52,10 @@ export default function MainTopMenu() {
                             <Burger size={16} opened={opened} onClick={toggle} aria-label={label} />
                         </Group>
 
-                        <JoinDiscord />
+                        <Group>
+                            <ColorSchemeToggle />
+                            <JoinDiscord />
+                        </Group>
                     </Group>
                     <Drawer.Root opened={opened} onClose={toggle}>
                         <Drawer.Overlay />

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import MainLayout from '../layout';
-import { IconArrowRight } from '@tabler/icons';
 
 
 
@@ -18,7 +17,8 @@ export default function Roadmap() {
             <Space h="sm" />
             <Text size="sm" color="dimmed">
                 Every month we will update this page with our plans for the next 12 months.<br />
-                Every indication of time is just a guess, but we will try to be as realistic as possible.
+                Every indication of time is just a guess,
+                but we will try to be as realistic as possible.
             </Text>
             <Divider my="lg" label="End of July, 2023" labelPosition="center" />
             <Grid>
