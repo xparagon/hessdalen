@@ -59,7 +59,7 @@ export function Welcome() {
             wrap="wrap"
           >
             <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Manifesto</Button></Link>
-            <Link href="old.hessdalen.org" passHref><Button radius="sm" variant="outline">The historic hessdalen site</Button></Link>
+            <Link href="https://old.hessdalen.org/" passHref><Button radius="sm" variant="outline">The historic hessdalen site</Button></Link>
           </Flex>
           <Space h="sm" />
 
