@@ -6,6 +6,9 @@ import { MantineProvider, ColorScheme, ColorSchemeProvider } from '@mantine/core
 import { Notifications } from '@mantine/notifications';
 
 import { Analytics } from '@vercel/analytics/react';
+import { URL } from 'node:url';
+import { url } from 'node:inspector';
+
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;
@@ -39,6 +42,16 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
 
 App.getInitialProps = async (appContext: AppContext) => {
   const appProps = await NextApp.getInitialProps(appContext);
+
+  // Check if the response has a 404 status code
+  if (appContext.ctx.res?.statusCode === 404) {
+    // Redirect to the root URL
+    // eslint-disable-next-line prefer-template
+    const oldUri = ('https://old.hessdalen.org' + (appContext.ctx.req ? appContext.ctx.req.url : '/'));
+    appContext.ctx.res.writeHead(302, { Location: oldUri });
+    appContext.ctx.res.end();
+  }
+
   return {
     ...appProps,
     colorScheme: getCookie('mantine-color-scheme', appContext.ctx) || 'dark',
