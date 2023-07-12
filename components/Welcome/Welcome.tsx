@@ -4,7 +4,6 @@ import { IconEye, IconArrowDownCircle, IconExternalLink } from '@tabler/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
-import { MainFooter } from '../MainFooter/MainFooter';
 import MainLayout from '../../pages/layout';
 
 export function Welcome() {
