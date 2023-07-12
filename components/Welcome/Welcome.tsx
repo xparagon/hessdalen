@@ -156,6 +156,11 @@ export function Welcome() {
       <Grid>
         <Grid.Col sm={6}>
           <Center>
+            <Link href="https://youtu.be/X33k-RGenbo" target="youtube" passHref>
+              <Tooltip label="The Hessdalen UFO Project with Prof. Erling Strand">
+                <Image src="/img/youtube.png" alt="The Hessdalen UFO Project with Prof. Erling Strand" width={64} height={64} />
+              </Tooltip>
+            </Link>
             <Link href="https://youtu.be/7hBUk13yE8s" target="youtube" passHref>
               <Tooltip label="Erling Strand recounts his journey">
                 <Image src="/img/youtube.png" alt="Erling Strand recounts his journey" width={64} height={64} />
