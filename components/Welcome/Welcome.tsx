@@ -57,8 +57,12 @@ export function Welcome() {
             direction="row"
             wrap="wrap"
           >
-            <Link href="/manifesto" passHref><Button radius="sm" variant="outline">Manifesto</Button></Link>
-            <Link href="https://old.hessdalen.org/" passHref><Button radius="sm" variant="outline">The historic hessdalen site</Button></Link>
+            <Link href="/manifesto" passHref><Button radius="sm" >Manifesto</Button></Link>
+            <Link href="https://old.hessdalen.org/" passHref target="_blank">
+              <Button
+                radius="sm"
+                variant="outline"
+                rightIcon={<IconExternalLink size="1rem" />} >The historic hessdalen site</Button></Link>
           </Flex>
           <Space h="sm" />
 
@@ -870,6 +874,6 @@ export function Welcome() {
       <Space h="xl" />
 
 
-    </MainLayout>
+    </MainLayout >
   );
 }

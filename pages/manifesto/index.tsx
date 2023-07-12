@@ -91,7 +91,11 @@ export default function Manifesto() {
                     </Title>
                     <Space h="sm" />
                     <Text size="sm">
-                        The Hessdalen lights are well documented. Back in 1984, the field report was clear
+                        The Hessdalen lights are well documented. Back in 1984,&nbsp;
+                        <Link href="https://old.hessdalen.org/reports/hpreport84.shtml" passHref target="_blank">
+                            the field report
+                        </Link>
+                        &nbsp;was clear
                         in its conclusion: <br />“we know that the phenomenon, whatever it is, can be measured.”
                     </Text>
                     <Space h="sm" />
@@ -137,7 +141,7 @@ export default function Manifesto() {
                         lead to technological breakthroughs and advancements in various fields, including energy generation, transmission, and storage.
                     </Text>
                     <Space h="sm" />
-                    <Text size="sm">
+                    <Text size="lg">
                         Currently, we lack the necessary funding.
                     </Text>
                     <Space h="sm" />
@@ -201,7 +205,9 @@ export default function Manifesto() {
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
-                        Check out the observations on the old.hessdalen.org site.
+                        Check out the <Link href="https://old.hessdalen.org/observations/2023/" passHref target="_blank">
+                            observations
+                        </Link> on the old.hessdalen.org site.
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
@@ -240,7 +246,7 @@ export default function Manifesto() {
                         the real-time images of the phenomena - and hopefully one day, the crafts.
                     </Text>
                     <Space h="sm" />
-                    <Text size="sm">
+                    <Text size="xl">
                         Join us in our quest!
 
                     </Text>
