@@ -158,32 +158,32 @@ export function Welcome() {
           <Center>
             <Link href="https://youtu.be/X33k-RGenbo" target="youtube" passHref>
               <Tooltip label="The Hessdalen UFO Project with Prof. Erling Strand">
-                <Image src="/img/youtube.png" alt="The Hessdalen UFO Project with Prof. Erling Strand" width={64} height={64} />
+                <Image src="/img/youtube.png" alt="The Hessdalen UFO Project with Prof. Erling Strand" width={84} height={84} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/7hBUk13yE8s" target="youtube" passHref>
               <Tooltip label="Erling Strand recounts his journey">
-                <Image src="/img/youtube.png" alt="Erling Strand recounts his journey" width={64} height={64} />
+                <Image src="/img/youtube.png" alt="Erling Strand recounts his journey" width={48} height={48} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/tPUcmVRMj_Y" target="youtube" passHref>
               <Tooltip label="Jan Moen on Lehto Files">
-                <Image src="/img/youtube.png" alt="Jan Moen on Lehto Files" width={64} height={64} />
+                <Image src="/img/youtube.png" alt="Jan Moen on Lehto Files" width={48} height={48} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/sIZ9J2gy1qI" target="youtube" passHref>
               <Tooltip label="Tomas Dahl on Lehto Files">
-                <Image src="/img/youtube.png" alt="Tomas Dahl on Lehto Files" width={64} height={64} />
+                <Image src="/img/youtube.png" alt="Tomas Dahl on Lehto Files" width={48} height={48} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/q_9DyxGceQo" target="youtube" passHref>
               <Tooltip label="Erling Strand on Lehto Files">
-                <Image src="/img/youtube.png" alt="Erling Strand on Lehto Files" width={64} height={64} />
+                <Image src="/img/youtube.png" alt="Erling Strand on Lehto Files" width={48} height={48} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/K5XluLrIqCQ" target="youtube" passHref>
               <Tooltip label="Clas Svahn on Lehto Files">
-                <Image src="/img/youtube.png" alt="Clas Svahn on Lehto Files" width={64} height={64} />
+                <Image src="/img/youtube.png" alt="Clas Svahn on Lehto Files" width={48} height={48} />
               </Tooltip>
             </Link>
           </Center>
@@ -194,6 +194,8 @@ export function Welcome() {
               We will add the reports in a database, make a map,
               open for questions and answers about the sightings.
               Check the Roadmap for all our plans.</i><br />
+            Now that you are here - could you answer some&nbsp;
+            <Link href="https://forms.gle/HuJSHVoo4ZnzroTj7" passHref>questions</Link>?<br />
             - Fred Pallesen, VP
           </Text>
         </Grid.Col>
@@ -722,7 +724,7 @@ export function Welcome() {
               Early access to content: videos, pictures, and articles.<br />
               <i>We need a lot of people to join to pay our internet bills<br />
                 - so invite your friends</i> (use this&nbsp;
-              <Link href="/work-in-progress" passHref>invite form</Link>&nbsp;
+              <Link href="https://forms.gle/HuJSHVoo4ZnzroTj7" passHref>invite form</Link>&nbsp;
               now!)
               <br />
               We plan to enable <b>mobile notifications</b> to members when
