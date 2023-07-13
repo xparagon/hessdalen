@@ -187,10 +187,7 @@ export function MainFooter() {
                 <Stack align="center" justify="flex-start">
                     <Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={200} height={200} />
                     <Text size="md">
-                        Contact info: <a href="mailto:mail@xparagon.no?subject=PROJECT HESSDALEN Inquiry">mail@xparagon.no</a><br />
-                    </Text>
-                    <Text size="sm">
-                        (until we get our own email at @hessdalen.org)
+                        Contact info: <a href="mailto:admin@hessdalen.org?subject=PROJECT HESSDALEN Inquiry">admin@hessdalen.org</a><br />
                     </Text>
                     <Text size="sm">
                         Webmaster: Fred Pallesen&nbsp;
