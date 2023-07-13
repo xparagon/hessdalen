@@ -15,33 +15,39 @@ export default function LiveStreaming() {
             <Grid>
                 <Grid.Col sm={6}>
                     <Title order={2}>
-                        Roadmap
+                        Live streaming
                     </Title>
                     <Space h="sm" />
-                    <Text tt="uppercase">Work In Progress</Text>
+
+                    <Text tt="uppercase">From the manifesto-page:</Text>
                     <Space h="sm" />
-                    <Text size="md">The page you are looking for is not ready.
-                    </Text>
-                    <Space h="sm" />
-                    <Text size="xl">
-                        Come back soon to check if we are done.
+
+
+                    <Text size="sm">
+                        &laquo;While the Blue Box currently operates three live-stream cameras (temporarily out of order), the odds of capturing one of the approximately 20 annual events remain slim.
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
-                        We have two cameras in Hessdalen that are streaming live video.
-                        But we have some technical difficulties with the streaming.
+                        Here&apos;s our plan to improve that:
                     </Text>
                     <Space h="sm" />
-                    <Text size="lg">
-                        It is high on our priority list to get the streaming up and running again.
-                        And we want new and better cameras as soon as possible.
+                    <Text size="sm">
+                        We aim to install all-sky cameras with triangulation abilities to pinpoint the phenomena,
+                        subsequently utilizing a pan-tilt-zoom camera to secure a detailed view. Ideally, we would
+                        have multiple automated surveillance systems in operation.
                     </Text>
                     <Space h="sm" />
-                    <Text size="md">
-                        Please join our discord server to get the latest news.<br />
-                        Please help us to make this site better by reporting bugs and
-                        suggesting improvements.
+                    <Text size="sm">
+                        We also plan to deploy high-speed automated drones designed to approach the phenomena as closely as possible.
                     </Text>
+                    <Space h="sm" />
+                    <Text size="sm">
+                        All these components could be automated and activated by AI. Whenever the system triggers an alarm,
+                        notifications would be sent to members of Project Hessdalen. This way, we can collectively witness
+                        the real-time images of the phenomena - and hopefully one day, the crafts.&raquo;
+                    </Text>
+                    <Space h="sm" />
+
                 </Grid.Col>
                 <Grid.Col sm={6}>
                     <Image src="/img/ph-9.jpg" alt="View from the Blue Box camera" width={450} height={450} />
@@ -52,6 +58,6 @@ export default function LiveStreaming() {
             <Space h="xl" />
 
 
-        </MainLayout >
+        </MainLayout>
     );
 }

@@ -31,7 +31,7 @@ export default function MainTopMenu() {
                             <Link href="/ufo-reporting" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
                             <Link href="/ufo-reports" passHref><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
                             <Link href="/live-streaming" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
-                            <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
+                            <Link href="/ufo-research" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
                         </div>
                         <div>
                             <Group>
@@ -71,10 +71,10 @@ export default function MainTopMenu() {
                             <Drawer.Body>
 
                                 <Stack align="flex-start" spacing="xs">
-                                    <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
-                                    <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
-                                    <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
-                                    <Link href="/work-in-progress" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
+                                    <Link href="/ufo-reporting" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
+                                    <Link href="/ufo-reports" passHref><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
+                                    <Link href="/live-streaming" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
+                                    <Link href="/ufo-research" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
                                     <Space h="xl" />
                                     <Link href="/sitemap" passHref>
                                         <Button color="gray" leftIcon={<IconListSearch size={18} stroke={1.4} />} variant="subtle" compact>
