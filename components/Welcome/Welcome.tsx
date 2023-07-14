@@ -1,10 +1,18 @@
-import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Group, Popover, UnstyledButton, Tooltip } from '@mantine/core';
+import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Group, Popover, Tooltip } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import { IconEye, IconArrowDownCircle, IconExternalLink } from '@tabler/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
 import MainLayout from '../../pages/layout';
+
+declare global {
+  interface Window {
+    kofiWidgetOverlay: {
+      draw: (project: string, options: any) => void;
+    };
+  }
+}
 
 export function Welcome() {
   // const { classes } = useStyles();
