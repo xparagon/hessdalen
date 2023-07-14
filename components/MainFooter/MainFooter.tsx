@@ -120,6 +120,10 @@ export function MainFooter() {
         title: "Project",
         links: [
             {
+                label: "Blog",
+                link: "https://sites.google.com/hessdalen.org/blog/"
+            },
+            {
                 label: "Contribute",
                 link: "#"
             },
