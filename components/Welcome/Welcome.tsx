@@ -1,5 +1,5 @@
 import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Group, Popover, UnstyledButton, Tooltip } from '@mantine/core';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IconEye, IconArrowDownCircle, IconExternalLink } from '@tabler/icons';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,6 +14,26 @@ export function Welcome() {
   const [imgTeam, imgTeamSet] = useState('/img/ph-es.jpeg');
   const [imgCommunity, imgCommunitySet] = useState('/img/pg-discord.jpg');
   const [imgAction, imgActionSet] = useState('/img/ph-field.jpg');
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      window.kofiWidgetOverlay.draw('projecthessdalen', {
+        type: 'floating-chat',
+        'floating-chat.donateButton.text': 'Donate',
+        'floating-chat.donateButton.background-color': 'transparent',
+        'floating-chat.donateButton.text-color': 'red',
+      });
+    };
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
 
   return (
@@ -866,7 +886,18 @@ export function Welcome() {
             direction="row"
             wrap="wrap"
           >
-            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Donate</Button></Link>
+
+
+            <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank">
+              <Button
+                radius="sm"
+                variant="outline"
+                rightIcon={<IconExternalLink size="1rem" />}
+              >
+                Donate
+              </Button>
+            </Link>
+
           </Flex>
         </Grid.Col>
       </Grid>

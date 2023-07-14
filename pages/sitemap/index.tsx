@@ -94,7 +94,11 @@ export default function Sitemap() {
                 <List withPadding listStyleType="disc">
                     <List.Item>Contribute
                         <List withPadding listStyleType="disc">
-                            <List.Item>Donate</List.Item>
+                            <List.Item>
+                                <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank">
+                                    Donate
+                                </Link>
+                            </List.Item>
                             <List.Item>Membership</List.Item>
                         </List>
                     </List.Item>
