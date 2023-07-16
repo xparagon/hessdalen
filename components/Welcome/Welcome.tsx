@@ -752,20 +752,32 @@ export function Welcome() {
             <Text color="dimmed" size="sm">
 
               <b>5 Euro per month</b><br />
-              Early access to content: videos, pictures, and articles.<br />
-              <i>We need a lot of people to join to pay our internet bills<br />
-                - so invite your friends</i> (use this&nbsp;
-              <Link href="https://forms.gle/HuJSHVoo4ZnzroTj7" passHref>invite form</Link>&nbsp;
-              now!)
+              Access to the member area in discord.<br />
+              Access to Stage events for members only.<br />
+              With rights as specified in the articles of association.
               <br />
-              We plan to enable <b>mobile notifications</b> to members when
-              the AI detects an anomaly - then you could access the live streaming cameras
-              and see what is going on.<br />
-
+              <br />
+              <i>
+                We plan to enable <b>mobile notifications</b> every time
+                the AI detects an anomaly - then you could access the live streaming cameras
+                and see what is going on. These notifications will be sent to members only.
+              </i>
             </Text>
             <Space h="sm" />
 
-            <Link href="https://ko-fi.com/projecthessdalen" passHref><Button radius="sm" variant="outline">Membership</Button></Link>
+            <Flex
+              mih={50}
+              gap="sm"
+              justify="flex-start"
+              align="center"
+              direction="row"
+              wrap="wrap"
+            >
+              <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank"><Button radius="sm">Pay for membership</Button></Link>
+              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">What is Ko-fo? Why ko-fi?</Button></Link>
+            </Flex>
+
+
           </div>
 
           <Space h="md" />
