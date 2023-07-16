@@ -751,7 +751,7 @@ export function Welcome() {
 
             <Text color="dimmed" size="sm">
 
-              <b>50 NOK (5 USD) per month</b><br />
+              <b>5 Euro per month</b><br />
               Early access to content: videos, pictures, and articles.<br />
               <i>We need a lot of people to join to pay our internet bills<br />
                 - so invite your friends</i> (use this&nbsp;
@@ -765,7 +765,7 @@ export function Welcome() {
             </Text>
             <Space h="sm" />
 
-            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Membership</Button></Link>
+            <Link href="https://ko-fi.com/projecthessdalen" passHref><Button radius="sm" variant="outline">Membership</Button></Link>
           </div>
 
           <Space h="md" />
