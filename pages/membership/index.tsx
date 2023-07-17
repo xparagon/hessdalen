@@ -28,9 +28,10 @@ export default function UFOreporting() {
                     <Space h="xl" />
                     <Text size="xl">Why do we use ko-fi?</Text>
                     <Text size="md">
-                        The moment you pay ko-fi is connected to our discord server and you will be given access to the &quot;MEMBER-AREA&quot;.<br />
-                        Without this automation, we would have to manually add you to the discord role.<br />
-                        Without the payment system of ko-fi, we would have to manage a manual payment system.<br /><br />
+                        Ko-fi is connected to our discord server and you will be given access to the &quot;MEMBER-AREA&quot;
+                        the very moment the payment process is done.<br /><br />
+                        Without this automation, we would have to manually add you to the discord role, and
+                        without the payment system of ko-fi, we would have to manage a manual payment system.<br /><br />
                         <i>Now we can focus on the content of the site, the community and the research.</i><br /><br />
                         <b>And of course, we like that ko-fi has 0% fees on Membership payments, 0% fees on Shop sales, and 0% fees on Donations.</b><br /><br />
                         But if you still prefer to pay to a bank account, please contact us on admin@hessdalen.org.
@@ -46,22 +47,18 @@ export default function UFOreporting() {
 
             <Space h="xl" />
 
-            <Text size="lg">How I did it:</Text>
-            <Space h="xl" />
             <Image src="/img/signup-1.png" alt="Step 1" width={960} height={540} />
             <Space h="xl" />
             <Image src="/img/signup-2.png" alt="Step 2" width={960} height={540} />
 
             <Space h="xl" />
             <Text size="lg">Now that you have access to the MEMBER-AREA, it would be nice if you
-                say hi in the #lounge channel.<br />
-                And if you have any questions or comments, please add it in this channel
+                say hi in the #lounge channel.
             </Text>
-            <Space h="xl" />
             <Space h="xl" />
             <Text size="md">Also: Check your email for a thank you message from us.</Text>
             <Space h="xl" />
-            <Text size="lg">Back in ko-fi you should see:</Text>
+            <Text size="lg">Back on your ko-fi page you should see:</Text>
 
             <Image src="/img/signup-3.png" alt="start" width={788} height={510} />
             <Space h="xl" />

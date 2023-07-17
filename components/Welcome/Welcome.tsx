@@ -780,7 +780,7 @@ export function Welcome() {
                 >Pay for membership
                 </Button>
               </Link>
-              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Help with ko-fi</Button></Link>
+              <Link href="/membership" passHref><Button radius="sm" variant="outline">Help with ko-fi</Button></Link>
             </Flex>
 
 
