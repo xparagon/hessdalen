@@ -22,8 +22,12 @@ export default function UFOreporting() {
             <Grid>
                 <Grid.Col sm={6}>
                     <Text size="md">
-                        When you click on the &quot;Pay for Membership&quot; button, you will be taken to the Ko-fi website.<br />
-                        On the ko-fi.com/projecthessdalen page, click on the Membership button:
+                        When you click on the &quot;Pay for Membership&quot; button, you will be taken to the Ko-fi website.<br /><br />
+                        On the&nbsp;
+                        <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank">
+                            ko-fi.com/projecthessdalen
+                        </Link>
+                        &nbsp;page, click on the Membership button:
                     </Text>
                     <Space h="xl" />
                     <Text size="xl">Why do we use ko-fi?</Text>
