@@ -773,8 +773,14 @@ export function Welcome() {
               direction="row"
               wrap="wrap"
             >
-              <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank"><Button radius="sm">Pay for membership</Button></Link>
-              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">What is Ko-fo? Why ko-fi?</Button></Link>
+              <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank">
+                <Button
+                  radius="sm"
+                  rightIcon={<IconExternalLink size="1rem" />}
+                >Pay for membership
+                </Button>
+              </Link>
+              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Help with ko-fi</Button></Link>
             </Flex>
 
 
@@ -843,14 +849,16 @@ export function Welcome() {
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              We will be looking out for UFOs, with all the equipment available.
-              You will meet locals and the researchers.
-              I promise - the nights will be long but feel short with
-              interesting stories and discussions.<br />
-              <i>We have set up these field trips because it
-                has been requested by many for years.
-              </i>
-
+              We will be looking out for UAPs, with all the equipment available.
+              You will get to meet locals and the researchers.<br />
+              <i>These field trips have been requested by many for years.</i>
+            </Text>
+            <Text color="red" size="sm">
+              We did not have time to setup a field trip this year.
+            </Text>
+            <Text color="orange" size="md">
+              But if you get to Hessdalen on your own - you can meet us in the field
+              between 19 - 27 August.
             </Text>
           </div>
           <Flex
@@ -863,9 +871,9 @@ export function Welcome() {
           >
 
             <Group>
-              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Field trip</Button></Link>
+              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline" disabled="true">Field trip</Button></Link>
               <div>
-                3 days in Hessdalen - in September
+                3 days in Hessdalen - September 2024
               </div>
             </Group>
           </Flex>

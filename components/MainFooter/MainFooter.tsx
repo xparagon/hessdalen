@@ -1,5 +1,5 @@
 import { createStyles, Text, Container, ActionIcon, Group, rem, Button, Space, Center, Stack, Tooltip } from '@mantine/core';
-import { IconBrandFacebook } from '@tabler/icons';
+import { IconBrandChrome, IconBrandFacebook } from '@tabler/icons';
 import { IconBrandYoutube, IconBrandInstagram, IconUfo, IconSearch } from '@tabler/icons-react';
 import Link from 'next/link';
 
@@ -215,12 +215,31 @@ export function MainFooter() {
                 </Text>
 
                 <Group spacing={0} className={classes.social} position="right" noWrap>
-                    {/* <ActionIcon size="lg">
-                        <IconBrandFacebook size="1.05rem" stroke={1.5} />
-                    </ActionIcon> */}
-                    <Link href="https://www.youtube.com/@projecthessdalen" passHref>
+
+                    <Link href="http://www.itacomm.net/PH/CIPH/HOME_PAGE.html" passHref target="_blank">
+                        <Tooltip label="Italian Hessdalen site">
+
+                            <ActionIcon size="lg">
+                                <IconBrandChrome size="1.5rem" stroke={1.5} />
+                            </ActionIcon>
+                        </Tooltip>
+                    </Link>
+                    <Link href="https://hessdalen.de/" passHref target="_blank">
+                        <Tooltip label="German Hessdalen site">
+                            <ActionIcon size="lg">
+                                <IconBrandChrome size="1.5rem" stroke={1.5} />
+                            </ActionIcon>
+                        </Tooltip>
+                    </Link>
+
+                    <Link href="https://www.facebook.com/profile.php?id=100064338265408" passHref target="_blank">
                         <ActionIcon size="lg">
-                            <IconBrandYoutube size="1.05rem" stroke={1.5} />
+                            <IconBrandFacebook size="1.5rem" stroke={1.5} />
+                        </ActionIcon>
+                    </Link>
+                    <Link href="https://www.youtube.com/@projecthessdalen" passHref target="_blank">
+                        <ActionIcon size="lg">
+                            <IconBrandYoutube size="1.5rem" stroke={1.5} />
                         </ActionIcon>
                     </Link>
 
