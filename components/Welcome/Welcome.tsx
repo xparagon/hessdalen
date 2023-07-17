@@ -861,7 +861,7 @@ export function Welcome() {
               between 19 - 27 August.
             </Text>
           </div>
-          <Flex
+          {/* <Flex
             mih={50}
             gap="sm"
             justify="flex-start"
@@ -871,12 +871,12 @@ export function Welcome() {
           >
 
             <Group>
-              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline" disabled="true">Field trip</Button></Link>
+              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Field trip</Button></Link>
               <div>
                 3 days in Hessdalen - September 2024
               </div>
             </Group>
-          </Flex>
+          </Flex> */}
           <Space h="md" />
           <div onMouseEnter={() => imgActionSet('/img/ph-flares.jpg')} style={{ cursor: 'pointer' }}>
 
