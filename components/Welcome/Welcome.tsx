@@ -586,7 +586,7 @@ export function Welcome() {
             >
               <IconEye size={24} />
               <Text>
-                The Precident of Project Hessdalen
+                The President of Project Hessdalen
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
