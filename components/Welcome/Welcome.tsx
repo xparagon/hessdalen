@@ -574,7 +574,10 @@ export function Welcome() {
           <div onMouseEnter={() => imgTeamSet('/img/ph-es.jpeg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
-              Erling P. Strand
+              Erling P. Strand&nbsp;&nbsp;
+              <Link href="https://www.erling-strand.no/english/" passHref target="_blank">
+                <Button radius="sm" variant="subtle" compact leftIcon={<IconExternalLink size="1rem" />} />
+              </Link>
             </Title>
 
             <Flex
@@ -600,7 +603,10 @@ export function Welcome() {
           <div onMouseEnter={() => imgTeamSet('/img/ph-mt-ai.png')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
-              Massimo Teodorani
+              Massimo Teodorani&nbsp;&nbsp;
+              <Link href="https://massimoteodorani.com/" passHref target="_blank">
+                <Button radius="sm" variant="subtle" compact leftIcon={<IconExternalLink size="1rem" />} />
+              </Link>
             </Title>
             <Flex
               mih={32}
