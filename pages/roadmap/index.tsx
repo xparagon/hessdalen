@@ -21,64 +21,6 @@ export default function Roadmap() {
                 but we will try to be as realistic as possible.
             </Text>
             <Divider my="lg" label="End of July, 2023" labelPosition="center" />
-            <Grid>
-                <Grid.Col sm={6}>
-                    <Space h="sm" />
-                    <Title order={2}>
-                        Membership
-                    </Title>
-                    <Space h="sm" />
-
-                    <Text size="lg">
-                        We will use Ko-fi to collect membership fees and donations,
-                        because - guess what - no money: no equipment.
-                        No cameras, no sensors, no nothing.
-                    </Text>
-                    <Space h="sm" />
-                    <Text size="sm" color="dimmed">
-                        We will always have a free option, if you just want to
-                        subscribe to our discord server and check out the our website,
-                        that&apos;s fine. But please tell your friends about us.
-                        If you want to support us, please consider becoming a member.
-                    </Text>
-                    <Space h="sm" />
-                    <Text size="sm">
-                        On the website we will ask you to join our discord server.
-                        In our discord server we will ask you to become a member.
-                        When you become a member, you will get access to
-                        more channels on our discord server.
-                    </Text>
-
-                    <Space h="sm" />
-
-                    <Text size="md">
-                        <i>
-                            We need 200 members at the first tier<br />
-                            to pay for web hosting and streaming.
-                        </i>
-                    </Text>
-
-                    <Space h="sm" />
-
-                    <Text size="sm">
-                        By the end of July we plan to define the membership tiers.
-                        <ul>
-                            <li>Watcher Tier - 50 NOK / month</li>
-                            <li>Tracer Tier - 150 NOK / month</li>
-                            <li>Hunter Tier - 500 NOK / month</li>
-                        </ul>
-                    </Text>
-
-                    <Space h="sm" />
-
-                </Grid.Col>
-                <Grid.Col sm={6}>
-                    <Image src="/img/flow.png" alt="web-discord-ko-fi" width={450} height={450} />
-
-                </Grid.Col>
-            </Grid>
-
-            <Divider my="lg" label="August 19-20 and 26-27, 2023" labelPosition="center" />
 
             <Grid>
                 <Grid.Col sm={6}>
@@ -102,6 +44,7 @@ export default function Roadmap() {
                             <li>Andreas</li>
                             <li>Magnus</li>
                             <li>Fred</li>
+                            <li>Garry</li>
                             <li>Bjørn (who is living in Hessdalen)</li>
                         </ul>
                         If you want to join us, please let us know.
