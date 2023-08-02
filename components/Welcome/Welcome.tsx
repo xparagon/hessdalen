@@ -221,10 +221,11 @@ export function Welcome() {
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text color="dimmed" size="sm">
-            <i>As you can see - this site is under construction.
-              We will add the reports in a database, make a map,
-              open for questions and answers about the sightings.
-              Check the menu at the bottom of this page for more.
+            <i>As you can see - this site is under construction.<br />
+              What we need most of all now is your support and feedback.<br />
+              <b>Please donate or become a member.</b><br />
+              We are non-profit volunteer organization<br />
+              Help us achieve our goal: to get the UNDENIABLE PICTURE!
             </i><br />
             - Fred Pallesen, VP
           </Text>
