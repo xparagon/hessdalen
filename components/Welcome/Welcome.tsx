@@ -224,7 +224,7 @@ export function Welcome() {
             <i>As you can see - this site is under construction.
               We will add the reports in a database, make a map,
               open for questions and answers about the sightings.
-              Check the menu at the botom of this page.
+              Check the menu at the bottom of this page for more.
             </i><br />
             - Fred Pallesen, VP
           </Text>
