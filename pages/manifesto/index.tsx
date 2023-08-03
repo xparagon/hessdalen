@@ -1,9 +1,8 @@
-import { Text, Group, rem, Space, List, Grid, Card, Button, Title } from '@mantine/core';
+import { Text, Space, Grid, Title, Divider } from '@mantine/core';
 import Link from 'next/link';
 import Image from 'next/image';
 
 import MainLayout from '../layout';
-import { IconArrowRight } from '@tabler/icons';
 
 
 
@@ -14,6 +13,17 @@ export default function Manifesto() {
 
             <Grid>
                 <Grid.Col sm={6}>
+                    <Text tt="uppercase">Our first goal is simple:</Text>
+
+
+                    <Space h="sm" />
+                    <Title order={1}>
+                        To get the <br />UNDENIABLE PICTURE
+                    </Title>
+                    <Space h="xl" />
+                    <Divider size="xs" />
+                    <Space h="xl" />
+
                     <Title order={2}>
                         Project Hessdalen Manifesto
                     </Title>

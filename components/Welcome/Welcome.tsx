@@ -1,6 +1,6 @@
-import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Group, Popover, Tooltip } from '@mantine/core';
+import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Popover, Tooltip } from '@mantine/core';
 import { useEffect, useState } from 'react';
-import { IconEye, IconArrowDownCircle, IconExternalLink } from '@tabler/icons';
+import { IconEye, IconArrowDownCircle, IconExternalLink, IconPigMoney, IconFlag } from '@tabler/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
@@ -85,12 +85,30 @@ export function Welcome() {
             direction="row"
             wrap="wrap"
           >
-            <Link href="/manifesto" passHref><Button radius="sm" >Manifesto</Button></Link>
+            <Link href="/manifesto" passHref>
+              <Button
+                radius="sm"
+                rightIcon={<IconFlag size="1rem" />}
+              >
+                Our Goal
+              </Button>
+            </Link>
             <Link href="https://old.hessdalen.org/" passHref target="_blank">
               <Button
                 radius="sm"
                 variant="outline"
-                rightIcon={<IconExternalLink size="1rem" />} >The historic hessdalen site</Button></Link>
+                rightIcon={<IconExternalLink size="1rem" />}
+              >old.hessdalen.org
+              </Button>
+            </Link>
+            <Link href="/donate" passHref>
+              <Button
+                radius="sm"
+                rightIcon={<IconPigMoney size="1rem" />}
+              >
+                Donate
+              </Button>
+            </Link>
           </Flex>
           <Space h="sm" />
 
@@ -922,11 +940,11 @@ export function Welcome() {
           >
 
 
-            <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank">
+            <Link href="/donate" passHref target="_blank">
               <Button
                 radius="sm"
                 variant="outline"
-                rightIcon={<IconExternalLink size="1rem" />}
+                rightIcon={<IconPigMoney size="1rem" />}
               >
                 Donate
               </Button>
