@@ -882,16 +882,9 @@ export function Welcome() {
             </Text>
             <Space h="sm" />
 
+            <Link href="/field-trip" passHref><Button radius="sm" variant="outline">Event details</Button></Link>
 
-            <Link href="/field-trip" passHref target="_blank">
-              <Button
-                radius="sm"
-                variant="outline"
-                rightIcon={<IconChecklist size="1rem" />}
-              >
-                Event details
-              </Button>
-            </Link>
+
           </div>
           {/* <Flex
             mih={50}

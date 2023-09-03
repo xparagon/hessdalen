@@ -1,11 +1,8 @@
-import { Text, Group, rem, Space, List, Grid, Card, Button, Title, Divider } from '@mantine/core';
-import Link from 'next/link';
+import { Divider, Grid, Space, Text, Title } from '@mantine/core';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import MainLayout from '../layout';
-import { IconArrowRight } from '@tabler/icons';
-
-
 
 export default function FieldTrip() {
     return (
