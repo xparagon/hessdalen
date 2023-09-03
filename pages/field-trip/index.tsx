@@ -54,8 +54,21 @@ export default function FieldTrip() {
                         Guided tours and eye-witnesses telling about their sightings of UFOs.
                         Discussions around the campfire
                         before another late night field work.
+                        <br /><br />
+
 
                     </Text>
+
+                    <Text size="xl">
+                        Indicate your interest in this event&nbsp;
+                        <Link
+                            href="https://forms.gle/s2535MDV2PaZjz8w5"
+                            target="_blank">
+                            here
+                        </Link>&nbsp;
+                        and get updates on you email.
+                    </Text>
+
                     <Space h="xl" />
                     <Space h="xl" />
                     <Divider my="sm" />

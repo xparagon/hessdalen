@@ -239,12 +239,15 @@ export function Welcome() {
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text color="dimmed" size="sm">
-            <i>As you can see - this site is under construction.<br />
-              What we need most of all now is your support and feedback.<br />
-              <b>Please donate or become a member.</b><br />
-              We are non-profit volunteer organization<br />
-              Help us achieve our goal: to get the UNDENIABLE PICTURE!
+            <i>As you can see - this site is still under construction.<br />
             </i><br />
+            <b>
+              Check out our&nbsp;
+              <Link href="/field-trip" passHref>
+                Field Trip Weekend in 2024
+              </Link>&nbsp;with pictues from the Meet &amp; Greet in August 2023.
+            </b>
+            <br />
             - Fred Pallesen, VP
           </Text>
         </Grid.Col>
