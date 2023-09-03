@@ -1,6 +1,6 @@
 import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Popover, Tooltip } from '@mantine/core';
 import { useEffect, useState } from 'react';
-import { IconEye, IconArrowDownCircle, IconExternalLink, IconPigMoney, IconFlag } from '@tabler/icons';
+import { IconEye, IconArrowDownCircle, IconExternalLink, IconPigMoney, IconFlag, IconChecklist } from '@tabler/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
@@ -858,7 +858,7 @@ export function Welcome() {
           <div onMouseEnter={() => imgActionSet('/img/ph-field.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
-              Field trip
+              Field Trip Weekend:<br />September 6-8, 2024
             </Title>
             <Flex
               mih={32}
@@ -873,17 +873,25 @@ export function Welcome() {
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              We will be looking out for UAPs, with all the equipment available.
-              You will get to meet locals and the researchers.<br />
-              <i>These field trips have been requested by many for years.</i>
+              Workshop on how to use the UAP detection equipment in the field.
+              Late night field work on two known UFO hotspots in the valley.
+              Guided tours and eye-witnesses telling about their sightings of UFOs.
+              Discussions around the campfire.
+              And lectures by Erling Strand and Massimo Teodorani.<br />
+              <b>Now is your chance to join! - limited to 24 participants</b>
             </Text>
-            <Text color="red" size="sm">
-              We did not have time to setup a field trip this year.
-            </Text>
-            <Text color="orange" size="md">
-              But if you get to Hessdalen on your own - you can meet us in the field
-              between 19 - 27 August.
-            </Text>
+            <Space h="sm" />
+
+
+            <Link href="/field-trip" passHref target="_blank">
+              <Button
+                radius="sm"
+                variant="outline"
+                rightIcon={<IconChecklist size="1rem" />}
+              >
+                Event details
+              </Button>
+            </Link>
           </div>
           {/* <Flex
             mih={50}
@@ -923,11 +931,6 @@ export function Welcome() {
               Your substantial donation can shape the future of UFO research.
               With your support, we'll acquire advanced equipment, conduct field investigations,
               collaborate with experts, and analyze crucial data.<br />
-              <i>As a distinguished donor, you'll enjoy exclusive
-                benefits like VIP access to field trips,
-                firsthand updates, and connections with passionate researchers.
-                Your name will be etched in UFO research history as a catalyst for change.
-              </i>
             </Text>
           </div>
           <Flex
