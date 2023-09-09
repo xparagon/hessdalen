@@ -20,53 +20,8 @@ export default function Roadmap() {
                 Every indication of time is just a guess,
                 but we will try to be as realistic as possible.
             </Text>
-            <Divider my="lg" label="End of July, 2023" labelPosition="center" />
 
-            <Grid>
-                <Grid.Col sm={6}>
-                    <Image src="/img/ph-team.jpg" alt="Field trip" width={450} height={450} />
-
-                </Grid.Col>
-
-                <Grid.Col sm={6}>
-                    <Space h="sm" />
-                    <Title order={2}>
-                        Meet &amp; Greet
-                    </Title>
-                    <Space h="sm" />
-
-
-                    <Text size="md">
-                        Many in the core team plans to visit Hessdalen
-                        in August, in week 33 and 34.<br />
-                        <ul>
-                            <li>Erling</li>
-                            <li>Andreas</li>
-                            <li>Magnus</li>
-                            <li>Fred</li>
-                            <li>Garry</li>
-                            <li>Bjørn (who is living in Hessdalen)</li>
-                        </ul>
-                        If you want to join us, please let us know.
-
-
-                    </Text>
-                    <Space h="sm" />
-                    <Text size="sm" color="dimmed">
-                        Every year we hope to have a conference, a field trip,
-                        a chance to meet local vitnesses and our annual meeting - in Hessdalen.
-                        This time we are not ready at all, but we
-                        would still like to meet other team-members
-                        in the valley, not only on screen. And you are welcome too. <br />
-                        Next year we will be better prepared - but then there may be a price tag!
-                        Because we want to make it interesting, educational and fun.
-                    </Text>
-                    <Space h="sm" />
-
-                </Grid.Col>
-            </Grid>
-
-            <Divider my="lg" label="October, 2023" labelPosition="center" />
+            <Divider my="lg" label="End of 2023" labelPosition="center" />
 
             <Grid>
 
