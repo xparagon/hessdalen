@@ -22,13 +22,20 @@ export default function UFOreporting() {
             <Grid>
                 <Grid.Col sm={6}>
                     <Text size="md">
-                        When you click on the &quot;Pay for Membership&quot; button, you will be taken to the Ko-fi website.<br /><br />
+                        When you click on the &quot;Membership&quot; button, you will be taken to the <b>Ko-fi</b> website.<br /><br />
                         On the&nbsp;
-                        <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank">
+                        <a href="https://ko-fi.com/projecthessdalen" target="membership">
                             ko-fi.com/projecthessdalen
-                        </Link>
-                        &nbsp;page, click on the Membership button:
+                        </a>
+                        &nbsp;page, click on the <b>Membership</b> button.
                     </Text>
+                    <Space h="xl" />
+                    <Title
+                        order={2}
+                        variant="gradient"
+                        gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
+                    >We need members to pay for new cameras, equipment and the internet expenses - please help us!
+                    </Title>
                     <Space h="xl" />
                     <Text size="xl">Why do we use ko-fi?</Text>
                     <Text size="md">

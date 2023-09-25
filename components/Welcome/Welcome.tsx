@@ -116,13 +116,13 @@ export function Welcome() {
 
             Project Hessdalen, established in 1983,
             is a&nbsp;
-            <Link href="https://www.explorescu.org/partners" passHref>
+            <a href="https://www.explorescu.org/partners" target="partners">
               partner
-            </Link>
+            </a>
             &nbsp;in the Scientific Coalition for UAP Studies (
-            <Link href="https://www.explorescu.org/" passHref>
+            <a href="https://www.explorescu.org/" target="scu">
               SCU
-            </Link>
+            </a>
             ).
             <br />
             <br />
@@ -140,15 +140,15 @@ export function Welcome() {
                     and gain insight into, the nature and origins of UAPs. <br />
                     AARO is the All-domain Anomaly Resolution Office, established in 2020.<br />
                     as the successor of UAPTF.<br />
-                    <Link href="https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/" passHref>
+                    <a href="https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/" target="defense">
                       defense.gov
                       <IconExternalLink size={14} />
-                    </Link>
+                    </a>
                     &nbsp;
-                    <Link href="https://en.wikipedia.org/wiki/All-domain_Anomaly_Resolution_Office" passHref>
+                    <a href="https://en.wikipedia.org/wiki/All-domain_Anomaly_Resolution_Office" target="aaro">
                       AARO
                       <IconExternalLink size={14} />
-                    </Link>
+                    </a>
 
                   </Text>
                 </Popover.Dropdown>
@@ -165,10 +165,10 @@ export function Welcome() {
                   <Text size="sm">
                     To examine the possibility of extraterrestrial origin for unidentified aerial phenomena (UAP),
                     by making observations of objects in and near Earth’s atmosphere<br />
-                    <Link href="https://projects.iq.harvard.edu/galileo/project-goal" passHref>
+                    <a href="https://projects.iq.harvard.edu/galileo/project-goal" target="harvard">
                       harvard.edu
                       <IconExternalLink size={14} />
-                    </Link>
+                    </a>
                   </Text>
                 </Popover.Dropdown>
               </Popover>
@@ -184,10 +184,10 @@ export function Welcome() {
                   <Text size="sm">
                     NASA has selected 16 individuals to participate in its
                     independent study team on unidentified anomalous phenomena (UAP).<br />
-                    <Link href="https://www.nasa.gov/feature/nasa-to-set-up-independent-study-on-unidentified-aerial-phenomena/" passHref>
+                    <a href="https://www.nasa.gov/feature/nasa-to-set-up-independent-study-on-unidentified-aerial-phenomena/" target="nasa">
                       nasa.gov
                       <IconExternalLink size={14} />
-                    </Link>
+                    </a>
                   </Text>
                 </Popover.Dropdown>
               </Popover>
@@ -205,36 +205,36 @@ export function Welcome() {
       <Grid>
         <Grid.Col sm={6}>
           <Center>
-            <Link href="https://youtu.be/X33k-RGenbo" target="youtube" passHref>
+            <a href="https://youtu.be/X33k-RGenbo" target="youtube">
               <Tooltip label="The Hessdalen UFO Project with Prof. Erling Strand">
                 <Image src="/img/youtube.png" alt="The Hessdalen UFO Project with Prof. Erling Strand" width={84} height={84} />
               </Tooltip>
-            </Link>
-            <Link href="https://youtu.be/7hBUk13yE8s" target="youtube" passHref>
+            </a>
+            <a href="https://youtu.be/7hBUk13yE8s" target="youtube">
               <Tooltip label="Erling Strand recounts his journey">
                 <Image src="/img/youtube.png" alt="Erling Strand recounts his journey" width={48} height={48} />
               </Tooltip>
-            </Link>
-            <Link href="https://youtu.be/tPUcmVRMj_Y" target="youtube" passHref>
+            </a>
+            <a href="https://youtu.be/tPUcmVRMj_Y" target="youtube">
               <Tooltip label="Jan Moen on Lehto Files">
                 <Image src="/img/youtube.png" alt="Jan Moen on Lehto Files" width={48} height={48} />
               </Tooltip>
-            </Link>
-            <Link href="https://youtu.be/sIZ9J2gy1qI" target="youtube" passHref>
+            </a>
+            <a href="https://youtu.be/sIZ9J2gy1qI" target="youtube">
               <Tooltip label="Tomas Dahl on Lehto Files">
                 <Image src="/img/youtube.png" alt="Tomas Dahl on Lehto Files" width={48} height={48} />
               </Tooltip>
-            </Link>
-            <Link href="https://youtu.be/q_9DyxGceQo" target="youtube" passHref>
+            </a>
+            <a href="https://youtu.be/q_9DyxGceQo" target="youtube">
               <Tooltip label="Erling Strand on Lehto Files">
                 <Image src="/img/youtube.png" alt="Erling Strand on Lehto Files" width={48} height={48} />
               </Tooltip>
-            </Link>
-            <Link href="https://youtu.be/K5XluLrIqCQ" target="youtube" passHref>
+            </a>
+            <a href="https://youtu.be/K5XluLrIqCQ" target="youtube">
               <Tooltip label="Clas Svahn on Lehto Files">
                 <Image src="/img/youtube.png" alt="Clas Svahn on Lehto Files" width={48} height={48} />
               </Tooltip>
-            </Link>
+            </a>
           </Center>
         </Grid.Col>
         <Grid.Col sm={6}>
@@ -242,10 +242,16 @@ export function Welcome() {
             <i>As you can see - this site is still under construction.<br />
             </i><br />
             <b>
-              Check out our&nbsp;
+              Check out Isaiah Photo's entertaining&nbsp;
+              <a href="https://youtu.be/AwYiEWLSDhA?si=nCe9dIxkhL3ndMkI" target="youtube">
+                video from Hessdalen
+              </a>.
+            </b><br />
+            <b>
+              Want to join our&nbsp;
               <Link href="/field-trip" passHref>
-                Field Trip Weekend in 2024
-              </Link>&nbsp;with pictues from the Meet &amp; Greet in August 2023.
+                Field Trip Weekend
+              </Link>&nbsp; in 2024?
             </b>
             <br />
             - Fred Pallesen, VP
@@ -804,10 +810,10 @@ export function Welcome() {
                 <Button
                   radius="sm"
                   rightIcon={<IconExternalLink size="1rem" />}
-                >Pay for membership
+                >Membership
                 </Button>
               </Link>
-              <Link href="/membership" passHref><Button radius="sm" variant="outline">Help with ko-fi</Button></Link>
+              <Link href="/membership" passHref><Button radius="sm" variant="outline">How and why ...</Button></Link>
             </Flex>
 
 
