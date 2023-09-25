@@ -2,6 +2,8 @@ import { Divider, Grid, Space, Text, Title } from '@mantine/core';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import imgFieldTrip from '../../public/img/field-trip.jpg';
+
 import MainLayout from '../layout';
 
 export default function FieldTrip() {
@@ -105,7 +107,7 @@ export default function FieldTrip() {
 
                 </Grid.Col>
                 <Grid.Col sm={6}>
-                    <Image src="/img/field-trip.jpg" alt="Logo" width={450} height={450} />
+                    <Image src={imgFieldTrip} alt="Logo" width={450} height={450} />
                     <Space h="sm" />
                     <Text size="xl">
                         More details to come
