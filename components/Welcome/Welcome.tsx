@@ -6,6 +6,10 @@ import Link from 'next/link';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
 import MainLayout from '../../pages/layout';
 
+import patchImg from '../../public/img/Patch_Project_Hessdalen.png';
+import ytLogo from '../../public/img/youtube.png';
+
+
 declare global {
   interface Window {
     kofiWidgetOverlay: {
@@ -53,7 +57,7 @@ export function Welcome() {
       <Grid>
         <Grid.Col sm={6}>
           <Center>
-            <Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={350} height={350} />
+            <Image src={patchImg} alt="Hessdalen logo" width={350} height={350} />
           </Center>
         </Grid.Col>
         <Grid.Col sm={6}>
@@ -207,32 +211,32 @@ export function Welcome() {
           <Center>
             <Link href="https://youtu.be/X33k-RGenbo" target="youtube" passHref>
               <Tooltip label="The Hessdalen UFO Project with Prof. Erling Strand">
-                <Image src="/img/youtube.png" alt="The Hessdalen UFO Project with Prof. Erling Strand" width={84} height={84} />
+                <Image src={ytLogo} alt="The Hessdalen UFO Project with Prof. Erling Strand" width={84} height={84} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/7hBUk13yE8s" target="youtube" passHref>
               <Tooltip label="Erling Strand recounts his journey">
-                <Image src="/img/youtube.png" alt="Erling Strand recounts his journey" width={48} height={48} />
+                <Image src={ytLogo} alt="Erling Strand recounts his journey" width={48} height={48} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/tPUcmVRMj_Y" target="youtube" passHref>
               <Tooltip label="Jan Moen on Lehto Files">
-                <Image src="/img/youtube.png" alt="Jan Moen on Lehto Files" width={48} height={48} />
+                <Image src={ytLogo} alt="Jan Moen on Lehto Files" width={48} height={48} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/sIZ9J2gy1qI" target="youtube" passHref>
               <Tooltip label="Tomas Dahl on Lehto Files">
-                <Image src="/img/youtube.png" alt="Tomas Dahl on Lehto Files" width={48} height={48} />
+                <Image src={ytLogo} alt="Tomas Dahl on Lehto Files" width={48} height={48} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/q_9DyxGceQo" target="youtube" passHref>
               <Tooltip label="Erling Strand on Lehto Files">
-                <Image src="/img/youtube.png" alt="Erling Strand on Lehto Files" width={48} height={48} />
+                <Image src={ytLogo} alt="Erling Strand on Lehto Files" width={48} height={48} />
               </Tooltip>
             </Link>
             <Link href="https://youtu.be/K5XluLrIqCQ" target="youtube" passHref>
               <Tooltip label="Clas Svahn on Lehto Files">
-                <Image src="/img/youtube.png" alt="Clas Svahn on Lehto Files" width={48} height={48} />
+                <Image src={ytLogo} alt="Clas Svahn on Lehto Files" width={48} height={48} />
               </Tooltip>
             </Link>
           </Center>
