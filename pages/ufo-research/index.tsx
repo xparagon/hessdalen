@@ -30,9 +30,9 @@ export default function UFOResearch() {
                         MASSIMO TEODORANI, Ph.D., astrophysicist<br />
                         <i>Project Hessdalen Research Manager</i><br />
                         <br />
-                        <Link href="https://drive.google.com/file/d/1BTfEvuYTdGOvj24twzOxHMVu4jsVV4Yx/view?usp=sharing" passHref target="_blank">
-                            Read the full document <IconExternalLink size="1rem" />
-                        </Link> - or just the conclusion:
+                        <a href="/doc/Project_Hessdalen_Phoenix_2023_MT.pdf" target="full-doc">
+                            Read the full document
+                        </a> - or just the conclusion:
                         <br />
                     </Text>
                     <Space h="sm" />
