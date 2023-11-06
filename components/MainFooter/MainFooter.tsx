@@ -124,6 +124,10 @@ export function MainFooter() {
                 link: "https://sites.google.com/hessdalen.org/blog/"
             },
             {
+                label: "Webanonnser",
+                link: "https://sites.google.com/hessdalen.org/blog/web-annonser"
+            },
+            {
                 label: "Contribute",
                 link: "#"
             },
