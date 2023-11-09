@@ -19,27 +19,27 @@ declare global {
 }
 
 
-function AdSense() {
-  return (
-    <div>
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3671890713624906"
-        crossOrigin="anonymous"
-      />
-      {/* verticalAd */}
-      <ins
-        className="adsbygoogle"
-        style={{ display: 'block' }}
-        data-ad-client="ca-pub-3671890713624906"
-        data-ad-slot="8314844990"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      />
-      <script>{'(adsbygoogle = window.adsbygoogle || []).push({});'}</script>
-    </div>
-  );
-}
+// function AdSense() {
+//   return (
+//     <div>
+//       <script
+//         async
+//         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3671890713624906"
+//         crossOrigin="anonymous"
+//       />
+//       {/* verticalAd */}
+//       <ins
+//         className="adsbygoogle"
+//         style={{ display: 'block' }}
+//         data-ad-client="ca-pub-3671890713624906"
+//         data-ad-slot="8314844990"
+//         data-ad-format="auto"
+//         data-full-width-responsive="true"
+//       />
+//       <script>{'(adsbygoogle = window.adsbygoogle || []).push({});'}</script>
+//     </div>
+//   );
+// }
 
 export function Welcome() {
   // const { classes } = useStyles();
@@ -444,7 +444,7 @@ export function Welcome() {
       </Grid>
       <Divider my="sm" />
 
-      <AdSense />
+      {/* <AdSense /> */}
 
       <Space h="sm" />
       <Divider my="sm" />
