@@ -100,7 +100,7 @@ export function Welcome() {
 
           <Text tt="uppercase">Vision</Text>
           <Text size="md">
-            Discover unknown processes and laws of nature, find new sources of energy and discover and interact with non-human intelligences.
+            Discover unknown processes and laws of nature, find new sources of energy and potentially interact with unknown intelligences.
           </Text>
 
           <Space h="sm" />
@@ -128,6 +128,7 @@ export function Welcome() {
               >old.hessdalen.org
               </Button>
             </Link>
+
             <Link href="/donate" passHref>
               <Button
                 radius="sm"
@@ -136,6 +137,7 @@ export function Welcome() {
                 Donate
               </Button>
             </Link>
+
           </Flex>
           <Space h="sm" />
 
@@ -266,8 +268,6 @@ export function Welcome() {
         </Grid.Col>
         <Grid.Col sm={6}>
           <Text color="dimmed" size="sm">
-            <i>As you can see - this site is still under construction.<br />
-            </i><br />
             <b>
               Check out Isaiah Photo's entertaining&nbsp;
               <a href="https://youtu.be/AwYiEWLSDhA?si=nCe9dIxkhL3ndMkI" target="youtube">
@@ -280,8 +280,19 @@ export function Welcome() {
                 Field Trip Weekend
               </Link>&nbsp; in 2024?
             </b>
+
             <br />
             - Fred Pallesen, VP
+            <br />
+            <br />
+            Check out the&nbsp;
+            <Link href="https://blog.hessdalen.org/" passHref>
+              <Button
+                radius="sm"
+              >
+                Blog
+              </Button>
+            </Link>
           </Text>
         </Grid.Col>
       </Grid>
@@ -293,7 +304,7 @@ export function Welcome() {
         Hessdalen is a hotspot for unexplained arial phenomena.
       </Text>
       <Text ta="center" size={24}>
-        These mesmerizing light phenomena are undeniably real,
+        These mesmerizing objects are undeniably real,
         and their presence shows no signs of fading away.
       </Text>
       <Space h="xl" />
