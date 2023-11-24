@@ -28,9 +28,9 @@ export default function UFOResearch() {
 
                         <br />
                         MASSIMO TEODORANI, Ph.D., astrophysicist<br />
-                        <i>Project Hessdalen Research Manager</i><br />
+                        <i>Scientific consultant for Project Hessdalen</i><br />
                         <br />
-                        <a href="/doc/Project_Hessdalen_Phoenix_2023_MT.pdf" target="full-doc">
+                        <a href="/doc/Project_Hessdalen_Phoenix_2023_MTv2.pdf" target="full-doc">
                             Read the full document
                         </a> - or just the conclusion:
                         <br />
@@ -58,7 +58,7 @@ export default function UFOResearch() {
                         phenomenology are very many, considering that the cases of structured flying objects reported in
                         the Hessdalen valley are not a few, even as a clear minority compared to the more usual
                         unstructured light anomalies. This phenomenon appears by manifesting a very similar behavior in
-                        several other locations of the world.<br /><br />
+                        several othßer locations of the world.<br /><br />
                         What has been reported and directly observed during so many years shows sometimes an apparent
                         violation of the known physics laws. Should we ignore this – if ascertained by observational data –
                         only because it does not fit the canons of accepted science? Alternatively, should this be an

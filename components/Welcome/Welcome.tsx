@@ -44,7 +44,7 @@ declare global {
 export function Welcome() {
   // const { classes } = useStyles();
 
-  const [imgUfo, imgUfoSet] = useState('/img/ph-ufo3-t.png');
+  const [imgUfo, imgUfoSet] = useState('/img/type4.jpg');
   const [imgEquipment, imgEquipmentSet] = useState('/img/ph-2.jpg');
   const [imgTeam, imgTeamSet] = useState('/img/ph-es.jpeg');
   const [imgCommunity, imgCommunitySet] = useState('/img/pg-discord.jpg');
@@ -100,7 +100,7 @@ export function Welcome() {
 
           <Text tt="uppercase">Vision</Text>
           <Text size="md">
-            Discover unknown processes and laws of nature, find new sources of energy and interact with non-human intelligences.
+            Discover unknown processes and laws of nature, find new sources of energy and discover and interact with non-human intelligences.
           </Text>
 
           <Space h="sm" />
@@ -406,7 +406,7 @@ export function Welcome() {
           </div>
 
           <Space h="md" />
-          <div onMouseEnter={() => imgUfoSet('/img/ph-ufo3-t.png')} style={{ cursor: 'pointer' }}>
+          <div onMouseEnter={() => imgUfoSet('/img/type4.jpg')} style={{ cursor: 'pointer' }}>
 
             <Title order={2}>
               Type 4
@@ -424,7 +424,10 @@ export function Welcome() {
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              Drawing from a witness report.
+              The Hessdalen Phenomenon manifests itself as much more than a light phenomenon.
+              During field studies, 10 times more radar detections of objects were recorded,
+              compared to visible observations. Hence these objects are frequently invisible
+              in the optical spectrum, which adds to the mystery.
             </Text>
           </div>
 
@@ -680,7 +683,7 @@ export function Welcome() {
             </Flex>
 
             <Text color="dimmed" size="sm">
-              Research Director in Project Hessdalen<br />
+              Scientific consultant in Project Hessdalen<br />
               An astrophysicist, specializes in atmospheric and plasma physics.
               His research focuses on the unique light emissions observed in Hessdalen,
               resulting in scientific publications and presentations at conferences.
