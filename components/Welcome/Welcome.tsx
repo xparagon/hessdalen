@@ -290,7 +290,7 @@ export function Welcome() {
       <Divider my="sm" />
       <Space h="sm" />
       <Text ta="center" c="blue" size={48}>
-        Hessdalen is a UFO hotspot.
+        Hessdalen is a hotspot for unexplained arial phenomena.
       </Text>
       <Text ta="center" size={24}>
         These mesmerizing light phenomena are undeniably real,
