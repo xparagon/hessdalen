@@ -301,7 +301,7 @@ export function Welcome() {
       <Divider my="sm" />
       <Space h="sm" />
       <Text ta="center" c="blue" size={48}>
-        Hessdalen is a hotspot for unexplained arial phenomena.
+        Hessdalen is a hotspot for <br />unexplained arial phenomena.
       </Text>
       <Text ta="center" size={24}>
         These mesmerizing objects are undeniably real,
@@ -467,9 +467,8 @@ export function Welcome() {
         24/7 Automatic UFO Surveillance
       </Text>
       <Text ta="center" size={24}>
-        When the light phenomena appears, a UFO or a mysterious Energy Object,
-        the system will <b>automatically</b> start recording -
-        and you can get a notification on your mobilephone<sup>*</sup>
+        When the phenomena appears the system will <b>automatically</b> start recording.<br />
+        We are working to integrate live streaming and mobile notifications for members.
       </Text>
       <Space h="xl" />
 
