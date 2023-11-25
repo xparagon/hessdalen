@@ -24,14 +24,14 @@ export default function MainTopMenu() {
                         <div>
                             <Group>
                                 <Link href="/" passHref><Image src="/img/Patch_Project_Hessdalen.png" alt="Hessdalen logo" width={48} height={48} /></Link>
-                                <Link href="/sitemap" passHref style={{ height: '24px' }} ><IconListSearch size={24} /></Link>
+                                {/* <Link href="/sitemap" passHref style={{ height: '24px' }} ><IconListSearch size={24} /></Link> */}
                             </Group>
                         </div>
                         <div>
                             <Link href="/ufo-reporting" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
-                            <Link href="/ufo-reports" passHref><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
+                            <Link href="/ufo-reports" passHref><Button radius="sm" compact variant="subtle">Reports</Button></Link>
                             <Link href="/live-streaming" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
-                            <Link href="/ufo-research" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
+                            <Link href="/ufo-research" passHref><Button radius="sm" compact variant="subtle">Research</Button></Link>
                         </div>
                         <div>
                             <Group>

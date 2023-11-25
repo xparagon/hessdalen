@@ -1,6 +1,6 @@
 import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Popover, Tooltip } from '@mantine/core';
 import { useEffect, useState } from 'react';
-import { IconEye, IconArrowDownCircle, IconExternalLink, IconPigMoney, IconFlag, IconChecklist } from '@tabler/icons';
+import { IconEye, IconArrowDownCircle, IconExternalLink, IconPigMoney, IconFlag } from '@tabler/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
@@ -8,7 +8,6 @@ import MainLayout from '../../pages/layout';
 
 import patchImg from '../../public/img/Patch_Project_Hessdalen.png';
 import ytLogo from '../../public/img/youtube.png';
-
 
 declare global {
   interface Window {
@@ -18,28 +17,6 @@ declare global {
   }
 }
 
-
-// function AdSense() {
-//   return (
-//     <div>
-//       <script
-//         async
-//         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3671890713624906"
-//         crossOrigin="anonymous"
-//       />
-//       {/* verticalAd */}
-//       <ins
-//         className="adsbygoogle"
-//         style={{ display: 'block' }}
-//         data-ad-client="ca-pub-3671890713624906"
-//         data-ad-slot="8314844990"
-//         data-ad-format="auto"
-//         data-full-width-responsive="true"
-//       />
-//       <script>{'(adsbygoogle = window.adsbygoogle || []).push({});'}</script>
-//     </div>
-//   );
-// }
 
 export function Welcome() {
   // const { classes } = useStyles();
@@ -451,8 +428,8 @@ export function Welcome() {
             direction="row"
             wrap="wrap"
           >
-            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">UFO research</Button></Link>
-            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">UFO reports</Button></Link>
+            <Link href="/ufo-research" passHref><Button radius="sm" variant="outline">Research</Button></Link>
+            <Link href="/ufo-reports" passHref><Button radius="sm" variant="outline">Reports</Button></Link>
           </Flex>
         </Grid.Col>
       </Grid>
@@ -745,11 +722,11 @@ export function Welcome() {
 
       <Space h="sm" />
       <Text ta="center" c="pink" size={48}>
-        Calling all UFO Enthusiasts:
+        The Hessdalen Phenomenon is unique<br /> - help us!
+
       </Text>
       <Text ta="center" size={24}>
-        Unite for a Collective Quest to Unravel the UFO Mysteries!
-
+        Donate or become a member to help us solve this enigma that could lead to new discoveries within science, energy and humanity itself.
       </Text>
       <Space h="xl" />
 
@@ -926,7 +903,8 @@ export function Welcome() {
             </Flex>
             <Text color="dimmed" size="sm">
               Workshop on how to use the UAP detection equipment in the field.
-              Late night field work on two known UFO hotspots in the valley.
+              Late night field work on two known hotspot for
+              unexplained arial phenomena in the valley.
               Guided tours and eye-witnesses telling about their sightings of UFOs.
               Discussions around the campfire.
               And lectures by Erling Strand and Massimo Teodorani.<br />
@@ -938,22 +916,6 @@ export function Welcome() {
 
 
           </div>
-          {/* <Flex
-            mih={50}
-            gap="sm"
-            justify="flex-start"
-            align="center"
-            direction="row"
-            wrap="wrap"
-          >
-
-            <Group>
-              <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Field trip</Button></Link>
-              <div>
-                3 days in Hessdalen - September 2024
-              </div>
-            </Group>
-          </Flex> */}
           <Space h="md" />
           <div onMouseEnter={() => imgActionSet('/img/ph-flares.jpg')} style={{ cursor: 'pointer' }}>
 
@@ -973,7 +935,7 @@ export function Welcome() {
               </Text>
             </Flex>
             <Text color="dimmed" size="sm">
-              Your substantial donation can shape the future of UFO research.
+              Your substantial donation can shape the future of our research.
               With your support, we'll acquire advanced equipment, conduct field investigations,
               collaborate with experts, and analyze crucial data.<br />
             </Text>

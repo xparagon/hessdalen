@@ -13,12 +13,9 @@ export default function UFOResearch() {
             <Grid>
                 <Grid.Col sm={6}>
                     <Title order={1}>
-                        UFO Research
-                    </Title>
-                    <Space h="sm" />
-                    <Text size="sm">
                         This is our research plan:
-                    </Text>
+                    </Title>
+
                     <Space h="sm" />
                     <Title order={3}>
                         PROJECT HESSDALEN:<br />
