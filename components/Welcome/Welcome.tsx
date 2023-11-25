@@ -464,7 +464,7 @@ export function Welcome() {
       <Divider my="sm" />
       <Space h="sm" />
       <Text ta="center" c="orange" size={48}>
-        24/7 Automatic UFO Surveillance
+        24/7 Automatic Anomaly Surveillance
       </Text>
       <Text ta="center" size={24}>
         When the phenomena appears the system will <b>automatically</b> start recording.<br />
@@ -603,8 +603,7 @@ export function Welcome() {
       <Text ta="center" size={24}>
         "The Hessdalen phenomenon represents
         the most important laboratory <b>in the world</b> to study
-        recurrent anomalous aerial phenomena”
-        (UFOs!)<br />
+        recurrent anomalous aerial phenomena”<br />
         - Massimo Teodorani
 
       </Text>
