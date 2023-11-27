@@ -1,4 +1,4 @@
-import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Popover, Tooltip } from '@mantine/core';
+import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Popover, Tooltip, Group } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import { IconEye, IconArrowDownCircle, IconExternalLink, IconPigMoney, IconFlag } from '@tabler/icons';
 import Image from 'next/image';
@@ -8,6 +8,7 @@ import MainLayout from '../../pages/layout';
 
 import patchImg from '../../public/img/Patch_Project_Hessdalen.png';
 import ytLogo from '../../public/img/youtube.png';
+import rrdigital from '../../public/img/RenRoros_digital_svart.svg';
 
 declare global {
   interface Window {
@@ -435,7 +436,48 @@ export function Welcome() {
       </Grid>
       <Divider my="sm" />
 
-      {/* <AdSense /> */}
+      <div>
+
+        <Title ta="center" order={1}>
+          <span style={{ color: '#1971c2' }}>
+            Companies
+          </span>&nbsp;
+          that support us:
+        </Title>
+
+        <Space h="sm" />
+        <Text ta="center" size="md">
+          creative volunteers / scientific inquiries / cutting edge technologies / youth empowerment
+        </Text>
+        <Space h="sm" />
+
+        <Grid style={{ backgroundColor: 'rgb(233, 243, 236)', borderRadius: '10px', padding: '1em 2em' }}>
+          <Grid.Col sm={6} md={3}>
+            <Image src={rrdigital} alt="Ren Røros Digital" width={200} height={100} />
+          </Grid.Col>
+          <Grid.Col sm={6} md={9}>
+
+            <Text size="xl" color="rgb(76, 76, 76)">
+              Har du behov for hjelp til å forenkle og effektivisere din IT-hverdag?<br />
+              Ren Røros Digital hjelper deg.
+            </Text>
+            <Space h="sm" />
+
+            <Text size="lg">
+              <a href="https://renroros.no/it-tjenester/" target="renroros">
+                https://renroros.no/it-tjenester/
+              </a>
+            </Text>
+          </Grid.Col>
+
+        </Grid>
+        <Space h="sm" />
+        <Text size="md" ta="center">
+          <a href="https://blog.hessdalen.org/web-annonser" target="bannerad">
+            Donate and get your company listed here
+          </a>
+        </Text>
+      </div>
 
       <Space h="sm" />
       <Divider my="sm" />
