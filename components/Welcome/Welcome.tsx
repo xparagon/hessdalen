@@ -313,7 +313,7 @@ export function Welcome() {
                 </Button>
               </Grid.Col>
               <Grid.Col span={3}>
-                <Button variant="outline" compact onClick={() => imgUfoSet('/img/ph-ufo3-t.png')}>
+                <Button variant="outline" compact onClick={() => imgUfoSet('/img/type4.jpg')}>
                   4
                 </Button>
               </Grid.Col>
