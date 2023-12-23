@@ -59,6 +59,17 @@ export function Welcome() {
         <Grid.Col sm={6}>
           <Center>
             <Image src={patchImg} alt="Hessdalen logo" width={350} height={350} />
+
+
+          </Center>
+          <Center>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7gLbO0hEBEI?si=dfxfQy_I9jeoRZF1"
+              title="Hunting Alien Techno-Signatures with Science / Massimo - Project Hessdalen"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+
           </Center>
         </Grid.Col>
         <Grid.Col sm={6}>
@@ -200,7 +211,33 @@ export function Welcome() {
               </Popover>
             </div>
 
-
+            <br />
+            The&nbsp;
+            <Link href="https://blog.hessdalen.org/" passHref>
+              <Button
+                radius="sm"
+              >
+                Blog
+              </Button>
+            </Link> has the latest news and updates.
+            <br />
+            <ul>
+              <li>
+                Read about the Field Trip Weekend
+              </li>
+              <li>
+                Check our Developer Program.
+              </li>
+              <li>
+                Read about the people on the team.
+              </li>
+            </ul>
+            Soon to come:
+            <ul>
+              <li>
+                How to become a member
+              </li>
+            </ul>
 
           </Text>
 
@@ -261,16 +298,6 @@ export function Welcome() {
 
             <br />
             - Fred Pallesen, VP
-            <br />
-            <br />
-            Check out the&nbsp;
-            <Link href="https://blog.hessdalen.org/" passHref>
-              <Button
-                radius="sm"
-              >
-                Blog
-              </Button>
-            </Link>
           </Text>
         </Grid.Col>
       </Grid>
