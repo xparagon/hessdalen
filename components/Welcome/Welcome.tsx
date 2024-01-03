@@ -73,6 +73,23 @@ export function Welcome() {
             />
 
           </Center>
+          <Center>
+            <br />
+            <br />
+            <Text size="sm">
+              <b>
+                You can now study UAPs in a
+                8 week course:
+              </b>
+              <br />
+              <a href="https://www.societyforuapstudies.org/scientificinvestigationofuap" target="study">
+                The Scientific Investigation of UAP
+              </a>
+              <br />
+              by Dr. Massimo Teodorani
+            </Text>
+          </Center>
+
         </Grid.Col>
         <Grid.Col sm={6}>
 
