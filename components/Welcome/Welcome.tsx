@@ -125,7 +125,7 @@ export function Welcome() {
                 radius="sm"
                 rightIcon={<IconFlag size="1rem" />}
               >
-                Our Goal
+                Our Goal:
               </Button>
             </Link>
             <Link href="https://old.hessdalen.org/" passHref target="_blank">
@@ -242,22 +242,31 @@ export function Welcome() {
             <br />
             <ul>
               <li>
-                Read about the Field Trip Weekend
+                <a href="https://blog.hessdalen.org/field-trip-weekend" target="blog">
+                  Read about the Field Trip Weekend
+                </a>
               </li>
               <li>
-                Check our Developer Program.
+                <a href="https://blog.hessdalen.org/developer" target="blog">
+                  Check our Developer Program.
+                </a>
               </li>
               <li>
-                Read about the people on the team.
+                <a href="https://blog.hessdalen.org/people" target="blog">
+                  Read about the people on the team.
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.hessdalen.org/join" target="blog">
+                  How to become a member
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.hessdalen.org/student" target="blog">
+                  Find your student assignment
+                </a>
               </li>
             </ul>
-            Soon to come:
-            <ul>
-              <li>
-                How to become a member
-              </li>
-            </ul>
-
           </Text>
 
         </Grid.Col>
