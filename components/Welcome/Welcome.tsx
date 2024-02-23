@@ -8,6 +8,7 @@ import MainLayout from '../../pages/layout';
 
 import patchImg from '../../public/img/Patch_Project_Hessdalen.png';
 import ytLogo from '../../public/img/youtube.png';
+import underDS from '../../public/img/under-ds.jpg';
 import rrdigital from '../../public/img/RenRoros_digital_svart.svg';
 
 declare global {
@@ -59,9 +60,31 @@ export function Welcome() {
         <Grid.Col sm={6}>
           <Center>
             <Image src={patchImg} alt="Hessdalen logo" width={350} height={350} />
-
-
           </Center>
+          <br />
+          <Center>
+            <Text size="sm" align='center'>
+              <b>
+                <Link href="https://blog.hessdalen.org/start" target="blog">
+
+                  Read more
+                </Link>&nbsp;
+                about &quot;Operation Arctic Seal&quot;</b><br />
+              and the cigar-shaped object found<br />
+               in Lake Djupsjøen.<br />
+            </Text>
+          </Center>
+          <Center>
+            <Link href="https://blog.hessdalen.org/start" target="blog">
+              <Image src={underDS} alt="The Hessdalen UFO Project with Prof. Erling Strand" width={250} height={140} />
+            </Link>
+          </Center>
+          <Text size="sm" align='center'>
+            <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank">
+              Donate
+            </Link><br />
+            to help us to fund the retrieval attempt
+          </Text>
           <br />
           <Center>
 
@@ -89,6 +112,9 @@ export function Welcome() {
               by Dr. Massimo Teodorani
             </Text>
           </Center>
+
+
+
 
         </Grid.Col>
         <Grid.Col sm={6}>
