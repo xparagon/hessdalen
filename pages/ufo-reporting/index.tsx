@@ -1,6 +1,7 @@
 import { Text, Group, rem, Space, List, Grid, Card, Button, Title } from '@mantine/core';
 import Link from 'next/link';
 import Image from 'next/image';
+import { IconEye, IconArrowDownCircle, IconExternalLink, IconPigMoney, IconFlag } from '@tabler/icons';
 
 import MainLayout from '../layout';
 import { IconArrowRight } from '@tabler/icons';
@@ -18,22 +19,22 @@ export default function UFOreporting() {
                         Have you seen a UFO?
                     </Title>
                     <Space h="sm" />
-                    <Text tt="uppercase">Work In Progress</Text>
-                    <Space h="sm" />
-                    <Text size="md">The page you are looking for is not ready.
-                    </Text>
-                    <Space h="sm" />
                     <Text size="xl">
-                        Come back soon to check if we are done.
+                    <a href="https://forms.gle/enMd7yrsKoD99iwCA" target="report">
+                    Form to report a sighting
+                    </a> 
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
-                        Any sighting of the light phonomenoa in Hessdalen has been
+                        Previousely any sighting of the light phonomenoa in Hessdalen has been
                         reported to the Project Hessdalen team,
                         by taking to people in the area,
-                        or by sending an email to the <a href="mailto:erling.p.strand@gmail.com">Erling P. Strand</a>.<br />
-                        If you have seen a UFO in Hessdalen, please report it to us.<br />
-
+                        or by sending an email to the <a href="mailto:erling@hessdalen.org">Erling P. Strand</a>.<br />
+                        <br />
+                        If you have seen a UFO in Hessdalen, please the form above.<br />
+                        <i>This is in Norwegian - intended to be used for sightings in or near the Hessdalen valley.</i>
+                        <br />
+                        It does include a 
                     </Text>
                     <Space h="sm" />
                     <Text size="sm">
@@ -43,21 +44,21 @@ export default function UFOreporting() {
                     </Text>
                     <Space h="sm" />
                     <Text size="lg">
-                        We hope to make a form for reporting UFO sightings in Hessdalen soon.
-                        But we also want to make it easy to share a sighing in real time
+                        We are working with SCU on a database project. 
+                        Our hope is that this tool can be used to view the sighings on the map. (See picture)
+                        <br />
+                        <br />
+                        
+                        <i>We want to make it easy to share a sighing in real time
                         - and let members of the community
-                        get a notification when a sighting is beeing reported
-                        - using live video feed.
+                        get a notification when there is a sighting 
+                        - using live video feed.</i>
                     </Text>
                     <Space h="sm" />
-                    <Text size="md">
-                        Please join our discord server to get the latest news.<br />
-                        Please help us to make this site better by reporting bugs and
-                        suggesting improvements.
-                    </Text>
+                   
                 </Grid.Col>
                 <Grid.Col sm={6}>
-                    <Image src="/img/building-a-ufo-mj.png" alt="Building a UFO (Midjourney)" width={450} height={450} />
+                    <Image src="/img/scu-db.jpg" alt="Database" width={450} height={450} />
 
                 </Grid.Col>
             </Grid>
