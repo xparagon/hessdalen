@@ -268,11 +268,6 @@ export function Welcome() {
             <br />
             <ul>
               <li>
-                <a href="https://blog.hessdalen.org/field-trip-weekend" target="blog">
-                  Read about the Field Trip Weekend
-                </a>
-              </li>
-              <li>
                 <a href="https://blog.hessdalen.org/developer" target="blog">
                   Check our Developer Program.
                 </a>
@@ -295,6 +290,38 @@ export function Welcome() {
             </ul>
           </Text>
 
+          <Space h="sm" />
+          <Divider my="sm" />
+          
+
+          <Title order={2}>
+          Join our Field Trip Weekend
+          </Title>
+          <Text size="xl">
+          <b>Sign up</b> for the Conference in September:<br />
+          &rarr;
+                <a href="https://blog.hessdalen.org/field-trip-weekend" target="blog">
+                  Program and activites
+                </a><br />
+              </Text>
+              <Text size="md">
+            All activities including food, the
+            opening ceremony, presentations, panel discussion and 2 field trips:
+          </Text>
+          <Title order={3}>
+          4000 NOK - kids under 18: 1500 NOK
+          </Title>
+          <a href="https://book.stripe.com/8wMg0z1ZsbINgg09AA" target="fee">
+              <Button
+                radius="sm"
+                rightIcon={<IconPigMoney size="1rem" />}
+              >
+                Pay the Registration Fee
+              </Button>
+            </a> Secure your spot 
+          <Text size="md">
+          After you pay the registration fee you will receive an email with more details (how to book a cabin/hotel, what to do with transportation, etc)
+          </Text>
         </Grid.Col>
       </Grid>
       <Space h="sm" />
@@ -338,20 +365,10 @@ export function Welcome() {
         <Grid.Col sm={6}>
           <Text color="dimmed" size="sm">
             <b>
-              Check out Isaiah Photo's entertaining&nbsp;
-              <a href="https://youtu.be/AwYiEWLSDhA?si=nCe9dIxkhL3ndMkI" target="youtube">
-                video from Hessdalen
-              </a>.
+            We have had a number of technical problems after a number of power outages in the valley, 
+            but soon we'll finally have "live streaming" from one camera - to YouTube Live
             </b><br />
-            <b>
-              Want to join our&nbsp;
-              <Link href="/field-trip" passHref>
-                Field Trip Weekend
-              </Link>&nbsp; in 2024?
-            </b>
-
-            <br />
-            - Fred Pallesen, VP
+            - Fred Pallesen, CEO
           </Text>
         </Grid.Col>
       </Grid>
