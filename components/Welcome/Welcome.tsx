@@ -365,8 +365,9 @@ export function Welcome() {
         <Grid.Col sm={6}>
           <Text color="dimmed" size="sm">
             <b>
-            We have had a number of technical problems after a number of power outages in the valley, 
-            but soon we'll finally have "live streaming" from one camera - to YouTube Live
+            You can now view Hessdalen on&nbsp;
+            <a href="https://www.youtube.com/@ProjectHessdalen2023/streams" target="youtube">
+            YouTube Live</a>
             </b><br />
             - Fred Pallesen, CEO
           </Text>
