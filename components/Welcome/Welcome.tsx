@@ -9,6 +9,7 @@ import MainLayout from '../../pages/layout';
 import patchImg from '../../public/img/Patch_Project_Hessdalen.png';
 import ytLogo from '../../public/img/youtube.png';
 import underDS from '../../public/img/under-ds.jpg';
+import ftwImage from '../../public/img/FTW.png';
 import rrdigital from '../../public/img/RenRoros_digital_svart.svg';
 
 declare global {
@@ -88,28 +89,28 @@ export function Welcome() {
           <br />
           <Center>
 
-            <iframe
-              className="w-full aspect-video"
-              src="https://www.youtube.com/embed/7gLbO0hEBEI?si=dfxfQy_I9jeoRZF1"
-              title="Hunting Alien Techno-Signatures with Science / Massimo - Project Hessdalen"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            />
+          <Link href="https://blog.hessdalen.org/field-trip-weekend" target="ftw">
+              <Image src={ftwImage} alt="Field Trip Weekend" width={250} height={140} />
+            </Link>
 
           </Center>
           <Center>
             <br />
             <br />
-            <Text size="sm">
-              <b>
-                You can now study UAPs in a
-                8 week course:
+            <Text size="sm" align='center'>
+              <b><br />
+                Lectures by <br />
+                Erling P. Strand, <br />
+                Massimo Teodorani and <br />
+                Susan Demeter.
+              <br />
+              <a href="https://blog.hessdalen.org/field-trip-weekend" target="study">
+                Field Trip Weekend
+              </a>
               </b>
               <br />
-              <a href="https://www.societyforuapstudies.org/scientificinvestigationofuap" target="study">
-                The Scientific Investigation of UAP
-              </a>
-              <br />
-              by Dr. Massimo Teodorani
+              We will go out in the field <br />
+              and use equipment to look for UAPs
             </Text>
           </Center>
 
