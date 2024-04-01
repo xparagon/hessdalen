@@ -62,328 +62,61 @@ export function Welcome() {
           <Center>
             <Image src={patchImg} alt="Hessdalen logo" width={350} height={350} />
           </Center>
-          <br />
-          <Center>
-            <Text size="sm" align='center'>
-              <b>
-                <Link href="https://blog.hessdalen.org/start" target="blog">
-
-                  Read more
-                </Link>&nbsp;
-                about &quot;Operation Arctic Seal&quot;</b><br />
-              and the cigar-shaped object found<br />
-               in Lake Djupsjøen.<br />
-            </Text>
-          </Center>
-          <Center>
-            <Link href="https://blog.hessdalen.org/start" target="blog">
-              <Image src={underDS} alt="The Hessdalen UFO Project with Prof. Erling Strand" width={250} height={140} />
-            </Link>
-          </Center>
-          <Text size="sm" align='center'>
-            <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank">
-              Donate
-            </Link><br />
-            to help us to fund the retrieval attempt
-          </Text>
-          <br />
-          <Center>
-
-          <Link href="https://blog.hessdalen.org/field-trip-weekend" target="ftw">
-              <Image src={ftwImage} alt="Field Trip Weekend" width={250} height={140} />
-            </Link>
-
-          </Center>
-          <Center>
-            <br />
-            <br />
-            <Text size="sm" align='center'>
-              <b><br />
-                Lectures by <br />
-                Erling P. Strand, <br />
-                Massimo Teodorani and <br />
-                Susan Demeter.
-              <br />
-              <a href="https://blog.hessdalen.org/field-trip-weekend" target="study">
-                Field Trip Weekend
-              </a>
-              </b>
-              <br />
-              We will go out in the field <br />
-              and use equipment to look for UAPs
-            </Text>
-          </Center>
-
-
-
+          <Space h="sm" />
 
         </Grid.Col>
         <Grid.Col sm={6}>
 
 
-          <Title order={2}>
+          <Title order={1}>
             Project Hessdalen
           </Title>
           <Space h="sm" />
 
-          <Text tt="uppercase">Mission</Text>
+          <Title order={3} tt="uppercase">Mission</Title>
 
-          <Text size="md">
+          <Text size="xl">
             Collect high quality data on the Hessdalen Lights phenomenon and explain the science behind it.
           </Text>
           <Space h="sm" />
 
-          <Text tt="uppercase">Vision</Text>
-          <Text size="md">
+          <Title order={3} tt="uppercase">Vision</Title>
+          <Text size="xl">
             Discover unknown processes and laws of nature, find new sources of energy and potentially interact with unknown intelligences.
           </Text>
 
+ 
+
+          
           <Space h="sm" />
-          <Flex
-            mih={50}
-            gap="sm"
-            justify="flex-start"
-            align="center"
-            direction="row"
-            wrap="wrap"
-          >
-            <Link href="/manifesto" passHref>
-              <Button
-                radius="sm"
-                rightIcon={<IconFlag size="1rem" />}
-              >
-                Our Goal:
-              </Button>
-            </Link>
-            <Link href="https://old.hessdalen.org/" passHref target="_blank">
-              <Button
-                radius="sm"
-                variant="outline"
-                rightIcon={<IconExternalLink size="1rem" />}
-              >old.hessdalen.org
-              </Button>
-            </Link>
-
-            <Link href="/donate" passHref>
-              <Button
-                radius="sm"
-                rightIcon={<IconPigMoney size="1rem" />}
-              >
-                Donate
-              </Button>
-            </Link>
-
-          </Flex>
-          <Space h="sm" />
-
-          <Text size="sm">
-
-            Project Hessdalen, established in 1983,
-            is a&nbsp;
-            <a href="https://www.explorescu.org/partners" target="partners">
-              partner
-            </a>
-            &nbsp;in the Scientific Coalition for UAP Studies (
-            <a href="https://www.explorescu.org/" target="scu">
-              SCU
-            </a>
-            ).
-            <br />
-            <br />
-            UAPs, UFOs, USOs and OVNIs are now studied by:<br />
-            <div>
-              <Popover width={300} position="bottom" withArrow shadow="md">
-                <Popover.Target>
-                  <Text size="sm" style={{ cursor: 'pointer' }}>
-                    <IconArrowDownCircle color="blue" size={18} />  <b>US Department of Defense</b>: UAPTF/AOIMSG (since 2020)
-                  </Text>
-                </Popover.Target>
-                <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
-                  <Text size="sm">
-                    The Department of Defense established the UAPTF (2017) to improve its understanding of,
-                    and gain insight into, the nature and origins of UAPs. <br />
-                    AARO is the All-domain Anomaly Resolution Office, established in 2020.<br />
-                    as the successor of UAPTF.<br />
-                    <a href="https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/" target="defense">
-                      defense.gov
-                      <IconExternalLink size={14} />
-                    </a>
-                    &nbsp;
-                    <a href="https://en.wikipedia.org/wiki/All-domain_Anomaly_Resolution_Office" target="aaro">
-                      AARO
-                      <IconExternalLink size={14} />
-                    </a>
-
-                  </Text>
-                </Popover.Dropdown>
-              </Popover>
-            </div>
-            <div>
-              <Popover width={300} position="bottom" withArrow shadow="md">
-                <Popover.Target>
-                  <Text size="sm" style={{ cursor: 'pointer' }}>
-                    <IconArrowDownCircle color="blue" size={18} /> <b>Harvard & Smithsonian</b>: The Galileo Project (since 2021)
-                  </Text>
-                </Popover.Target>
-                <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
-                  <Text size="sm">
-                    To examine the possibility of extraterrestrial origin for unidentified aerial phenomena (UAP),
-                    by making observations of objects in and near Earth’s atmosphere<br />
-                    <a href="https://projects.iq.harvard.edu/galileo/project-goal" target="harvard">
-                      harvard.edu
-                      <IconExternalLink size={14} />
-                    </a>
-                  </Text>
-                </Popover.Dropdown>
-              </Popover>
-            </div>
-            <div>
-              <Popover width={300} position="bottom" withArrow shadow="md">
-                <Popover.Target>
-                  <Text size="sm" style={{ cursor: 'pointer' }}>
-                    <IconArrowDownCircle color="blue" size={18} /> <b>NASA</b>: Independent Study on UAPs (since 2022)
-                  </Text>
-                </Popover.Target>
-                <Popover.Dropdown sx={{ pointerEvents: 'none' }}>
-                  <Text size="sm">
-                    NASA has selected 16 individuals to participate in its
-                    independent study team on unidentified anomalous phenomena (UAP).<br />
-                    <a href="https://www.nasa.gov/feature/nasa-to-set-up-independent-study-on-unidentified-aerial-phenomena/" target="nasa">
-                      nasa.gov
-                      <IconExternalLink size={14} />
-                    </a>
-                  </Text>
-                </Popover.Dropdown>
-              </Popover>
-            </div>
-
-            <br />
-            The&nbsp;
-            <Link href="https://blog.hessdalen.org/" passHref>
-              <Button
-                radius="sm"
-              >
-                Blog
-              </Button>
-            </Link> has the latest news and updates.
-            <br />
-            <ul>
-              <li>
-                <a href="https://blog.hessdalen.org/developer" target="blog">
-                  Check our Developer Program.
-                </a>
-              </li>
-              <li>
-                <a href="https://blog.hessdalen.org/people" target="blog">
-                  Read about the people on the team.
-                </a>
-              </li>
-              <li>
-                <a href="https://blog.hessdalen.org/join" target="blog">
-                  How to become a member
-                </a>
-              </li>
-              <li>
-                <a href="https://blog.hessdalen.org/student" target="blog">
-                  Find your student assignment
-                </a>
-              </li>
-            </ul>
-          </Text>
-
-          <Space h="sm" />
-          <Divider my="sm" />
+       
+       
           
 
-          <Title order={2}>
-          Join our Field Trip Weekend
-          </Title>
-          <Text size="xl">
-          <b>Sign up</b> for the Conference in September:<br />
-          &rarr;
-                <a href="https://blog.hessdalen.org/field-trip-weekend" target="blog">
-                  Program and activites
-                </a><br />
-              </Text>
-              <Text size="md">
-            All activities including food, the
-            opening ceremony, presentations, panel discussion and 2 field trips:
-          </Text>
-          <Title order={3}>
-          4000 NOK - kids under 18: 1500 NOK
-          </Title>
-          <a href="https://book.stripe.com/8wMg0z1ZsbINgg09AA" target="fee">
-              <Button
-                radius="sm"
-                rightIcon={<IconPigMoney size="1rem" />}
-              >
-                Pay the Registration Fee
-              </Button>
-            </a> Secure your spot 
-          <Text size="md">
-          After you pay the registration fee you will receive an email with more details (how to book a cabin/hotel, what to do with transportation, etc)
-          </Text>
         </Grid.Col>
       </Grid>
       <Space h="sm" />
-      <Divider my="sm" />
-      <Space h="xs" />
       <Grid>
-        <Grid.Col sm={6}>
-          <Center>
-            <a href="https://youtu.be/X33k-RGenbo" target="youtube">
-              <Tooltip label="The Hessdalen UFO Project with Prof. Erling Strand">
-                <Image src={ytLogo} alt="The Hessdalen UFO Project with Prof. Erling Strand" width={84} height={84} />
-              </Tooltip>
-            </a>
-            <a href="https://youtu.be/7hBUk13yE8s" target="youtube">
-              <Tooltip label="Erling Strand recounts his journey">
-                <Image src={ytLogo} alt="Erling Strand recounts his journey" width={48} height={48} />
-              </Tooltip>
-            </a>
-            <a href="https://youtu.be/tPUcmVRMj_Y" target="youtube">
-              <Tooltip label="Jan Moen on Lehto Files">
-                <Image src={ytLogo} alt="Jan Moen on Lehto Files" width={48} height={48} />
-              </Tooltip>
-            </a>
-            <a href="https://youtu.be/sIZ9J2gy1qI" target="youtube">
-              <Tooltip label="Tomas Dahl on Lehto Files">
-                <Image src={ytLogo} alt="Tomas Dahl on Lehto Files" width={48} height={48} />
-              </Tooltip>
-            </a>
-            <a href="https://youtu.be/q_9DyxGceQo" target="youtube">
-              <Tooltip label="Erling Strand on Lehto Files">
-                <Image src={ytLogo} alt="Erling Strand on Lehto Files" width={48} height={48} />
-              </Tooltip>
-            </a>
-            <a href="https://youtu.be/K5XluLrIqCQ" target="youtube">
-              <Tooltip label="Clas Svahn on Lehto Files">
-                <Image src={ytLogo} alt="Clas Svahn on Lehto Files" width={48} height={48} />
-              </Tooltip>
-            </a>
-          </Center>
-        </Grid.Col>
-        <Grid.Col sm={6}>
-          <Text color="dimmed" size="sm">
-            <b>
-            You can now view Hessdalen on&nbsp;
-            <a href="https://www.youtube.com/@ProjectHessdalen2023/streams" target="youtube">
-            YouTube Live</a>
-            </b><br />
-            - Fred Pallesen, CEO
-          </Text>
-        </Grid.Col>
-      </Grid>
+      <Grid.Col span={4}>
+      <a href="https://sites.google.com/hessdalen.org/web"  ><Button fullWidth size="xl" radius="md" >web.hessdalen.org</Button></a>
+      </Grid.Col>
+      <Grid.Col span={4}>
+      <a href="https://sites.google.com/hessdalen.org/blog" ><Button fullWidth size="xl" radius="md" >blog.hessdalen.org</Button></a>
 
+      </Grid.Col>
+      <Grid.Col span={4}>
+      <a href="https://old.hessdalen.org/"><Button fullWidth size="xl" radius="md" >old.hessdalen.org</Button></a>
+      </Grid.Col>
+    </Grid>
       <Space h="xs" />
-      <Divider my="sm" />
+   
+
       <Space h="sm" />
       <Text ta="center" c="blue" size={48}>
         Hessdalen is a hotspot for <br />unexplained arial phenomena.
       </Text>
       <Text ta="center" size={24}>
-        These mesmerizing objects are undeniably real,
-        and their presence shows no signs of fading away.
+        Their presence shows no signs of fading away.
       </Text>
       <Space h="xl" />
 
@@ -521,17 +254,7 @@ export function Welcome() {
           </div>
 
           <Space h="md" />
-          <Flex
-            mih={50}
-            gap="sm"
-            justify="flex-start"
-            align="center"
-            direction="row"
-            wrap="wrap"
-          >
-            <Link href="/ufo-research" passHref><Button radius="sm" variant="outline">Research</Button></Link>
-            <Link href="/ufo-reports" passHref><Button radius="sm" variant="outline">Reports</Button></Link>
-          </Flex>
+          
         </Grid.Col>
       </Grid>
       <Divider my="sm" />
@@ -579,533 +302,33 @@ export function Welcome() {
         </Text>
       </div>
 
-      <Space h="sm" />
-      <Divider my="sm" />
-      <Space h="sm" />
-      <Text ta="center" c="orange" size={48}>
-        24/7 Automatic Anomaly Surveillance
-      </Text>
-      <Text ta="center" size={24}>
-        When the phenomena appears the system will <b>automatically</b> start recording.<br />
-        We are working to integrate live streaming and mobile notifications for members.
-      </Text>
-      <Space h="xl" />
 
-
-      <Grid>
-        <Grid.Col sm={6}>
-          <Flex
-            mih={500}
-            justify="center"
-            align="center"
-            direction="column"
-          >
-            <Image src={imgEquipment} alt="" width={450} height={450} />
-            <Grid pt={4}>
-              <Grid.Col span={4}>
-                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-2.jpg')}>
-                  1
-                </Button>
-              </Grid.Col>
-              <Grid.Col span={4}>
-                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-9.jpg')}>
-                  2
-                </Button>
-              </Grid.Col>
-
-              <Grid.Col span={4}>
-                <Button variant="outline" compact onClick={() => imgEquipmentSet('/img/ph-11.jpg')}>
-                  3
-                </Button>
-              </Grid.Col>
-            </Grid>
-
-          </Flex>
-        </Grid.Col>
-        <Grid.Col sm={6}>
-          <Text tt="uppercase">The Equipment</Text>
-          <div onMouseEnter={() => imgEquipmentSet('/img/ph-2.jpg')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              The Blue Box
-            </Title>
-
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                With all the Equipment to capture the Phenomena.
-              </Text>
-            </Flex>
-            <Text color="dimmed" size="sm">
-              Live camera. Alarm system. Magnetometer.
-              Radar. Spectrum Analyzer. Two weather stations.
-            </Text>
-          </div>
-          <Space h="md" />
-          <div onMouseEnter={() => imgEquipmentSet('/img/ph-9.jpg')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              Live Streaming
-            </Title>
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                3 x  Novus NVC-GDN5801C-2
-              </Text>
-            </Flex>
-
-            <Text color="dimmed" size="sm">
-              There are two cameras directed towards the southwest
-              and one camera to the northwest.<br />
-              <i>We want to upgrade our cameras!</i>
-            </Text>
-          </div>
-          <Space h="md" />
-
-          <div onMouseEnter={() => imgEquipmentSet('/img/ph-11.jpg')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              Goal: Triangulate and follow
-            </Title>
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                a scientific endeavour
-              </Text>
-            </Flex>
-            <Text color="dimmed" size="sm">
-              we need to get all of it - optical, radar,
-              thermal, wide band spectrum analyzer, magnetometer,
-              all correlated in a tracking mode configuration
-            </Text>
-          </div>
-          <Space h="md" />
-          <Flex
-            mih={50}
-            gap="sm"
-            justify="flex-start"
-            align="center"
-            direction="row"
-            wrap="wrap"
-          >
-            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Blue Box</Button></Link>
-            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Live streaming</Button></Link>
-          </Flex>
-        </Grid.Col>
-      </Grid>
 
       <Space h="sm" />
       <Divider my="sm" />
-
-      <Space h="sm" />
-      <Text ta="center" c="grape" size={48}>
-        A new international research initiative
-      </Text>
-      <Text ta="center" size={24}>
-        "The Hessdalen phenomenon represents
-        the most important laboratory <b>in the world</b> to study
-        recurrent anomalous aerial phenomena”<br />
-        - Massimo Teodorani
-
-      </Text>
-      <Space h="xl" />
-
       <Grid>
-        <Grid.Col sm={6}>
-          <Flex
-            mih={500}
-            justify="center"
-            align="center"
-            direction="column"
-          >
-            <Image src={imgTeam} alt="" width={450} height={450} />
-            <Grid pt={4}>
-              <Grid.Col span={4}>
-                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-es.jpeg')}>
-                  1
-                </Button>
-              </Grid.Col>
-              <Grid.Col span={4}>
-                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-mt-ai.png')}>
-                  2
-                </Button>
-              </Grid.Col>
+      <Grid.Col span={4}>
+      <a href="https://sites.google.com/hessdalen.org/web"  ><Button fullWidth size="xl" radius="md" >web.hessdalen.org</Button></a>
+      </Grid.Col>
+      <Grid.Col span={4}>
+      <a href="https://sites.google.com/hessdalen.org/blog" ><Button fullWidth size="xl" radius="md" >blog.hessdalen.org</Button></a>
 
-              <Grid.Col span={4}>
-                <Button variant="outline" compact onClick={() => imgTeamSet('/img/ph-team.jpg')}>
-                  3
-                </Button>
-              </Grid.Col>
-            </Grid>
-
-          </Flex>
-        </Grid.Col>
-        <Grid.Col sm={6}>
-          <Text tt="uppercase">The Research Team</Text>
-          <div onMouseEnter={() => imgTeamSet('/img/ph-es.jpeg')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              Erling P. Strand&nbsp;&nbsp;
-              <Link href="https://www.erling-strand.no/english/" passHref target="_blank">
-                <Button radius="sm" variant="subtle" compact leftIcon={<IconExternalLink size="1rem" />} />
-              </Link>
-            </Title>
-
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                The President of Project Hessdalen
-              </Text>
-            </Flex>
-            <Text color="dimmed" size="sm">
-              Co-founded and led the Hessdalen project in the early 1980s.
-              Through field investigations, monitoring systems, and data collection,
-              he applies scientific methods and advanced equipment to study the nature and
-              characteristics of the Hessdalen lights.
-            </Text>
-          </div>
-          <Space h="md" />
-          <div onMouseEnter={() => imgTeamSet('/img/ph-mt-ai.png')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              Massimo Teodorani&nbsp;&nbsp;
-              <Link href="https://massimoteodorani.com/" passHref target="_blank">
-                <Button radius="sm" variant="subtle" compact leftIcon={<IconExternalLink size="1rem" />} />
-              </Link>
-            </Title>
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                Ph.D. in Astrophysics
-              </Text>
-            </Flex>
-
-            <Text color="dimmed" size="sm">
-              Scientific consultant in Project Hessdalen<br />
-              An astrophysicist, specializes in atmospheric and plasma physics.
-              His research focuses on the unique light emissions observed in Hessdalen,
-              resulting in scientific publications and presentations at conferences.
-            </Text>
-          </div>
-          <Space h="md" />
-
-          <div onMouseEnter={() => imgTeamSet('/img/ph-team.jpg')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              The Team
-            </Title>
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                UFO witnesses, engineers, programmers, and more.
-              </Text>
-            </Flex>
-            <Text color="dimmed" size="sm">
-              Established in the summer of 1983, Project Hessdalen has seen the
-              involvement of some team members since its inception.
-              Now, a new generation of researchers, engineers, software developers,
-              and community builders are joining the team, further strengthening the project goals.
-
-            </Text>
-          </div>
-          <Space h="md" />
-          <Flex
-            mih={50}
-            gap="sm"
-            justify="flex-start"
-            align="center"
-            direction="row"
-            wrap="wrap"
-          >
-            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">People</Button></Link>
-            <Link href="/work-in-progress" passHref><Button radius="sm" variant="outline">Teams</Button></Link>
-          </Flex>
-        </Grid.Col>
-      </Grid>
-
+      </Grid.Col>
+      <Grid.Col span={4}>
+      <a href="https://old.hessdalen.org/" ><Button fullWidth size="xl" radius="md" >old.hessdalen.org</Button></a>
+      </Grid.Col>
+    </Grid>
       <Space h="sm" />
-      <Divider my="sm" />
-
       <Space h="sm" />
-      <Text ta="center" c="pink" size={48}>
-        The Hessdalen Phenomenon is unique<br /> - help us!
+        <Text ta="center" size="xs">
+          creative volunteers / scientific inquiries / cutting edge technologies / youth empowerment
+        </Text>
 
-      </Text>
-      <Text ta="center" size={24}>
-        Donate or become a member to help us solve this enigma that could lead to new discoveries within science, energy and humanity itself.
-      </Text>
       <Space h="xl" />
-
-      <Grid>
-        <Grid.Col sm={6}>
-          <Flex
-            mih={500}
-            justify="center"
-            align="center"
-            direction="column"
-          >
-            <Image src={imgCommunity} alt="" width={450} height={450} />
-            <Grid pt={4}>
-              <Grid.Col span={6}>
-                <Button variant="outline" compact onClick={() => imgCommunitySet('/img/pg-discord.jpg')}>
-                  1
-                </Button>
-              </Grid.Col>
-              <Grid.Col span={6}>
-                <Button variant="outline" compact onClick={() => imgCommunitySet('/img/ph-ko-fi.jpg')}>
-                  2
-                </Button>
-              </Grid.Col>
-
-            </Grid>
-
-          </Flex>
-        </Grid.Col>
-        <Grid.Col sm={6}>
-          <Text tt="uppercase">The Community</Text>
-          <div onMouseEnter={() => imgCommunitySet('/img/pg-discord.jpg')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              Discord
-            </Title>
-
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                Always free to subscribe
-              </Text>
-            </Flex>
-            <Text color="dimmed" size="sm">
-              Project Hessdalen is an open Discord community server.<br />
-              Want to ask questions to the researchers? Join the Discord server.
-
-            </Text>
-          </div>
-          <Space h="md" />
-          <JoinDiscord />
-          <Space h="md" />
-          <div onMouseEnter={() => imgCommunitySet('/img/ph-ko-fi.jpg')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              Membership
-            </Title>
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                Help us fund the project
-              </Text>
-            </Flex>
-
-            <Text color="dimmed" size="sm">
-
-              <b>5 Euro per month</b><br />
-              Access to the member area in discord.<br />
-              Access to Stage events for members only.<br />
-              With rights as specified in the articles of association.
-              <br />
-              <br />
-              <i>
-                We plan to enable <b>mobile notifications</b> every time
-                the AI detects an anomaly - then you could access the live streaming cameras
-                and see what is going on. These notifications will be sent to members only.
-              </i>
-            </Text>
-            <Space h="sm" />
-
-            <Flex
-              mih={50}
-              gap="sm"
-              justify="flex-start"
-              align="center"
-              direction="row"
-              wrap="wrap"
-            >
-              <Link href="https://ko-fi.com/projecthessdalen" passHref target="_blank">
-                <Button
-                  radius="sm"
-                  rightIcon={<IconExternalLink size="1rem" />}
-                >Membership
-                </Button>
-              </Link>
-              <Link href="/membership" passHref><Button radius="sm" variant="outline">How and why ...</Button></Link>
-            </Flex>
-
-
-          </div>
-
-          <Space h="md" />
-
-        </Grid.Col>
-      </Grid>
-
-      <Space h="sm" />
-      <Divider my="sm" />
-
-      <Space h="sm" />
-      <Text ta="center" size={48}>
-        Be part of the solution
-      </Text>
-      <Text ta="center" size={24}>
-
-        Join us in our mission to solve the ultimate cosmic puzzle!
-
-      </Text>
+      <Text ta="center" size="md">
+          creative volunteers / scientific inquiries / cutting edge technologies / youth empowerment
+        </Text>
       <Space h="xl" />
-
-      <Grid>
-        <Grid.Col sm={6}>
-          <Flex
-            mih={500}
-            justify="center"
-            align="center"
-            direction="column"
-          >
-            <Image src={imgAction} alt="" width={450} height={450} />
-            <Grid pt={4}>
-              <Grid.Col span={6}>
-                <Button variant="outline" compact onClick={() => imgActionSet('/img/ph-field.jpg')}>
-                  1
-                </Button>
-              </Grid.Col>
-              <Grid.Col span={6}>
-                <Button variant="outline" compact onClick={() => imgActionSet('/img/ph-flares.jpg')}>
-                  2
-                </Button>
-              </Grid.Col>
-            </Grid>
-          </Flex>
-        </Grid.Col>
-        <Grid.Col sm={6}>
-          <Text tt="uppercase">The Action</Text>
-
-          <div onMouseEnter={() => imgActionSet('/img/ph-field.jpg')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              Field Trip Weekend:<br />September 6-8, 2024
-            </Title>
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                Observe, investigate, and experience
-              </Text>
-            </Flex>
-            <Text color="dimmed" size="sm">
-              Workshop on how to use the UAP detection equipment in the field.
-              Late night field work on two known hotspot for
-              unexplained arial phenomena in the valley.
-              Guided tours and eye-witnesses telling about their sightings of UFOs.
-              Discussions around the campfire.
-              And lectures by Erling Strand and Massimo Teodorani.<br />
-              <b>Now is your chance to join! - limited to 24 participants</b>
-            </Text>
-            <Space h="sm" />
-
-            <Link href="/field-trip" passHref><Button radius="sm" variant="outline">Event details</Button></Link>
-
-
-          </div>
-          <Space h="md" />
-          <div onMouseEnter={() => imgActionSet('/img/ph-flares.jpg')} style={{ cursor: 'pointer' }}>
-
-            <Title order={2}>
-              Donate
-            </Title>
-            <Flex
-              mih={32}
-              gap="xs"
-              justify="flex-start"
-              align="center"
-              direction="row"
-            >
-              <IconEye size={24} />
-              <Text>
-                Boost the project!
-              </Text>
-            </Flex>
-            <Text color="dimmed" size="sm">
-              Your substantial donation can shape the future of our research.
-              With your support, we'll acquire advanced equipment, conduct field investigations,
-              collaborate with experts, and analyze crucial data.<br />
-            </Text>
-          </div>
-          <Flex
-            mih={50}
-            gap="sm"
-            justify="flex-start"
-            align="center"
-            direction="row"
-            wrap="wrap"
-          >
-
-
-            <Link href="/donate" passHref target="_blank">
-              <Button
-                radius="sm"
-                variant="outline"
-                rightIcon={<IconPigMoney size="1rem" />}
-              >
-                Donate
-              </Button>
-            </Link>
-
-          </Flex>
-        </Grid.Col>
-      </Grid>
-
       <Space h="xl" />
 
 
