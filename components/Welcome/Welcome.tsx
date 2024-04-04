@@ -1,6 +1,6 @@
 import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Popover, Tooltip, Group } from '@mantine/core';
 import { useEffect, useState } from 'react';
-import { IconEye, IconArrowDownCircle, IconExternalLink, IconPigMoney, IconFlag } from '@tabler/icons';
+import { IconEye, IconArrowDownCircle, IconExternalLink, IconPhone, IconMail } from '@tabler/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import JoinDiscord from '../JoinDiscord/JoinDiscord';
@@ -73,14 +73,14 @@ export function Welcome() {
           </Title>
           <Space h="sm" />
 
-          <Title order={3} tt="uppercase">Mission</Title>
+          <Title order={3} tt="uppercase">Mission:</Title>
 
           <Text size="xl">
             Collect high quality data on the Hessdalen Lights phenomenon and explain the science behind it.
           </Text>
           <Space h="sm" />
 
-          <Title order={3} tt="uppercase">Vision</Title>
+          <Title order={3} tt="uppercase">Vision:</Title>
           <Text size="xl">
             Discover unknown processes and laws of nature, find new sources of energy and potentially interact with unknown intelligences.
           </Text>
@@ -321,12 +321,17 @@ export function Welcome() {
       <Space h="sm" />
       <Space h="sm" />
         <Text ta="center" size="xs">
-          creative volunteers / scientific inquiries / cutting edge technologies / youth empowerment
+          
         </Text>
 
       <Space h="xl" />
       <Text ta="center" size="md">
-          creative volunteers / scientific inquiries / cutting edge technologies / youth empowerment
+      <a href="mailto:admin@hessdalen.org" ><Button  variant="outline" size="sm" radius="md" >
+      <IconMail size={24} />&nbsp; admin@hessdalen.org</Button></a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="tel:+4794086203" ><Button  variant="outline" size="sm" radius="md" >
+      <IconPhone size={24} />&nbsp; 
+        +47 94086203</Button></a>
         </Text>
       <Space h="xl" />
       <Space h="xl" />
