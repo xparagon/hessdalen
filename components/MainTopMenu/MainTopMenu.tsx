@@ -1,4 +1,4 @@
-import { Group, Button, Stack, Box, CSSObject, Burger, Drawer, Space, MediaQuery } from '@mantine/core';
+import { Group, Button, Stack, Box, CSSObject, Burger, Drawer, Space, MediaQuery, Grid } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconListSearch } from '@tabler/icons-react';
 import Link from 'next/link';
@@ -29,7 +29,6 @@ export default function MainTopMenu() {
                         </div>
                         <div>
                             <Link href="/ufo-reporting" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
-                            <Link href="/ufo-reports" passHref><Button radius="sm" compact variant="subtle">Reports</Button></Link>
                             <Link href="/live-streaming" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
                             <Link href="/ufo-research" passHref><Button radius="sm" compact variant="subtle">Research</Button></Link>
                         </div>
@@ -72,17 +71,26 @@ export default function MainTopMenu() {
 
                                 <Stack align="flex-start" spacing="xs">
                                     <Link href="/ufo-reporting" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
-                                    <Link href="/ufo-reports" passHref><Button radius="sm" compact variant="subtle">UFO reports</Button></Link>
                                     <Link href="/live-streaming" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
                                     <Link href="/ufo-research" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
-                                    <Space h="xl" />
-                                    <Link href="/sitemap" passHref>
-                                        <Button color="gray" leftIcon={<IconListSearch size={18} stroke={1.4} />} variant="subtle" compact>
-                                            Sitemap
-                                        </Button>
-                                    </Link>
-                                    <JoinDiscord />
+                                   
+
                                 </Stack>
+                                    <Space h="xl" />
+                                <Grid>
+      <Grid.Col span={4}>
+      <a href="https://sites.google.com/hessdalen.org/web"  ><Button fullWidth size="md" radius="sm" >web</Button></a>
+      </Grid.Col>
+      <Grid.Col span={4}>
+      <a href="https://sites.google.com/hessdalen.org/blog" ><Button fullWidth size="md" radius="sm" >blog</Button></a>
+
+      </Grid.Col>
+      <Grid.Col span={4}>
+      <a href="https://old.hessdalen.org/"><Button fullWidth size="md" radius="sm" >old</Button></a>
+      </Grid.Col>
+    </Grid>
+                                <Space h="xl" />
+                                <JoinDiscord />
                             </Drawer.Body>
                         </Drawer.Content>
                     </Drawer.Root>
