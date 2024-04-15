@@ -55,8 +55,11 @@ export default function LiveStreaming() {
                 <h2><a href="https://www.youtube.com/@ProjectHessdalen2023/streams" target="live">Live Camera</a></h2>
             </Center>
             <Center>
-                <iframe title="Cam1" src="https://www.youtube.com/embed/Mzk0ddJYGy4?si=6onxWFK3RW8kAyvd" height="720" width="1280" name="HD CAM 2">Live Stream Camera 1</iframe>
+                <h3><a href="https://www.youtube.com/@ProjectHessdalen2023/streams" target="live">youtube.com/@ProjectHessdalen2023/streams</a></h3>
             </Center>
+            {/* <Center>
+                <iframe title="Cam1" src="https://www.youtube.com/embed/Mzk0ddJYGy4?si=6onxWFK3RW8kAyvd" height="720" width="1280" name="HD CAM 2">Live Stream Camera 1</iframe>
+            </Center> */}
             <Space h="lg" />
 
         </>
