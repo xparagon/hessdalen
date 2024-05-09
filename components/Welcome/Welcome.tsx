@@ -1,16 +1,12 @@
-import { Title, Text, Space, Grid, Divider, Center, Button, Flex, Popover, Tooltip, Group } from '@mantine/core';
+import { Title, Text, Space, Grid, Divider, Center, Button, Flex } from '@mantine/core';
 import { useEffect, useState } from 'react';
-import { IconEye, IconArrowDownCircle, IconExternalLink, IconPhone, IconMail } from '@tabler/icons';
+import { IconEye, IconPhone, IconMail } from '@tabler/icons';
 import Image from 'next/image';
-import Link from 'next/link';
-import JoinDiscord from '../JoinDiscord/JoinDiscord';
 import MainLayout from '../../pages/layout';
 
 import patchImg from '../../public/img/Patch_Project_Hessdalen.png';
-import ytLogo from '../../public/img/youtube.png';
-import underDS from '../../public/img/under-ds.jpg';
-import ftwImage from '../../public/img/FTW.png';
 import rrdigital from '../../public/img/RenRoros_digital_svart.svg';
+import ftwAd from '../../public/img/ad-netboard-1-en.png';
 
 declare global {
   interface Window {
@@ -115,8 +111,17 @@ export function Welcome() {
       Beatriz Villarroel
       </Title>
       </Grid.Col>
-
       </Grid>
+
+      <Space h="xl" />
+      <Center>
+      <a href="https://sites.google.com/hessdalen.org/blog/field-trip-weekend">
+      <Image src={ftwAd} alt="Field Trip Weekend" width={580} height={400} />
+      </a>
+      </Center>
+
+
+
       <Space h="xl" />
 
       <Grid>
