@@ -83,29 +83,69 @@ export function Welcome() {
           <Title order={3} tt="uppercase">Vision:</Title>
           <Text size="xl">
             Discover unknown processes and laws of nature, find new sources of energy and potentially interact with unknown intelligences.
-          </Text>
-
- 
-
-          
+          </Text>          
           <Space h="sm" />
-       
-       
-          
-
         </Grid.Col>
       </Grid>
+
       <Space h="sm" />
+      <a href="https://sites.google.com/hessdalen.org/blog/field-trip-weekend"  ><Button  color="red" fullWidth size="xl" radius="md" >Field Trip Weekend &amp; Conference</Button></a>
+      <Space h="sm" />
+      <Title order={2}>
+            Speakers at the Conference
+          </Title>
+      <Grid>
+      <Grid.Col span={3}>
+      <Title order={4}>
+      Erling P. Strand
+      </Title>
+      </Grid.Col>
+      <Grid.Col span={3}>
+      <Title order={4}>
+      Massimo Teodorani
+      </Title>
+      </Grid.Col>
+      <Grid.Col span={3}>
+      <Title order={4}>
+      Susan Demeter
+      </Title>
+      </Grid.Col>
+      <Grid.Col span={3}>
+      <Title order={4}>
+      Beatriz Villarroel
+      </Title>
+      </Grid.Col>
+
+      </Grid>
+      <Space h="xl" />
+
       <Grid>
       <Grid.Col span={4}>
-      <a href="https://sites.google.com/hessdalen.org/web"  ><Button fullWidth size="xl" radius="md" >web.hessdalen.org</Button></a>
+      <a href="https://sites.google.com/hessdalen.org/web"  ><Button fullWidth size="xl" radius="md" >web</Button></a>
+      <ul>
+      <li>What we do</li>
+      <li>Our automated monitoring systems</li>
+      <li>Events</li>
+      <li>The team</li>
+      </ul>
       </Grid.Col>
       <Grid.Col span={4}>
-      <a href="https://sites.google.com/hessdalen.org/blog" ><Button fullWidth size="xl" radius="md" >blog.hessdalen.org</Button></a>
-
+      <a href="https://sites.google.com/hessdalen.org/blog" ><Button fullWidth size="xl" radius="md" >blog</Button></a>
+      <ul>
+      <li>Do you want to help?</li>
+      <li>Where you find us on YouTube</li>
+      <li>Field Trip Weekend</li>
+      <li>Developer Program</li>
+      </ul>
       </Grid.Col>
       <Grid.Col span={4}>
-      <a href="https://old.hessdalen.org/"><Button fullWidth size="xl" radius="md" >old.hessdalen.org</Button></a>
+      <a href="https://old.hessdalen.org/"><Button fullWidth size="xl" radius="md" >old</Button></a>
+      <ul>
+      <li>Witness observations</li>
+      <li>Alarm pictures</li>
+      <li>Scientific articles</li>
+      <li>History of Project Hessdalen</li>
+      </ul>
       </Grid.Col>
     </Grid>
       <Space h="xs" />
@@ -308,14 +348,14 @@ export function Welcome() {
       <Divider my="sm" />
       <Grid>
       <Grid.Col span={4}>
-      <a href="https://sites.google.com/hessdalen.org/web"  ><Button fullWidth size="xl" radius="md" >web.hessdalen.org</Button></a>
+      <a href="https://sites.google.com/hessdalen.org/web"  ><Button fullWidth size="xl" radius="md" >web</Button></a>
       </Grid.Col>
       <Grid.Col span={4}>
-      <a href="https://sites.google.com/hessdalen.org/blog" ><Button fullWidth size="xl" radius="md" >blog.hessdalen.org</Button></a>
+      <a href="https://sites.google.com/hessdalen.org/blog" ><Button fullWidth size="xl" radius="md" >blog</Button></a>
 
       </Grid.Col>
       <Grid.Col span={4}>
-      <a href="https://old.hessdalen.org/" ><Button fullWidth size="xl" radius="md" >old.hessdalen.org</Button></a>
+      <a href="https://old.hessdalen.org/" ><Button fullWidth size="xl" radius="md" >old</Button></a>
       </Grid.Col>
     </Grid>
       <Space h="sm" />
