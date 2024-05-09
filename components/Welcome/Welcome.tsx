@@ -6,7 +6,7 @@ import MainLayout from '../../pages/layout';
 
 import patchImg from '../../public/img/Patch_Project_Hessdalen.png';
 import rrdigital from '../../public/img/RenRoros_digital_svart.svg';
-import ftwAd from '../../public/img/ad-netboard-1-en.png';
+import ftwAd from '../../public/img/ad-netboard-1-en-min.png';
 
 declare global {
   interface Window {
