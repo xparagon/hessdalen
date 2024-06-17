@@ -86,35 +86,7 @@ export function Welcome() {
 
       <Space h="sm" />
       <a href="https://sites.google.com/hessdalen.org/blog/field-trip-weekend"  ><Button color="red" fullWidth size="xl" radius="md" >Field Trip Weekend &amp; Conference</Button></a>
-      <Space h="sm" />
-      <Center>
-        <Title order={2}>
-          Speakers at the Conference
-        </Title>
-      </Center>
-      <Grid>
-        <Grid.Col span={3}><Center>
-          <Title order={4}>
-            Erling P. Strand
-          </Title></Center>
-        </Grid.Col>
-        <Grid.Col span={3}><Center>
-          <Title order={4}>
-            Massimo Teodorani
-          </Title></Center>
-        </Grid.Col>
-        <Grid.Col span={3}><Center>
-          <Title order={4}>
-            Susan Demeter
-          </Title></Center>
-        </Grid.Col>
-        <Grid.Col span={3}><Center>
-          <Title order={4}>
-            Beatriz Villarroel
-          </Title></Center>
-        </Grid.Col>
-      </Grid>
-
+     
       <Space h="xl" />
       <Center>
         <a href="https://sites.google.com/hessdalen.org/blog/field-trip-weekend">
