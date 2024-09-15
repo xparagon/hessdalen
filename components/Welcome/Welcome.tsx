@@ -97,11 +97,23 @@ export function Welcome() {
       </Center>
       <Space h="xl" />
       <Center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/MhZHpe9-I_c?si=m4lYCPpMEFre-duy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/MhZHpe9-I_c?si=m4lYCPpMEFre-duy"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        />
       </Center>
       <Space h="xl" />
       <Center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ha-d3BBBjdk?si=nUEdWQFvkzDU3E4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Ha-d3BBBjdk?si=nUEdWQFvkzDU3E4Q"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        />
       </Center>
       <Space h="xl" />
       <Center>
