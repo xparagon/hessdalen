@@ -85,16 +85,44 @@ export function Welcome() {
       </Grid>
 
       <Space h="sm" />
-      <a href="https://sites.google.com/hessdalen.org/blog/field-trip-weekend"  ><Button color="red" fullWidth size="xl" radius="md" >Field Trip Weekend &amp; Conference</Button></a>
-     
-      <Space h="xl" />
       <Center>
-        <a href="https://sites.google.com/hessdalen.org/blog/field-trip-weekend">
-          <Image src={ftwAd} alt="Field Trip Weekend" width={580} height={400} />
+        <Title order={2}>
+          Field Trip Weekend &amp; Conference
+        </Title>
+      </Center>
+      <Center>
+        <a href="https://sites.google.com/hessdalen.org/blog/field-trip-weekend"  >
+          <Button color="red" size="xl" radius="md" >Conference summary report</Button>
         </a>
       </Center>
-
-
+      <Space h="xl" />
+      <Center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MhZHpe9-I_c?si=m4lYCPpMEFre-duy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Center>
+      <Space h="xl" />
+      <Center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ha-d3BBBjdk?si=nUEdWQFvkzDU3E4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Center>
+      <Space h="xl" />
+      <Center>
+        <Title order={3}>
+          Support us
+        </Title>
+      </Center>
+      <Center>
+        <Text size="xl">
+          <a href="http://discord.hessdalen.org">Subscribe</a> /&nbsp;
+          <a href="https://sites.google.com/hessdalen.org/web/support-us">Donate</a> /&nbsp;
+          <a href="https://ko-fi.com/projecthessdalen">Become a member *</a> /&nbsp;
+          <a href="https://sites.google.com/hessdalen.org/blog/join">Join the team</a>
+        </Text>
+      </Center>
+      <Center>
+        <Text size="sm" align="center">
+          * The membership is 5€ / month and gives you access to the latest news and events on discord.<br />
+          We are a non-profit organization and we are dependent on donations and memberships to keep the project running.
+        </Text>
+      </Center>
 
       <Space h="xl" />
 
@@ -104,7 +132,7 @@ export function Welcome() {
           <ul>
             <li>What we do</li>
             <li>Our automated monitoring systems</li>
-            <li>Events</li>
+            <li><a href="https://events.hessdalen.org">Events</a></li>
             <li>The team</li>
           </ul>
         </Grid.Col>
