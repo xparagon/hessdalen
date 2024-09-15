@@ -154,13 +154,13 @@ export function Welcome() {
             <li>Do you want to help?</li>
             <li>Where you find us on YouTube</li>
             <li>Field Trip Weekend</li>
-            <li>Developer Program</li>
+            <li><a href="https://developer.hessdalen.org">Developer Program</a></li>
           </ul>
         </Grid.Col>
         <Grid.Col span={4}>
           <a href="https://old.hessdalen.org/"><Button fullWidth size="xl" radius="md" >old</Button></a>
           <ul>
-            <li>Witness observations</li>
+            <li><a href="https://docs.google.com/document/d/1NqFD7Q-Cv_mi2tB05waULUcNaNnjcUNBFP8-ZNvMCbQ/edit#heading=h.yqdgy49xqfy6">Witness observations</a></li>
             <li>Alarm pictures</li>
             <li>Scientific articles</li>
             <li>History of Project Hessdalen</li>
