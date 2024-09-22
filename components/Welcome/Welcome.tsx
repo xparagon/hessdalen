@@ -6,7 +6,6 @@ import MainLayout from '../../pages/layout';
 
 import patchImg from '../../public/img/Patch_Project_Hessdalen.png';
 import rrdigital from '../../public/img/RenRoros_digital_svart.svg';
-import ftwAd from '../../public/img/ad-netboard-1-en-min.png';
 
 declare global {
   interface Window {
@@ -21,10 +20,6 @@ export function Welcome() {
   // const { classes } = useStyles();
 
   const [imgUfo, imgUfoSet] = useState('/img/type4.jpg');
-  const [imgEquipment, imgEquipmentSet] = useState('/img/ph-2.jpg');
-  const [imgTeam, imgTeamSet] = useState('/img/ph-es.jpeg');
-  const [imgCommunity, imgCommunitySet] = useState('/img/pg-discord.jpg');
-  const [imgAction, imgActionSet] = useState('/img/ph-field.jpg');
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -95,26 +90,7 @@ export function Welcome() {
           <Button color="red" size="xl" radius="md" >Conference summary report</Button>
         </a>
       </Center>
-      <Space h="xl" />
-      <Center>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/MhZHpe9-I_c?si=m4lYCPpMEFre-duy"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        />
-      </Center>
-      <Space h="xl" />
-      <Center>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Ha-d3BBBjdk?si=nUEdWQFvkzDU3E4Q"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        />
-      </Center>
+
       <Space h="xl" />
       <Center>
         <Title order={3}>
