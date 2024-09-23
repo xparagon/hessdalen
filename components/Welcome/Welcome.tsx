@@ -90,6 +90,22 @@ export function Welcome() {
           <Button color="red" size="xl" radius="md" >Conference summary report</Button>
         </a>
       </Center>
+      <Space h="sm" />
+      <Space h="xl" />
+      <Center>
+        <a href="https://events.hessdalen.org/"  >
+          <Button size="xl" radius="md" >events.hessdalen.org </Button>
+        </a>
+
+      </Center>
+      <Center>
+        <Text size="xl">
+          Next event: What did we learn from the Field Trip & Conference
+        </Text>
+      </Center>
+
+
+
 
       <Space h="xl" />
       <Center>
