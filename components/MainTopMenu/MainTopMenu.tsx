@@ -30,7 +30,6 @@ export default function MainTopMenu() {
                         <div>
                             <Link href="/ufo-reporting" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
                             <Link href="/live-streaming" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
-                            <Link href="/ufo-research" passHref><Button radius="sm" compact variant="subtle">Research</Button></Link>
                         </div>
                         <div>
                             <Group>
@@ -72,31 +71,26 @@ export default function MainTopMenu() {
                                 <Stack align="flex-start" spacing="xs">
                                     <Link href="/ufo-reporting" passHref><Button radius="sm" compact variant="subtle">Have you seen a UFO?</Button></Link>
                                     <Link href="/live-streaming" passHref><Button radius="sm" compact variant="subtle">Live streaming</Button></Link>
-                                    <Link href="/ufo-research" passHref><Button radius="sm" compact variant="subtle">UFO research</Button></Link>
-                                   
-
                                 </Stack>
-                                    <Space h="xl" />
+                                <Space h="xl" />
                                 <Grid>
-      <Grid.Col span={4}>
-      <a href="https://sites.google.com/hessdalen.org/web"  ><Button fullWidth size="md" radius="sm" >web</Button></a>
-      </Grid.Col>
-      <Grid.Col span={4}>
-      <a href="https://sites.google.com/hessdalen.org/blog" ><Button fullWidth size="md" radius="sm" >blog</Button></a>
+                                    <Grid.Col span={4}>
+                                        <a href="https://sites.google.com/hessdalen.org/web"  ><Button fullWidth size="md" radius="sm" >web</Button></a>
+                                    </Grid.Col>
+                                    <Grid.Col span={4}>
+                                        <a href="https://sites.google.com/hessdalen.org/blog" ><Button fullWidth size="md" radius="sm" >blog</Button></a>
 
-      </Grid.Col>
-      <Grid.Col span={4}>
-      <a href="https://old.hessdalen.org/"><Button fullWidth size="md" radius="sm" >old</Button></a>
-      </Grid.Col>
-    </Grid>
+                                    </Grid.Col>
+                                    <Grid.Col span={4}>
+                                        <a href="https://old.hessdalen.org/"><Button fullWidth size="md" radius="sm" >old</Button></a>
+                                    </Grid.Col>
+                                </Grid>
                                 <Space h="xl" />
                                 <JoinDiscord />
                             </Drawer.Body>
                         </Drawer.Content>
                     </Drawer.Root>
-
                 </div>
-
             </MediaQuery>
         </>
     );

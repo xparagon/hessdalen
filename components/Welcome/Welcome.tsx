@@ -98,11 +98,7 @@ export function Welcome() {
         </a>
 
       </Center>
-      <Center>
-        <Text size="xl">
-          Next event: What did we learn from the Field Trip & Conference
-        </Text>
-      </Center>
+
 
 
 

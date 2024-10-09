@@ -83,7 +83,6 @@ export default function Sitemap() {
                     <List.Item>People
                         <List withPadding listStyleType="disc">
                             <List.Item>Erling E. Strand</List.Item>
-                            <List.Item>Massimo  Teodorani</List.Item>
                         </List>
                     </List.Item>
                     <List.Item>Blue Box</List.Item>

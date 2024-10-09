@@ -37,9 +37,6 @@ export default function FieldTrip() {
                     <Text size="sm">
                         Erling P. Strand:
                         Instruments for UAP detection.<br />
-                        Massimo Teodorani:
-                        Theories about UAPs.
-
                     </Text>
                     <Space h="sm" />
 

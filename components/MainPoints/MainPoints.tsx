@@ -68,7 +68,7 @@ const data = [
         image:
             'img/ph-1.jpg',
         title: '“The Hessdalen phenomenon represents the most important laboratory in the world to study recurrent anomalous aerial phenomena”',
-        category: 'Massimo Teodorani',
+        category: 'Erling Strand',
     },
     {
         image:
@@ -80,7 +80,7 @@ const data = [
         image:
             'img/ph-3.jpg',
         title: '“the all-sky camera system is expected to identify targets of opportunity using AI machine learning and to track the chosen target.”',
-        category: 'Massimo Teodorani',
+        category: 'Erling Strand',
     },
     {
         image:
@@ -98,7 +98,7 @@ const data = [
         image:
             'img/ph-6.jpg',
         title: '“the main question is: what kind of flying machine is able to produce such a high magnetic field strength?”',
-        category: 'Massimo Teodorani',
+        category: 'Erling Strand',
     },
     {
         image:
@@ -110,7 +110,7 @@ const data = [
         image:
             'img/ph-8.jpg',
         title: '“... sometimes an apparentviolation of the known physics laws”',
-        category: 'Massimo Teodorani',
+        category: 'Erling Strand',
     },
 ];
 
